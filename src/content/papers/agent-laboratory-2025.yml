@@ -1,0 +1,15 @@
+id: agent-laboratory-2025
+title: "Agent Laboratory: Using LLM Agents as Research Assistants"
+authors: ["Samuel Schmidgall", "Yusheng Su", "Ze Wang", "Ximeng Sun", "Jialian Wu", "Xiaodong Yu", "Jiang Liu", "Michael Moor", "Zicheng Liu", "Emad Barsoum"]
+year: 2025
+arxiv: "2501.04227"
+links:
+  paper: https://arxiv.org/abs/2501.04227
+
+area: architectures
+scale: [multi-agent, human-agent]
+type: [framework]
+domain: [science]
+
+status: triaged
+added: 2026-09-22

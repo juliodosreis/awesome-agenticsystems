@@ -20,7 +20,7 @@ build.
 [RSS](https://juliodosreis.github.io/awesome-agenticsystems/rss.xml)
 
 <!-- gen:counts -->
-11 areas in 4 layers, 58 topics and 32 facet values across 5 facets.
+11 areas in 4 layers, 58 topics and 33 facet values across 5 facets.
 <!-- /gen:counts -->
 
 ## Contents
@@ -38,7 +38,7 @@ build.
 ## The collection
 
 <!-- gen:paper-count -->
-32 papers listed, 32 of them with a written summary.
+37 papers listed, 32 of them with a written summary.
 <!-- /gen:paper-count -->
 
 The site has filtering, search and the reading-path graph; this listing is the
@@ -112,8 +112,16 @@ What the agent reasons about, stores, executes and learns.
 
 The inner loop of the system, its number of agents, and the substrate it runs on.
 
+#### Agent architectures ([`architectures`](https://juliodosreis.github.io/awesome-agenticsystems/areas/architectures))
+
+- [Agent Laboratory: Using LLM Agents as Research Assistants](https://arxiv.org/abs/2501.04227) — `2025`
+- [Embracing Imperfection: Simulating Students with Diverse Cognitive Levels Using LLM-based Agents](https://arxiv.org/abs/2505.19997) — `ACL 2025` · 2025
+- [Simulating Classroom Education with LLM-Empowered Agents](https://arxiv.org/abs/2406.19226) — `2024`
+- [Leveraging generative artificial intelligence to simulate student learning behavior](https://arxiv.org/abs/2310.19206) — `2023`
+
 #### Coordination & organization ([`coordination`](https://juliodosreis.github.io/awesome-agenticsystems/areas/coordination))
 
+- [Multi-Agent Teams Hold Experts Back](https://arxiv.org/abs/2602.01011) — `ICML 2026` · 2026
 - [AutoGen: Enabling Next-Gen LLM Applications via Multi-Agent Conversation](https://arxiv.org/abs/2308.08155) — `COLM 2024` · 2023  
   Models the application as a conversation between configurable agents, with humans and code execution as first-class participants.
 - [MetaGPT: Meta Programming for a Multi-Agent Collaborative Framework](https://arxiv.org/abs/2308.00352) — `ICLR 2024` · 2023  
@@ -158,7 +166,7 @@ How a system is measured, and how its risk is governed.
   Augments RL with verifiable rewards with an adversarial discriminator trained on human demonstrations, so non-verifiable properties like style and structure are optimized alongside task accuracy.
 
 
-> **Gaps.** No papers yet in `architectures`, `interoperability`. The areas exist in the taxonomy before anything lives in them — the gap is a reading list, and a good place to make a first contribution.
+> **Gaps.** No papers yet in `interoperability`. The areas exist in the taxonomy before anything lives in them — the gap is a reading list, and a good place to make a first contribution.
 <!-- /gen:papers -->
 
 ## Design decisions

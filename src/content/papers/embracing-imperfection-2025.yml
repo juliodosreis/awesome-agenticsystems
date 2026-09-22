@@ -1,0 +1,16 @@
+id: embracing-imperfection-2025
+title: "Embracing Imperfection: Simulating Students with Diverse Cognitive Levels Using LLM-based Agents"
+authors: ["Tao Wu", "Jingyuan Chen", "Wang Lin", "Mengze Li", "Yumeng Zhu", "Ang Li", "Kun Kuang", "Fei Wu"]
+year: 2025
+venue: "ACL 2025"
+arxiv: "2505.19997"
+links:
+  paper: https://arxiv.org/abs/2505.19997
+
+area: architectures
+scale: [single-agent]
+type: [method]
+domain: [education]
+
+status: triaged
+added: 2026-09-22

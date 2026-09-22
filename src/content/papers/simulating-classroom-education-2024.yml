@@ -1,0 +1,15 @@
+id: simulating-classroom-education-2024
+title: "Simulating Classroom Education with LLM-Empowered Agents"
+authors: ["Zheyuan Zhang", "Daniel Zhang-Li", "Jifan Yu", "Linlu Gong", "Jinchang Zhou", "Zhanxin Hao", "Jianxiao Jiang", "Jie Cao", "Huiqin Liu", "Zhiyuan Liu", "Lei Hou", "Juanzi Li"]
+year: 2024
+arxiv: "2406.19226"
+links:
+  paper: https://arxiv.org/abs/2406.19226
+
+area: architectures
+scale: [multi-agent, human-agent]
+type: [framework]
+domain: [education]
+
+status: triaged
+added: 2026-09-22
