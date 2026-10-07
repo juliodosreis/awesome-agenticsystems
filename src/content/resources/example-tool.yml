@@ -1,0 +1,9 @@
+id: example-tool
+title: "Example tool or framework"
+kind: tool
+url: https://example.com/
+authors: ["Author Name"]
+year: 2026
+description: >-
+  Placeholder entry. Replace it with a real tool or framework.
+added: "2026-10-07"

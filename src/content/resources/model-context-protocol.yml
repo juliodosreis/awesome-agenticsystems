@@ -1,0 +1,10 @@
+id: model-context-protocol
+title: "Model Context Protocol (MCP)"
+kind: protocol
+url: https://modelcontextprotocol.io/
+org: "Agentic AI Foundation"
+year: 2024
+description: >-
+  Client-server protocol over JSON-RPC. A server exposes tools, resources and
+  prompts, and an LLM application connects to it as a client.
+added: "2026-10-07"

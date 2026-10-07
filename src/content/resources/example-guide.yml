@@ -1,0 +1,9 @@
+id: example-guide
+title: "Example guide or post"
+kind: guide
+url: https://example.com/
+authors: ["Author Name"]
+year: 2026
+description: >-
+  Placeholder entry. Replace it with a real guide or post.
+added: "2026-10-07"
