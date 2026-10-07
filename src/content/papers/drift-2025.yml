@@ -1,0 +1,26 @@
+id: drift-2025
+title: 'DRIFT: Dynamic Rule-Based Defense with Injection Isolation for Securing LLM Agents'
+authors:
+- Hao Li
+- Xiaogeng Liu
+- Chun Chiu
+- Dianqi Li
+- Ning Zhang
+- Chaowei Xiao
+year: 2025
+venue: Advances in Neural Information Processing Systems
+arxiv: '2506.12104'
+links:
+  paper: https://proceedings.neurips.cc/paper_files/paper/2025/hash/77f3b26c7907aa27b207df9b9d43f29a-Abstract-Conference.html
+area: safety
+scale:
+- single-agent
+type:
+- framework
+topics: []
+about: []
+infra: []
+domain:
+- general
+status: triaged
+added: '2026-10-07'

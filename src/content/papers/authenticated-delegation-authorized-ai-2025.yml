@@ -1,0 +1,28 @@
+id: authenticated-delegation-authorized-ai-2025
+title: Authenticated Delegation and Authorized AI Agents
+authors:
+- Tobin South
+- Samuele Marro
+- Thomas Hardjono
+- Robert Mahari
+- Cedric Deslandes Whitney
+- Dazza Greenwood
+- Alan Chan
+- Alex Pentland
+year: 2025
+arxiv: '2501.09674'
+links:
+  paper: https://arxiv.org/abs/2501.09674
+area: safety
+scale:
+- single-agent
+- human-agent
+type:
+- framework
+topics: []
+about: []
+infra: []
+domain:
+- general
+status: triaged
+added: '2026-10-07'

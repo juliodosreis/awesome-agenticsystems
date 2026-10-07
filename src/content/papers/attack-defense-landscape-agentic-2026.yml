@@ -1,0 +1,26 @@
+id: attack-defense-landscape-agentic-2026
+title: 'The Attack and Defense Landscape of Agentic AI: A Comprehensive Survey'
+authors:
+- Juhee Kim
+- Xiaoyuan Liu
+- Zhun Wang
+- Shi Qiu
+- Bo Li
+- Wenbo Guo
+- Dawn Song
+year: 2026
+arxiv: '2603.11088'
+links:
+  paper: https://arxiv.org/abs/2603.11088
+area: safety
+scale:
+- single-agent
+type:
+- survey
+topics: []
+about: []
+infra: []
+domain:
+- general
+status: triaged
+added: '2026-10-07'
