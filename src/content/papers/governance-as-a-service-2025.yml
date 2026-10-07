@@ -1,0 +1,22 @@
+id: governance-as-a-service-2025
+title: 'Governance-as-a-Service: A Multi-Agent Framework for AI System Compliance and Policy Enforcement'
+authors:
+- Suyash Gaurav
+- Jukka Heikkonen
+- Jatin Chaudhary
+year: 2025
+arxiv: '2508.18765'
+links:
+  paper: https://arxiv.org/abs/2508.18765
+area: safety
+scale:
+- multi-agent
+type:
+- framework
+topics: []
+about: []
+infra: []
+domain:
+- general
+status: triaged
+added: '2026-10-07'
