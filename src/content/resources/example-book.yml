@@ -1,0 +1,9 @@
+id: example-book
+title: "Example book"
+kind: book
+url: https://example.com/
+authors: ["Author Name"]
+year: 2026
+description: >-
+  Placeholder entry. Replace it with a real book.
+added: "2026-10-07"

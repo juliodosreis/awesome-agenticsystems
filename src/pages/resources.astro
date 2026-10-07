@@ -1,0 +1,123 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { resourcesByKind, formatBy } from '../lib/resources';
+
+const sections = await resourcesByKind();
+const total = sections.reduce((n, s) => n + s.resources.length, 0);
+---
+
+<Layout
+    title="Resources | Awesome Agentic Systems"
+    description={`${total} resources on agentic systems that are not papers: protocols, books, courses, guides and frameworks.`}
+>
+    <div class="page-header">
+        <h2>Resources</h2>
+        <p class="subtitle">
+            Material on agentic systems that is not a paper: protocol
+            specifications, books, courses, engineering posts and software.
+        </p>
+    </div>
+
+    {sections.map(({ key, kind, resources }) => (
+        <section class="kind" id={key}>
+            <h3>{kind.label}</h3>
+            <p class="kind-desc">{kind.blurb}</p>
+            <div class="resource-list">
+                {resources.map(r => (
+                    <article class="resource-card">
+                        <a class="resource-title" href={r.data.url} target="_blank" rel="noopener">
+                            {r.data.title}
+                        </a>
+                        {formatBy(r) && <div class="resource-by">{formatBy(r)}</div>}
+                        <p class="resource-desc">{r.data.description}</p>
+                    </article>
+                ))}
+                {resources.length === 0 && (
+                    <div class="empty-state">No resources of this kind yet.</div>
+                )}
+            </div>
+        </section>
+    ))}
+</Layout>
+
+<style>
+    .page-header {
+        margin-bottom: 32px;
+        padding-bottom: 24px;
+        border-bottom: 1px solid var(--border-color);
+    }
+
+    .page-header h2 {
+        font-size: 2rem;
+        margin-bottom: 8px;
+    }
+
+    .subtitle {
+        color: var(--text-muted);
+        font-size: 1.05rem;
+        margin: 0;
+    }
+
+    .kind {
+        margin-bottom: 48px;
+        /* The sticky header is 60px tall: without this the anchor target
+           lands underneath it. */
+        scroll-margin-top: 76px;
+    }
+
+    .kind h3 {
+        font-size: 1.4rem;
+        color: var(--accent-color);
+        margin-bottom: 4px;
+    }
+
+    .kind-desc {
+        color: var(--text-muted);
+        font-size: 0.95rem;
+        margin-bottom: 16px;
+    }
+
+    .resource-list {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .resource-card {
+        background: var(--card-bg);
+        border: 1px solid var(--border-color);
+        padding: 16px 20px;
+        border-radius: 8px;
+        transition: border-color 0.2s;
+    }
+
+    .resource-card:hover {
+        border-color: var(--accent-color);
+    }
+
+    .resource-title {
+        font-size: 1.1rem;
+        font-weight: 600;
+        color: var(--text-main);
+    }
+
+    .resource-title:hover {
+        color: var(--accent-color);
+    }
+
+    .resource-by {
+        color: var(--text-muted);
+        font-size: 0.9rem;
+        margin-top: 2px;
+    }
+
+    .resource-desc {
+        font-size: 0.95rem;
+        margin: 10px 0 0;
+    }
+
+    .empty-state {
+        color: var(--text-muted);
+        font-style: italic;
+    }
+</style>

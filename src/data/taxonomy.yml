@@ -298,6 +298,28 @@ domain_groups:
     members: [data, deep-research, general]
 
 # ---------------------------------------------------------------------------
+# RESOURCE KINDS — for the /resources page, which lists material that is not a
+# paper: protocol specs, books, courses, posts and software.
+# The order here is the order of the sidebar links and of the page sections.
+# ---------------------------------------------------------------------------
+resource_kinds:
+  protocol:
+    label: "Protocols"
+    blurb: "Specifications for connecting agents to tools, to clients or to other agents."
+  book:
+    label: "Books"
+    blurb: "Books covering agents, or the methods agents are built from."
+  course:
+    label: "Courses"
+    blurb: "Courses and lecture series with recorded or written material."
+  guide:
+    label: "Guides & Posts"
+    blurb: "Articles and engineering posts on building and running agents."
+  tool:
+    label: "Tools & Frameworks"
+    blurb: "Libraries and SDKs for building agentic systems."
+
+# ---------------------------------------------------------------------------
 # STATUSES — a paper moves forward; it never blocks the submission.
 # ---------------------------------------------------------------------------
 # featured: true sorts the paper first in the listing. It no longer draws a badge.

@@ -1,23 +1,26 @@
 ---
 import Layout from '../../layouts/Layout.astro';
 import { listPapers, formatAuthors } from '../../lib/papers';
+import { listResources, formatBy } from '../../lib/resources';
 import { taxonomy } from '../../lib/taxonomy';
 import { url } from '../../lib/url';
 
 export async function getStaticPaths() {
   const papers = await listPapers();
+  const resources = await listResources();
 
   return Object.entries(taxonomy.areas).map(([areaKey, area]) => ({
     params: { area: areaKey },
     props: {
       areaData: area,
       group: taxonomy.groups[area.group],
-      papers: papers.filter(p => p.data.area === areaKey)
+      papers: papers.filter(p => p.data.area === areaKey),
+      resources: resources.filter(r => r.data.area === areaKey)
     }
   }));
 }
 
-const { areaData, group, papers } = Astro.props;
+const { areaData, group, papers, resources } = Astro.props;
 
 // Surveys are the way into an area: they go on top, separated out.
 const surveys = papers.filter((p: any) => p.data.type.includes('survey'));
@@ -83,9 +86,50 @@ rest.sort((a: any, b: any) => (b.data.year || 0) - (a.data.year || 0));
       </div>
     )}
   </div>
+
+  {resources.length > 0 && (
+    <section class="related-resources">
+      <h3>Related resources</h3>
+      <p class="entry-desc">
+        Protocols, books, courses and software tagged with this area.
+        See <a href={url('/resources')}>all resources</a>.
+      </p>
+      <ul>
+        {resources.map((r: any) => (
+          <li>
+            <a href={r.data.url} target="_blank" rel="noopener">{r.data.title}</a>
+            {formatBy(r) && <span class="resource-by"> · {formatBy(r)}</span>}
+          </li>
+        ))}
+      </ul>
+    </section>
+  )}
 </Layout>
 
 <style>
+  .related-resources {
+    margin-top: 48px;
+    padding-top: 24px;
+    border-top: 1px solid var(--border-color);
+  }
+
+  .related-resources h3 {
+    font-size: 1.1rem;
+    margin-bottom: 4px;
+  }
+
+  .related-resources ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .resource-by {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+  }
+
   .breadcrumb {
     margin-bottom: 24px;
     font-size: 0.9rem;

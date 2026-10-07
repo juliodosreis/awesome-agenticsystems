@@ -20,6 +20,11 @@ export interface DomainGroup {
   members: string[];
 }
 
+export interface ResourceKind {
+  label: string;
+  blurb: string;
+}
+
 export interface Reference {
   key: string;
   cite: string;
@@ -37,6 +42,7 @@ export interface Taxonomy {
   facet_blurbs: Record<string, string>;
   value_blurbs: Record<string, Record<string, string>>;
   domain_groups: Record<string, DomainGroup>;
+  resource_kinds: Record<string, ResourceKind>;
   status: string[];
   status_blurbs: Record<string, string>;
   rules: Record<string, number>;
@@ -55,6 +61,8 @@ export const taxonomy = load(
 export const allTopics: string[] = [...new Set(taxonomy.topics ?? [])];
 
 export const areaKeys = Object.keys(taxonomy.areas);
+
+export const resourceKindKeys = Object.keys(taxonomy.resource_kinds ?? {});
 
 /**
  * Areas in group order, with the groups in the order they are written in the
@@ -143,6 +151,14 @@ export function assertGroupsResolve(): void {
       if (!allowed.has(value)) {
         problems.push(`value_blurbs.${facet} describes "${value}", which is not a valid value`);
       }
+    }
+  }
+
+  // A kind without a label renders as an empty sidebar link and an untitled
+  // section on /resources.
+  for (const [key, kind] of Object.entries(taxonomy.resource_kinds ?? {})) {
+    if (!kind?.label) {
+      problems.push(`resource_kind "${key}" has no label`);
     }
   }
 

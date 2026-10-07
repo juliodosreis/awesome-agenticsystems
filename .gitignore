@@ -11,6 +11,7 @@ __pycache__/
 *.py[cod]
 *$py.class
 .env
+.venv/
 venv/
 env/
 
@@ -22,3 +23,5 @@ Thumbs.db
 output_slug.txt
 test.log
 issue_body.md
+.claude
+CLAUDE.md

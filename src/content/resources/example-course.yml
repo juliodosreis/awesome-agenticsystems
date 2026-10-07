@@ -1,0 +1,9 @@
+id: example-course
+title: "Example course"
+kind: course
+url: https://example.com/
+authors: ["Author Name"]
+year: 2026
+description: >-
+  Placeholder entry. Replace it with a real course.
+added: "2026-10-07"
