@@ -38,7 +38,7 @@ build.
 ## The collection
 
 <!-- gen:paper-count -->
-32 papers listed, 32 of them with a written summary.
+36 papers listed, 32 of them with a written summary.
 <!-- /gen:paper-count -->
 
 The site has filtering, search and the reading-path graph; this listing is the
@@ -93,6 +93,7 @@ What the agent reasons about, stores, executes and learns.
 
 - [Do Context Files Help Coding Agents? A Two-Agent Ablation Study on Real Repositories](https://arxiv.org/abs/2607.27250) — `2026`  
   A controlled ablation of AGENTS.md and CLAUDE.md across two frontier agents and 288 evaluated runs finds no measurable effect on correctness, bounded to 10-15pp by equivalence testing.
+- [Ontology-Constrained Neural Reasoning in Enterprise Agentic Systems: A Neurosymbolic Architecture for Domain-Grounded AI Agents](https://arxiv.org/abs/2604.00555) — `2026`
 - [ReContext: Recursive Evidence Replay as LLM Harness for Long-Context Reasoning](https://arxiv.org/abs/2607.02509) — `2026`  
   A training-free inference method that builds a query-conditioned evidence pool from the model's own relevance signals and replays it before generation, without pruning the original context.
 - [Toolformer: Language Models Can Teach Themselves to Use Tools](https://arxiv.org/abs/2302.04761) — `NeurIPS 2023` · 2023  
@@ -145,6 +146,7 @@ How a system is measured, and how its risk is governed.
   Scores candidate solutions by taking the expectation over scoring-token logits. Verification then scales with granularity, repetition and criteria decomposition.
 - 🔥 ⚖️ [One Success Isn't Reliability: Thinkingbox, a Sandbox and Benchmark for Agents in Stateful Business Workflows](https://arxiv.org/abs/2608.19741) — `2026`  
   507 policy-conditioned workflows in an MCP-compatible sandbox, scored on the persistent backend state an agent leaves behind.
+- ⚖️ [Protocol Agent: What If Agents Could Use Cryptography In Everyday Life?](https://arxiv.org/abs/2602.01304) — `2026`
 - [Rethinking the Evaluation of Harness Evolution for Agents](https://arxiv.org/abs/2607.12227) — `2026`  
   Argues automatic harness evolution must be compared against test-time scaling under matched feedback and inference budgets, and finds it does not outperform that baseline or generalize to held-out tasks.
 - 🔥 ⚖️ [tau-bench: A Benchmark for Tool-Agent-User Interaction in Real-World Domains](https://arxiv.org/abs/2406.12045) — `ICLR 2025` · 2024  
@@ -154,8 +156,10 @@ How a system is measured, and how its risk is governed.
 
 #### Safety, trust & governance ([`safety`](https://juliodosreis.github.io/awesome-agenticsystems/areas/safety))
 
+- 📖 [The Attack and Defense Landscape of Agentic AI: A Comprehensive Survey](https://arxiv.org/abs/2603.11088) — `2026`
 - [Right in the Right Way: LM Training with Verifiable Rewards and Human Demonstrations](https://arxiv.org/abs/2607.01181) — `2026`  
   Augments RL with verifiable rewards with an adversarial discriminator trained on human demonstrations, so non-verifiable properties like style and structure are optimized alongside task accuracy.
+- [Graph-Symbolic Policy Enforcement and Control (G-SPEC): A Neuro-Symbolic Framework for Safe Agentic AI in 5G Autonomous Networks](https://arxiv.org/abs/2512.20275) — `2025`
 
 
 > **Gaps.** No papers yet in `architectures`, `interoperability`. The areas exist in the taxonomy before anything lives in them — the gap is a reading list, and a good place to make a first contribution.
