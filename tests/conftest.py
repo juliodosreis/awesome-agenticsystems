@@ -61,7 +61,7 @@ def issue_body():
     ):
         sections = [
             ("Link to the paper", link),
-            ("BibTeX", bibtex),
+            ("BibTeX (optional)", bibtex),
             ("Area", area),
             ("Scale", scale),
             ("Type", type_),

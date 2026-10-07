@@ -167,6 +167,15 @@ def test_bibtex_without_fences_is_accepted(issue_body, papers_dir, tmp_path):
     assert record(papers_dir, "fenceless-entry-2025")["year"] == 2025
 
 
+def test_bibtex_last_first_names_are_reordered(issue_body, papers_dir, tmp_path):
+    """BibTeX writes "Last, First"; the records use "First Last"."""
+    raw = ("@article{x, title={Name Order}, "
+           "author={Li, Hao and Ann Author and {van der Laan}, Vincent}, year={2025}}")
+    run(issue_body(link="https://example.org/paper", bibtex=raw), tmp_path)
+    assert record(papers_dir, "name-order-2025")["authors"] == [
+        "Hao Li", "Ann Author", "Vincent van der Laan"]
+
+
 # --- rejections: each one is posted back to the contributor ---------------
 
 def test_rejects_link_that_is_not_a_url(issue_body, tmp_path):

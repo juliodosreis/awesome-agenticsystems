@@ -112,9 +112,12 @@ def check_vocab(values, vocab_path, label):
 
 def parse_bibtex(body):
     """Return the first BibTeX entry in the issue, or None if there is none."""
-    raw = re.search(r"### BibTeX\s*\n+```[a-z]*\n(.*?)\n```", body, re.DOTALL)
+    # The form labels the field "BibTeX (optional)", so the heading can carry
+    # text after the word. Matching only "### BibTeX\n" dropped every pasted
+    # entry and sent non-arXiv submissions to the "paste the BibTeX" error.
+    raw = re.search(r"### BibTeX[^\n]*\n+```[a-z]*\n(.*?)\n```", body, re.DOTALL)
     if not raw:
-        raw = re.search(r"### BibTeX\s*\n+(.*?)(?=\n### |\Z)", body, re.DOTALL)
+        raw = re.search(r"### BibTeX[^\n]*\n+(.*?)(?=\n### |\Z)", body, re.DOTALL)
     if not raw:
         return None
     text = raw.group(1).strip()
@@ -137,6 +140,15 @@ def clean(value):
     return " ".join(str(value).replace("{", "").replace("}", "").split())
 
 
+def display_name(author):
+    """BibTeX "Last, First" to the "First Last" every other record uses."""
+    author = clean(author)
+    if author.count(",") == 1:
+        last, first = (part.strip() for part in author.split(","))
+        return f"{first} {last}" if first else last
+    return author
+
+
 def metadata_from_bibtex(entry):
     title = clean(entry.get("title", ""))
     if not title:
@@ -151,7 +163,7 @@ def metadata_from_bibtex(entry):
         )
 
     authors_raw = " ".join(entry.get("author", "").split())
-    authors = [a.strip() for a in authors_raw.split(" and ") if a.strip()]
+    authors = [display_name(a) for a in authors_raw.split(" and ") if a.strip()]
     venue = clean(
         entry.get("journal") or entry.get("booktitle") or entry.get("publisher") or ""
     )
