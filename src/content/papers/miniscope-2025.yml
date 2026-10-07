@@ -1,0 +1,26 @@
+id: miniscope-2025
+title: 'MiniScope: Authorizing Agents with Least-Privilege Permissions'
+authors:
+- Jinhao Zhu
+- Xiao Huang
+- Kevin Tseng
+- Gil Vernik
+- Shishir G. Patil
+- Vivian Fang
+- Raluca Ada Popa
+year: 2025
+arxiv: '2512.11147'
+links:
+  paper: https://arxiv.org/abs/2512.11147
+area: safety
+scale:
+- single-agent
+type:
+- framework
+topics: []
+about: []
+infra: []
+domain:
+- general
+status: triaged
+added: '2026-10-07'
