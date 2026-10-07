@@ -1,0 +1,21 @@
+id: capability-gates-are-not-2026
+title: 'Capability Gates Are Not Authorization: Confused-Deputy Failures in LLM Agent Frameworks'
+authors:
+- David Mellafe Zuvic
+year: 2026
+arxiv: '2606.28679'
+links:
+  paper: https://arxiv.org/abs/2606.28679
+area: safety
+scale:
+- single-agent
+type:
+- empirical
+- method
+topics: []
+about: []
+infra: []
+domain:
+- general
+status: triaged
+added: '2026-10-07'
