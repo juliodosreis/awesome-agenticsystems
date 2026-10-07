@@ -1,0 +1,30 @@
+id: auditable-agents-2026
+title: Auditable Agents
+authors:
+- Yi Nian
+- Aojie Yuan
+- Haiyue Zhang
+- Jiate Li
+- Li Li
+- Xiyang Hu
+- Hua Wei
+- Xiongye Xiao
+- Chaowei Xiao
+- Yue Zhao
+year: 2026
+arxiv: '2604.05485'
+links:
+  paper: https://arxiv.org/abs/2604.05485
+area: safety
+scale:
+- multi-agent
+- single-agent
+type:
+- position
+topics: []
+about: []
+infra: []
+domain:
+- general
+status: triaged
+added: '2026-10-07'
