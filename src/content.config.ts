@@ -2,7 +2,7 @@ import { defineCollection } from 'astro:content';
 // The `z` re-export from astro:content was deprecated in Astro 5+.
 import { z } from 'astro/zod';
 import { glob } from 'astro/loaders';
-import { taxonomy, allTopics, areaKeys, assertGroupsResolve } from './lib/taxonomy';
+import { taxonomy, allTopics, areaKeys, resourceKindKeys, assertGroupsResolve } from './lib/taxonomy';
 
 assertGroupsResolve();
 
@@ -100,6 +100,29 @@ const paperCollection = defineCollection({
   })
 });
 
+// Material that is not a paper: protocol specs, books, courses, posts and
+// software. Listed on /resources, grouped by `kind`. It has no status cycle:
+// a resource is a link with a description, so there is nothing to triage.
+const resourceCollection = defineCollection({
+  loader: glob({ pattern: '**/*.yml', base: './src/content/resources' }),
+  schema: z.object({
+    id: z.string(),
+    title: z.string(),
+    kind: vocab('resource_kinds', resourceKindKeys),
+    url: z.url(),
+    // A person (a book, a post) or an organization (a protocol, an SDK).
+    authors: z.array(z.string()).default([]),
+    org: z.string().min(1).optional(),
+    year: z.number().optional(),
+    // The area the resource relates to. It also lists the resource on that
+    // area's page, under the papers.
+    area: vocab('areas', areaKeys).optional(),
+    description: z.string(),
+    added: z.coerce.date({ error: 'added must be a YYYY-MM-DD date.' })
+  })
+});
+
 export const collections = {
-  'papers': paperCollection
+  'papers': paperCollection,
+  'resources': resourceCollection
 };

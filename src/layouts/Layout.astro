@@ -1,6 +1,6 @@
 ---
 import Search from 'astro-pagefind/components/Search.astro';
-import { areasByGroup } from '../lib/taxonomy';
+import { areasByGroup, taxonomy } from '../lib/taxonomy';
 import { listPapers, countCaptured } from '../lib/papers';
 import { url, REPO_URL } from '../lib/url';
 
@@ -34,6 +34,9 @@ const countIn = (key: string) => papers.filter(p => p.data.area === key).length;
 // `captured` papers are not shown anywhere on the site. Without this counter
 // the backlog is invisible and nobody knows something is waiting for triage.
 const captured = await countCaptured();
+
+// One sidebar link per resource kind, pointing at its section on /resources.
+const resourceKinds = Object.entries(taxonomy.resource_kinds);
 
 const favicon = url('/favicon.svg');
 
@@ -119,6 +122,13 @@ const isCurrent = (href: string) => path === href.replace(/\/$/, '');
                                 <span class="triage-count">{captured}</span>
                             </a>
                         )}
+                    </div>
+
+                    <div class="nav-section">
+                        <span class="nav-heading">Resources</span>
+                        {resourceKinds.map(([key, kind]) => (
+                            <a href={url(`/resources#${key}`)}>{kind.label}</a>
+                        ))}
                     </div>
 
                     <div class="nav-section">
