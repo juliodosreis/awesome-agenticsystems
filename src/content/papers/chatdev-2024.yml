@@ -1,0 +1,34 @@
+id: chatdev-2024
+title: 'ChatDev: Communicative Agents for Software Development'
+authors:
+- Chen Qian
+- Wei Liu
+- Hongzhang Liu
+- Nuo Chen
+- Yufan Dang
+- Jiahao Li
+- Cheng Yang
+- Weize Chen
+- Yusheng Su
+- Xin Cong
+- Juyuan Xu
+- Dahai Li
+- Zhiyuan Liu
+- Maosong Sun
+year: 2024
+venue: 'Proceedings of the 62nd Annual Meeting of the Association for Computational Linguistics (Volume
+  1: Long Papers)'
+links:
+  paper: https://aclanthology.org/2024.acl-long.810/
+area: coordination
+scale:
+- multi-agent
+type:
+- framework
+topics: []
+about: []
+infra: []
+domain:
+- software-engineering
+status: triaged
+added: '2026-10-08'
