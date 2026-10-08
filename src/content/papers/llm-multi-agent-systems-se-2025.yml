@@ -1,0 +1,24 @@
+id: llm-multi-agent-systems-se-2025
+title: 'LLM-Based Multi-Agent Systems for Software Engineering: Literature Review, Vision, and the Road
+  Ahead'
+authors:
+- Junda He
+- Christoph Treude
+- David Lo
+year: 2025
+venue: ACM Transactions on Software Engineering and Methodology
+links:
+  paper: https://dl.acm.org/doi/10.1145/3712003
+area: foundations
+scale:
+- multi-agent
+type:
+- survey
+- position
+topics: []
+about: []
+infra: []
+domain:
+- software-engineering
+status: triaged
+added: '2026-10-08'

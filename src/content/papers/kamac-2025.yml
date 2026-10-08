@@ -1,0 +1,25 @@
+id: kamac-2025
+title: A Knowledge-driven Adaptive Collaboration of LLMs for Enhancing Medical Decision-making
+authors:
+- Xiao Wu
+- Ting-Zhu Huang
+- Liang-Jian Deng
+- Yanyuan Qiao
+- Imran Razzak
+- Yutong Xie
+year: 2025
+venue: Proceedings of the 2025 Conference on Empirical Methods in Natural Language Processing
+links:
+  paper: https://aclanthology.org/2025.emnlp-main.1699/
+area: coordination
+scale:
+- multi-agent
+type:
+- method
+topics: []
+about: []
+infra: []
+domain:
+- healthcare
+status: triaged
+added: '2026-10-08'

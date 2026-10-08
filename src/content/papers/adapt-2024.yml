@@ -1,0 +1,26 @@
+id: adapt-2024
+title: 'ADaPT: As-Needed Decomposition and Planning with Language Models'
+authors:
+- Archiki Prasad
+- Alexander Koller
+- Mareike Hartmann
+- Peter Clark
+- Ashish Sabharwal
+- Mohit Bansal
+- Tushar Khot
+year: 2024
+venue: 'Findings of the Association for Computational Linguistics: NAACL 2024'
+links:
+  paper: https://aclanthology.org/2024.findings-naacl.264/
+area: reasoning-planning
+scale:
+- single-agent
+type:
+- method
+topics: []
+about: []
+infra: []
+domain:
+- general
+status: triaged
+added: '2026-10-08'

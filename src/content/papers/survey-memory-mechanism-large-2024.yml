@@ -1,0 +1,28 @@
+id: survey-memory-mechanism-large-2024
+title: A Survey on the Memory Mechanism of Large Language Model based Agents
+authors:
+- Zeyu Zhang
+- Xiaohe Bo
+- Chen Ma
+- Rui Li
+- Xu Chen
+- Quanyu Dai
+- Jieming Zhu
+- Zhenhua Dong
+- Ji-Rong Wen
+year: 2024
+arxiv: '2404.13501'
+links:
+  paper: https://arxiv.org/abs/2404.13501
+area: memory
+scale:
+- single-agent
+type:
+- survey
+topics: []
+about: []
+infra: []
+domain:
+- general
+status: triaged
+added: '2026-10-08'

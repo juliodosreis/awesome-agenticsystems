@@ -1,0 +1,25 @@
+id: clinicalagents-2026
+title: 'ClinicalAgents: Multi-Agent Orchestration for Clinical Decision Making with Dual-Memory'
+authors:
+- Zhuohan Ge
+- Haoyang Li
+- Yubo Wang
+- Nicole Hu
+- Chen Jason Zhang
+- Qing Li
+year: 2026
+venue: Proceedings of the 32nd ACM SIGKDD Conference on Knowledge Discovery and Data Mining (KDD '26)
+links:
+  paper: https://dl.acm.org/doi/10.1145/3770855.3818931
+area: reasoning-planning
+scale:
+- multi-agent
+type:
+- method
+topics: []
+about: []
+infra: []
+domain:
+- healthcare
+status: triaged
+added: '2026-10-08'

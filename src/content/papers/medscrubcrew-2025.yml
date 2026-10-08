@@ -1,0 +1,22 @@
+id: medscrubcrew-2025
+title: 'MedScrubCrew: A Medical Multi-Agent Framework for Automating Appointment Scheduling Based on Patient-Provider
+  Profile Resource Matching'
+authors:
+- Jose M. Ruiz Mejia
+- Danda B. Rawat
+year: 2025
+venue: Healthcare
+links:
+  paper: https://www.mdpi.com/2227-9032/13/14/1649
+area: architectures
+scale:
+- multi-agent
+type:
+- framework
+topics: []
+about: []
+infra: []
+domain:
+- healthcare
+status: triaged
+added: '2026-10-08'

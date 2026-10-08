@@ -1,0 +1,22 @@
+id: intellicode-2026
+title: 'IntelliCode: A Multi-Agent LLM Tutoring System with Centralized Learner Modeling'
+authors:
+- Jones David
+- Shreya Ghosh
+year: 2026
+venue: Proceedings of the 19th Conference of the European Chapter of the Association for Computational
+  Linguistics (EACL 2026) -- System Demonstrations
+links:
+  paper: https://aclanthology.org/2026.eacl-demo.10/
+area: coordination
+scale:
+- multi-agent
+type:
+- framework
+topics: []
+about: []
+infra: []
+domain:
+- education
+status: triaged
+added: '2026-10-08'

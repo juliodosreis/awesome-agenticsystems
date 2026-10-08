@@ -1,0 +1,25 @@
+id: careconnect-2026
+title: Toward Trustworthy Large Language Model Agents in Healthcare
+authors:
+- Hadi Hasan
+- Safaa Salman
+- Adam Tai Abou Dargham
+- Ammar Mohanna
+- Ali Chehab
+year: 2026
+arxiv: '2607.05055'
+links:
+  paper: https://arxiv.org/abs/2607.05055
+area: safety
+scale:
+- single-agent
+- human-agent
+type:
+- framework
+topics: []
+about: []
+infra: []
+domain:
+- healthcare
+status: triaged
+added: '2026-10-08'

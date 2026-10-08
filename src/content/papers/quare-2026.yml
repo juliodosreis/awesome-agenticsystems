@@ -1,0 +1,27 @@
+id: quare-2026
+title: 'QUARE: Quality-Aware Requirements Analysis through Multi-Agent Dialectical Negotiation'
+authors:
+- Haowei Cheng
+- Milhan Kim
+- Foutse Khomh
+- Teeradaj Racharak
+- Nobukazu Yoshioka
+- Naoyasu Ubayashi
+- Hironori Washizaki
+year: 2026
+arxiv: '2603.11890'
+links:
+  paper: https://arxiv.org/abs/2603.11890
+area: coordination
+scale:
+- multi-agent
+type:
+- framework
+- empirical
+topics: []
+about: []
+infra: []
+domain:
+- software-engineering
+status: triaged
+added: '2026-10-08'

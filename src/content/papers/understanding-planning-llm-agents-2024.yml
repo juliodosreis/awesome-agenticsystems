@@ -1,0 +1,28 @@
+id: understanding-planning-llm-agents-2024
+title: 'Understanding the Planning of LLM Agents: A Survey'
+authors:
+- Xu Huang
+- Weiwen Liu
+- Xiaolong Chen
+- Xingmei Wang
+- Hao Wang
+- Defu Lian
+- Yasheng Wang
+- Ruiming Tang
+- Enhong Chen
+year: 2024
+arxiv: '2402.02716'
+links:
+  paper: https://arxiv.org/abs/2402.02716
+area: reasoning-planning
+scale:
+- single-agent
+type:
+- survey
+topics: []
+about: []
+infra: []
+domain:
+- general
+status: triaged
+added: '2026-10-08'
