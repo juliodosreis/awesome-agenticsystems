@@ -1,0 +1,25 @@
+id: agent-s-2024
+title: 'Agent S: An Open Agentic Framework that Uses Computers Like a Human'
+authors:
+- Saaket Agashe
+- Jiuzhou Han
+- Shuyu Gan
+- Jiachen Yang
+- Ang Li
+- Xin Eric Wang
+year: 2024
+arxiv: '2410.08164'
+links:
+  paper: https://arxiv.org/abs/2410.08164
+area: architectures
+scale:
+- single-agent
+type:
+- framework
+topics: []
+about: []
+infra: []
+domain:
+- gui
+status: triaged
+added: '2026-10-07'
