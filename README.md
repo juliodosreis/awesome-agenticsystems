@@ -38,7 +38,7 @@ build.
 ## The collection
 
 <!-- gen:paper-count -->
-83 papers listed, 32 of them with a written summary.
+87 papers listed, 32 of them with a written summary.
 <!-- /gen:paper-count -->
 
 The site has filtering, search and the reading-path graph; this listing is the
@@ -128,8 +128,10 @@ The inner loop of the system, its number of agents, and the substrate it runs on
 
 #### Agent architectures ([`architectures`](https://juliodosreis.github.io/awesome-agenticsystems/areas/architectures))
 
+- [Towards conversational artificial intelligence for disease management](https://www.nature.com/articles/s41586-026-10764-5) — `Nature` · 2026
 - [Agent Laboratory: Using LLM Agents as Research Assistants](https://arxiv.org/abs/2501.04227) — `2025`
 - [Cradle: Empowering Foundation Agents towards General Computer Control](https://proceedings.mlr.press/v267/tan25h.html) — `Proceedings of the 42nd International Conference on Machine Learning` · 2025
+- [MedScrubCrew: A Medical Multi-Agent Framework for Automating Appointment Scheduling Based on Patient-Provider Profile Resource Matching](https://www.mdpi.com/2227-9032/13/14/1649) — `Healthcare` · 2025
 - [UFO2: The Desktop AgentOS](https://arxiv.org/abs/2504.14603) — `2025`
 - [UFO: A UI-Focused Agent for Windows OS Interaction](https://aclanthology.org/2025.naacl-long.26/) — `Proceedings of the 2025 Conference of the Nations of the Americas Chapter of the Association for Computational Linguistics: Human Language Technologies (Volume 1: Long Papers)` · 2025
 - [Agent S: An Open Agentic Framework that Uses Computers Like a Human](https://arxiv.org/abs/2410.08164) — `2024`
@@ -137,6 +139,8 @@ The inner loop of the system, its number of agents, and the substrate it runs on
 
 #### Coordination & organization ([`coordination`](https://juliodosreis.github.io/awesome-agenticsystems/areas/coordination))
 
+- [A Diagnostic-Driven Multi-Agent Socratic Teaching System](https://doi.org/10.1145/3796114.3796119) — `Proceedings of the 2026 Asia-Pacific Intelligent Educational Technologies Conference (APIET 2026)` · 2026
+- [IntelliCode: A Multi-Agent LLM Tutoring System with Centralized Learner Modeling](https://aclanthology.org/2026.eacl-demo.10/) — `Proceedings of the 19th Conference of the European Chapter of the Association for Computational Linguistics (EACL 2026) -- System Demonstrations` · 2026
 - [Multi-Agent Teams Hold Experts Back](https://arxiv.org/abs/2602.01011) — `2026`
 - [QUARE: Quality-Aware Requirements Analysis through Multi-Agent Dialectical Negotiation](https://arxiv.org/abs/2603.11890) — `2026`
 - [UFO3: Weaving the Digital Agent Galaxy](https://arxiv.org/abs/2511.11332) — `2026`
