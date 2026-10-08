@@ -1,0 +1,21 @@
+id: rag-mcp-2025
+title: 'RAG-MCP: Mitigating Prompt Bloat in LLM Tool Selection via Retrieval-Augmented Generation'
+authors:
+- Tiantian Gan
+- Qiyao Sun
+year: 2025
+arxiv: '2505.03275'
+links:
+  paper: https://arxiv.org/abs/2505.03275
+area: tools-context
+scale:
+- single-agent
+type:
+- method
+topics: []
+about: []
+infra: []
+domain:
+- general
+status: triaged
+added: '2026-10-08'
