@@ -1,0 +1,23 @@
+id: trace-only-what-you-2026
+title: "Trace Only What You Need: Structure-Aware On-Demand Hypergraph Memory for Long-Document Question Answering"
+authors: ["Xiangjun Zai", "Xingyu Tan", "Chen Chen", "Xiaoyang Wang", "Wenjie Zhang"]
+year: 2026
+# venue: ""   # fill in once published
+arxiv: "2606.10921"
+links:
+  paper: https://arxiv.org/abs/2606.10921
+
+area: memory
+topics: [memory-retrieval, context-engineering]
+about: [memory, reasoning]
+scale: [single-agent]
+type: [method]
+infra: [rag]
+domain: [general]
+
+status: read
+tldr: "A memory architecture that maps long documents into a structure-aware hypergraph, tracing and retrieving only the necessary context nodes on-demand for complex multi-hop question answering."
+notes: "Replaces traditional vector-based RAG with a hypergraph structure to maintain entity relationships across long texts. Highly effective for resolving multi-hop queries by preventing context dilution, making it an excellent retrieval backbone for QA agents interacting with complex instructional materials."
+relates_to: [memgpt-2023, in-context-retrieval-2026]
+evaluated_on: []
+added: 2026-09-24

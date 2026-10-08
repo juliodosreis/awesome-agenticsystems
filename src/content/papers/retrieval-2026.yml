@@ -1,0 +1,23 @@
+id: retrieval-2026
+title: "Retrieval-Augmented Tutoring for Algorithm Tracing and Problem-Solving in AI Education"
+authors: ["Mragisha Jain", "Tirth Bhatt", "Griffin Pitts", "Aum Pandya", "Peter Brusilovsky", "Narges Norouzi", "Arto Hellas", "Juho Leinonen", "Bita Akram"]
+year: 2026
+# venue: ""   # fill in once published
+arxiv: "2605.12988"
+links:
+  paper: https://arxiv.org/abs/2605.12988
+
+area: tools-context
+topics: [memory-retrieval, context-engineering]
+about: [reasoning, memory]
+scale: [single-agent, human-agent]
+type: [method, case-study]
+infra: [rag]
+domain: [software-engineering, science]
+
+status: read
+tldr: "A retrieval-augmented agentic tutoring system designed to assist students with algorithm tracing and problem-solving in computer science education."
+notes: "Demonstrates the application of RAG in a highly interactive educational context. It highlights how dynamically retrieving and injecting relevant context improves an agent's ability to guide human learners through complex logical tasks without hallucinating."
+relates_to: [in-context-retrieval-2026]
+evaluated_on: []
+added: 2026-09-24

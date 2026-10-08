@@ -1,0 +1,23 @@
+id: quantization-degradation-large-language-2026
+title: "Quantization Degradation in Large Language Models: A Signal-Noise Perspective"
+authors: ["Chenxi Zhou", "Pengfei Cao", "Jinyu Ye", "Bohan Yu", "Haida Yu", "Jiang Li", "Jun Zhao", "Kang Liu"]
+year: 2026
+# venue: ""   # fill in once published
+arxiv: "2608.08188"
+links:
+  paper: https://arxiv.org/abs/2608.08188
+
+area: engineering
+topics: [agent-ops, observability]
+about: [reasoning]
+scale: [single-agent]
+type: [empirical]
+infra: []
+domain: [general]
+
+status: read
+tldr: "Analyzes the performance degradation of Large Language Models after quantization through a signal-to-noise ratio framework."
+notes: "A boundary case focused on the engineering layer. It investigates how quantization noise propagates through the network layers, providing a metric to understand why highly compressed models fail at complex agentic reasoning tasks. Read alongside other deployment optimization papers."
+relates_to: [breaking-1-58-2026, nemotron-puzzle-2026]
+evaluated_on: []
+added: 2026-09-24

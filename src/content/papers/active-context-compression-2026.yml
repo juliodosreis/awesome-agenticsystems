@@ -1,0 +1,23 @@
+id: active-context-compression-2026
+title: "Active Context Compression: Autonomous Memory Management in LLM Agents"
+authors: ["Nikhil Verma"]
+year: 2026
+# venue: ""   # fill in once published
+arxiv: "2601.07190"
+links:
+  paper: https://arxiv.org/abs/2601.07190
+
+area: memory
+topics: [context-compaction, working-memory, memory-consolidation, context-engineering]
+about: [memory]
+scale: [single-agent]
+type: [method]
+infra: []
+domain: [general]
+
+status: read
+tldr: "An autonomous memory management approach where the agent actively decides which parts of its context window to compress, summarize, or discard."
+notes: "Frames context management as an active agentic task rather than a passive systems-level token eviction algorithm. Addresses attention dilution in long-running tasks by forcing the agent to continuously consolidate its working memory."
+relates_to: [memgpt-2023, in-context-retrieval-2026]
+evaluated_on: []
+added: 2026-09-24

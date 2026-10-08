@@ -69,3 +69,63 @@ def fetch(aid, timeout=30):
     if not title:
         raise ArxivError(f"arXiv returned no title for {aid}")
     return title, authors, year, venue
+
+
+# -> se a API do arXiv retornar erro 406, a função abaixo pode funcionar
+# 1- comente a função fetch original e descomente essa
+# 2- salve o arquivo 
+# 3- dê o comando no terminal: pip install requests
+# 4- feche o terminal e abra novamente
+# 5- use normalmente
+
+# import requests
+# def fetch(aid, timeout=30):
+#     """Return (title, authors, year, venue) by parsing the arXiv HTML directly."""
+#     url = f"https://arxiv.org/abs/{aid}"
+    
+#     try:
+#         # Acessa a página principal de visualização do paper, que não bloqueia requisições 
+#         # comuns da mesma forma que o endpoint export.arxiv.org/api
+#         resp = requests.get(
+#             url, 
+#             timeout=timeout,
+#             headers={
+#                 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+#                 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+#                 'Accept-Language': 'en-US,en;q=0.5',
+#             }
+#         )
+#         resp.raise_for_status()
+#         html = resp.text
+#     except requests.exceptions.RequestException as exc:
+#         raise ArxivError(f"could not reach arxiv.org for {aid}: {exc}") from exc
+
+#     # Extração de Título via metadados embutidos na página
+#     title_match = re.search(r'<meta\s+name="citation_title"\s+content="([^"]+)"', html)
+#     if not title_match:
+#         raise ArxivError(f"arXiv returned no title for id {aid}")
+#     title = " ".join(title_match.group(1).replace('\n', ' ').split())
+
+#     # Extração de Autores
+#     authors_raw = re.findall(r'<meta\s+name="citation_author"\s+content="([^"]+)"', html)
+#     authors = []
+#     for a in authors_raw:
+#         # O arXiv formata a tag como "Sobrenome, Nome", vamos inverter para "Nome Sobrenome"
+#         if "," in a:
+#             parts = a.split(",", 1)
+#             authors.append(f"{parts[1].strip()} {parts[0].strip()}")
+#         else:
+#             authors.append(a.strip())
+
+#     # Extração de Ano
+#     date_match = re.search(r'<meta\s+name="citation_date"\s+content="(\d{4})[^"]*"', html)
+#     year = int(date_match.group(1)) if date_match else None
+
+#     # Extração de Venue (Referência de publicação, se existir)
+#     venue_match = re.search(r'<td class="tablecell jref">([^<]+)</td>', html)
+#     venue = " ".join(venue_match.group(1).split()) if venue_match else ""
+
+#     if not title:
+#         raise ArxivError(f"arXiv returned no title for {aid}")
+        
+#     return title, authors, year, venue
