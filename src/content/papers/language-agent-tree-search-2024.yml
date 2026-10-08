@@ -1,0 +1,24 @@
+id: language-agent-tree-search-2024
+title: Language Agent Tree Search Unifies Reasoning, Acting, and Planning in Language Models
+authors:
+- Andy Zhou
+- Kai Yan
+- Michal Shlapentokh-Rothman
+- Haohan Wang
+- Yu-Xiong Wang
+year: 2024
+venue: Proceedings of the 41st International Conference on Machine Learning
+links:
+  paper: https://proceedings.mlr.press/v235/zhou24r.html
+area: reasoning-planning
+scale:
+- single-agent
+type:
+- method
+topics: []
+about: []
+infra: []
+domain:
+- general
+status: triaged
+added: '2026-10-08'

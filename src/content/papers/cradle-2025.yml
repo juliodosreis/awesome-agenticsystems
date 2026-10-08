@@ -1,0 +1,47 @@
+id: cradle-2025
+title: 'Cradle: Empowering Foundation Agents towards General Computer Control'
+authors:
+- Weihao Tan
+- Wentao Zhang
+- Xinrun Xu
+- Haochong Xia
+- Ziluo Ding
+- Boyu Li
+- Bohan Zhou
+- Junpeng Yue
+- Jiechuan Jiang
+- Yewen Li
+- Ruyi An
+- Molei Qin
+- Chuqiao Zong
+- Longtao Zheng
+- Yujie Wu
+- Xiaoqiang Chai
+- Yifei Bi
+- Tianbao Xie
+- Pengjie Gu
+- Xiyun Li
+- Ceyao Zhang
+- Long Tian
+- Chaojie Wang
+- Xinrun Wang
+- Börje F. Karlsson
+- Bo An
+- Shuicheng Yan
+- Zongqing Lu
+year: 2025
+venue: Proceedings of the 42nd International Conference on Machine Learning
+links:
+  paper: https://proceedings.mlr.press/v267/tan25h.html
+area: architectures
+scale:
+- single-agent
+type:
+- framework
+topics: []
+about: []
+infra: []
+domain:
+- gui
+status: triaged
+added: '2026-10-08'

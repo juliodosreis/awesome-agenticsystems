@@ -1,0 +1,23 @@
+id: agent-workflow-memory-2024
+title: Agent Workflow Memory
+authors:
+- Zora Zhiruo Wang
+- Jiayuan Mao
+- Daniel Fried
+- Graham Neubig
+year: 2024
+arxiv: '2409.07429'
+links:
+  paper: https://arxiv.org/abs/2409.07429
+area: learning-evolution
+scale:
+- single-agent
+type:
+- method
+topics: []
+about: []
+infra: []
+domain:
+- web
+status: triaged
+added: '2026-10-08'

@@ -1,0 +1,26 @@
+id: swe-agent-2024
+title: 'SWE-agent: Agent-Computer Interfaces Enable Automated Software Engineering'
+authors:
+- John Yang
+- Carlos Jimenez
+- Alexander Wettig
+- Kilian Lieret
+- Shunyu Yao
+- Karthik Narasimhan
+- Ofir Press
+year: 2024
+venue: Advances in Neural Information Processing Systems
+links:
+  paper: https://proceedings.neurips.cc/paper_files/paper/2024/file/5a7c947568c1b1328ccc5230172e1e7c-Paper-Conference.pdf
+area: tools-context
+scale:
+- single-agent
+type:
+- method
+topics: []
+about: []
+infra: []
+domain:
+- software-engineering
+status: triaged
+added: '2026-10-08'

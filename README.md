@@ -38,7 +38,7 @@ build.
 ## The collection
 
 <!-- gen:paper-count -->
-57 papers listed, 32 of them with a written summary.
+72 papers listed, 32 of them with a written summary.
 <!-- /gen:paper-count -->
 
 The site has filtering, search and the reading-path graph; this listing is the
@@ -67,6 +67,7 @@ What the agent reasons about, stores, executes and learns.
   A survey of metacognition in LLMs: how it is measured, how it can be elicited or improved, and where the evidence for it is limited.
 - [CEDAR: Agent-Orchestrated Tree Search for Goal-Directed Optimization of Complex Systems](https://arxiv.org/abs/2608.06871) — `2026`  
   Runs Monte Carlo Tree Search where an LLM Judge scores emergent behavior and an LLM Editor proposes variants, searching for complex systems that meet a stated behavioral goal.
+- [Language Agent Tree Search Unifies Reasoning, Acting, and Planning in Language Models](https://proceedings.mlr.press/v235/zhou24r.html) — `Proceedings of the 41st International Conference on Machine Learning` · 2024
 - [Reflexion: Language Agents with Verbal Reinforcement Learning](https://arxiv.org/abs/2303.11366) — `NeurIPS 2023` · 2023  
   Turns the feedback from a failed attempt into text and stores it in episodic memory to condition the retry, without updating weights.
 - [Tree of Thoughts: Deliberate Problem Solving with Large Language Models](https://arxiv.org/abs/2305.10601) — `NeurIPS 2023` · 2023  
@@ -91,11 +92,15 @@ What the agent reasons about, stores, executes and learns.
 
 #### Tools, environment & context ([`tools-context`](https://juliodosreis.github.io/awesome-agenticsystems/areas/tools-context))
 
+- [A11y-Compressor: A Framework for Enhancing the Efficiency of GUI Agent Observations through Visual Context Reconstruction and Redundancy Reduction](https://aclanthology.org/2026.acl-srw.50/) — `Proceedings of the 64th Annual Meeting of the Association for Computational Linguistics (Volume 4: Student Research Workshop)` · 2026
 - [Do Context Files Help Coding Agents? A Two-Agent Ablation Study on Real Repositories](https://arxiv.org/abs/2607.27250) — `2026`  
   A controlled ablation of AGENTS.md and CLAUDE.md across two frontier agents and 288 evaluated runs finds no measurable effect on correctness, bounded to 10-15pp by equivalence testing.
 - [Ontology-Constrained Neural Reasoning in Enterprise Agentic Systems: A Neurosymbolic Architecture for Domain-Grounded AI Agents](https://arxiv.org/abs/2604.00555) — `2026`
 - [ReContext: Recursive Evidence Replay as LLM Harness for Long-Context Reasoning](https://arxiv.org/abs/2607.02509) — `2026`  
   A training-free inference method that builds a query-conditioned evidence pool from the model's own relevance signals and replays it before generation, without pruning the original context.
+- [RAG-MCP: Mitigating Prompt Bloat in LLM Tool Selection via Retrieval-Augmented Generation](https://arxiv.org/abs/2505.03275) — `2025`
+- [AutoCodeRover: Autonomous Program Improvement](https://dl.acm.org/doi/10.1145/3650212.3680384) — `Proceedings of the 33rd ACM SIGSOFT International Symposium on Software Testing and Analysis` · 2024
+- [SWE-agent: Agent-Computer Interfaces Enable Automated Software Engineering](https://proceedings.neurips.cc/paper_files/paper/2024/file/5a7c947568c1b1328ccc5230172e1e7c-Paper-Conference.pdf) — `Advances in Neural Information Processing Systems` · 2024
 - [Toolformer: Language Models Can Teach Themselves to Use Tools](https://arxiv.org/abs/2302.04761) — `NeurIPS 2023` · 2023  
   The model self-annotates where to insert API calls and keeps the ones that reduce perplexity, learning tool use without human supervision.
 
@@ -107,6 +112,7 @@ What the agent reasons about, stores, executes and learns.
   Post-trains a separate 9B harness engineer with online RL to turn batches of agent failures into validated executable patches to the runtime harness, rewarded by the target agent's realized success.
 - [Inducing Task Models from Computer-Use Traces](https://arxiv.org/abs/2608.20319) — `2026`  
   Recovers the latent tasks inside an unconstrained computer-use trace and induces, for each, a hierarchical objective model paired with a procedure model of the control flow.
+- [Agent Workflow Memory](https://arxiv.org/abs/2409.07429) — `2024`
 
 
 ### System structure
@@ -116,17 +122,22 @@ The inner loop of the system, its number of agents, and the substrate it runs on
 #### Agent architectures ([`architectures`](https://juliodosreis.github.io/awesome-agenticsystems/areas/architectures))
 
 - [Agent Laboratory: Using LLM Agents as Research Assistants](https://arxiv.org/abs/2501.04227) — `2025`
+- [Cradle: Empowering Foundation Agents towards General Computer Control](https://proceedings.mlr.press/v267/tan25h.html) — `Proceedings of the 42nd International Conference on Machine Learning` · 2025
 - [UFO2: The Desktop AgentOS](https://arxiv.org/abs/2504.14603) — `2025`
 - [UFO: A UI-Focused Agent for Windows OS Interaction](https://aclanthology.org/2025.naacl-long.26/) — `Proceedings of the 2025 Conference of the Nations of the Americas Chapter of the Association for Computational Linguistics: Human Language Technologies (Volume 1: Long Papers)` · 2025
 - [Agent S: An Open Agentic Framework that Uses Computers Like a Human](https://arxiv.org/abs/2410.08164) — `2024`
+- ⚖️ [WebVoyager: Building an End-to-End Web Agent with Large Multimodal Models](https://aclanthology.org/2024.acl-long.371/) — `Proceedings of the 62nd Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)` · 2024
 
 #### Coordination & organization ([`coordination`](https://juliodosreis.github.io/awesome-agenticsystems/areas/coordination))
 
 - [Multi-Agent Teams Hold Experts Back](https://arxiv.org/abs/2602.01011) — `2026`
 - [UFO3: Weaving the Digital Agent Galaxy](https://arxiv.org/abs/2511.11332) — `2026`
+- [ChatDev: Communicative Agents for Software Development](https://aclanthology.org/2024.acl-long.810/) — `Proceedings of the 62nd Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)` · 2024
+- [Mdagents: An adaptive collaboration of llms for medical decision-making](https://proceedings.neurips.cc/paper_files/paper/2024/hash/90d1fc07f46e31387978b88e7e057a31-Abstract-Conference.html) — `Advances in Neural Information Processing Systems` · 2024
 - [Simulating Classroom Education with LLM-Empowered Agents](https://arxiv.org/abs/2406.19226) — `2024`
 - [AutoGen: Enabling Next-Gen LLM Applications via Multi-Agent Conversation](https://arxiv.org/abs/2308.08155) — `COLM 2024` · 2023  
   Models the application as a conversation between configurable agents, with humans and code execution as first-class participants.
+- [CAMEL: Communicative Agents for "Mind" Exploration of Large Language Model Society](https://proceedings.neurips.cc/paper/2023/hash/a3621ee907def47c1b952ade25c67698-Abstract-Conference.html) — `Advances in Neural Information Processing Systems` · 2023
 - [MedAgents: Large Language Models as Collaborators for Zero-shot Medical Reasoning](https://arxiv.org/abs/2311.10537) — `2023`
 - [MetaGPT: Meta Programming for a Multi-Agent Collaborative Framework](https://arxiv.org/abs/2308.00352) — `ICLR 2024` · 2023  
   Encodes the standard operating procedures of a software company as agent roles chained by structured artifacts.
@@ -143,6 +154,7 @@ The inner loop of the system, its number of agents, and the substrate it runs on
   Trains agents inside the real inference harness they are deployed with, by proxying the harness's model calls into a standard RL codebase and running each rollout in its own container.
 - 🔥 [The Harness Effect: How Orchestration Design Sets the Token Economics of Enterprise Agentic AI](https://arxiv.org/abs/2607.06906) — `2026`  
   Holds six models constant and swaps only the orchestration layer, cutting cost per task 41% and tokens per task 38% at parity quality.
+- [OpenHands: An Open Platform for AI Software Developers as Generalist Agents](https://proceedings.iclr.cc/paper_files/paper/2025/hash/a4b6ad6b48850c0c331d1259fc66a69c-Abstract-Conference.html) — `International Conference on Learning Representations` · 2025
 
 
 ### Measurement and control
@@ -162,7 +174,10 @@ How a system is measured, and how its risk is governed.
   Argues automatic harness evolution must be compared against test-time scaling under matched feedback and inference budgets, and finds it does not outperform that baseline or generalize to held-out tasks.
 - ⚖️ [MedAgentBench: A Realistic Virtual EHR Environment to Benchmark Medical LLM Agents](https://arxiv.org/abs/2501.14654) — `2025`
 - ⚖️ [Sequential Diagnosis with Language Models](https://arxiv.org/abs/2506.22405) — `2025`
+- ⚖️ [Why Do Multi-Agent LLM Systems Fail?](https://arxiv.org/abs/2503.13657) — `2025`
 - ⚖️ [OSWorld: Benchmarking Multimodal Agents for Open-Ended Tasks in Real Computer Environments](https://arxiv.org/abs/2404.07972) — `2024`
+- ⚖️ [SWE-bench: Can Language Models Resolve Real-world Github Issues?](https://proceedings.iclr.cc/paper_files/paper/2024/hash/edac78c3e300629acfe6cbe9ca88fb84-Abstract-Conference.html) — `International Conference on Learning Representations` · 2024
+- ⚖️ [WebArena: A Realistic Web Environment for Building Autonomous Agents](https://proceedings.iclr.cc/paper_files/paper/2024/hash/4410c0711e9154a7a2d26f9b3816d1ef-Abstract-Conference.html) — `International Conference on Learning Representations` · 2024
 - ⚖️ [Windows Agent Arena: Evaluating Multi-Modal OS Agents at Scale](https://arxiv.org/abs/2409.08264) — `2024`
 - 🔥 ⚖️ [tau-bench: A Benchmark for Tool-Agent-User Interaction in Real-World Domains](https://arxiv.org/abs/2406.12045) — `ICLR 2025` · 2024  
   Evaluates the agent against a simulated user and domain policies, measuring consistency across runs on top of per-task success.

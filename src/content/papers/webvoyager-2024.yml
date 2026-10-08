@@ -1,0 +1,29 @@
+id: webvoyager-2024
+title: 'WebVoyager: Building an End-to-End Web Agent with Large Multimodal Models'
+authors:
+- Hongliang He
+- Wenlin Yao
+- Kaixin Ma
+- Wenhao Yu
+- Yong Dai
+- Hongming Zhang
+- Zhenzhong Lan
+- Dong Yu
+year: 2024
+venue: 'Proceedings of the 62nd Annual Meeting of the Association for Computational Linguistics (Volume
+  1: Long Papers)'
+links:
+  paper: https://aclanthology.org/2024.acl-long.371/
+area: architectures
+scale:
+- single-agent
+type:
+- framework
+- benchmark
+topics: []
+about: []
+infra: []
+domain:
+- web
+status: triaged
+added: '2026-10-08'
