@@ -1,0 +1,29 @@
+id: clinical-agent-benchmarking-2026
+title: Benchmarking large language model-based agent systems for clinical decision tasks
+authors:
+- Yunsong Liu
+- Zunamys I. Carrero
+- Xiaofeng Jiang
+- Dyke Ferber
+- Georg Wölflein
+- Li Zhang
+- Sanddhya Jayabalan
+- Tim Lenz
+- Zhouguang Hui
+- Jakob Nikolas Kather
+year: 2026
+venue: npj Digital Medicine
+links:
+  paper: https://www.nature.com/articles/s41746-026-02443-6
+area: evaluation
+scale:
+- multi-agent
+type:
+- empirical
+topics: []
+about: []
+infra: []
+domain:
+- healthcare
+status: triaged
+added: '2026-10-08'
