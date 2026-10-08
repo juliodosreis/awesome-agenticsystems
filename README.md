@@ -38,7 +38,7 @@ build.
 ## The collection
 
 <!-- gen:paper-count -->
-76 papers listed, 32 of them with a written summary.
+78 papers listed, 32 of them with a written summary.
 <!-- /gen:paper-count -->
 
 The site has filtering, search and the reading-path graph; this listing is the
@@ -55,6 +55,7 @@ Where to enter the field.
 
 - 🔥 📖 [Beyond the Leaderboard: A Synthesis of Tool-Use, Planning, and Reasoning Failures in Large Language Model Agents](https://arxiv.org/abs/2607.05775) — `2026`  
   Synthesizes 27 benchmark, taxonomy and audit papers across 19 benchmarks into six failure clusters, from tool invocation errors to measurement validity problems.
+- [LLM-based agentic systems in medicine and healthcare](https://www.nature.com/articles/s42256-024-00944-1) — `Nature Machine Intelligence` · 2024
 
 
 ### Agent capabilities
@@ -65,6 +66,7 @@ What the agent reasons about, stores, executes and learns.
 
 - 🔥 📖 [Metacognition in LLMs: Foundations, Progress, and Opportunities](https://arxiv.org/abs/2607.11881) — `2026`  
   A survey of metacognition in LLMs: how it is measured, how it can be elicited or improved, and where the evidence for it is limited.
+- 📖 [Understanding the Planning of LLM Agents: A Survey](https://arxiv.org/abs/2402.02716) — `2024`
 - [CEDAR: Agent-Orchestrated Tree Search for Goal-Directed Optimization of Complex Systems](https://arxiv.org/abs/2608.06871) — `2026`  
   Runs Monte Carlo Tree Search where an LLM Judge scores emergent behavior and an LLM Editor proposes variants, searching for complex systems that meet a stated behavioral goal.
 - [ClinicalAgents: Multi-Agent Orchestration for Clinical Decision Making with Dual-Memory](https://dl.acm.org/doi/10.1145/3770855.3818931) — `Proceedings of the 32nd ACM SIGKDD Conference on Knowledge Discovery and Data Mining (KDD '26)` · 2026
