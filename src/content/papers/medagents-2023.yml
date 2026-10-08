@@ -1,0 +1,27 @@
+id: medagents-2023
+title: 'MedAgents: Large Language Models as Collaborators for Zero-shot Medical Reasoning'
+authors:
+- Xiangru Tang
+- Anni Zou
+- Zhuosheng Zhang
+- Ziming Li
+- Yilun Zhao
+- Xingyao Zhang
+- Arman Cohan
+- Mark Gerstein
+year: 2023
+arxiv: '2311.10537'
+links:
+  paper: https://arxiv.org/abs/2311.10537
+area: coordination
+scale:
+- multi-agent
+type:
+- framework
+topics: []
+about: []
+infra: []
+domain:
+- healthcare
+status: triaged
+added: '2026-10-07'
