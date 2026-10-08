@@ -1,0 +1,30 @@
+id: ufo3-2026
+title: 'UFO3: Weaving the Digital Agent Galaxy'
+authors:
+- Chaoyun Zhang
+- Liqun Li
+- He Huang
+- Chiming Ni
+- Bo Qiao
+- Si Qin
+- Yu Kang
+- Minghua Ma
+- Qingwei Lin
+- Saravan Rajmohan
+- Dongmei Zhang
+year: 2026
+arxiv: '2511.11332'
+links:
+  paper: https://arxiv.org/abs/2511.11332
+area: coordination
+scale:
+- multi-agent
+type:
+- framework
+topics: []
+about: []
+infra: []
+domain:
+- general
+status: triaged
+added: '2026-10-07'
