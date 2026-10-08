@@ -1,0 +1,24 @@
+id: camel-2023
+title: 'CAMEL: Communicative Agents for "Mind" Exploration of Large Language Model Society'
+authors:
+- Guohao Li
+- Hasan Hammoud
+- Hani Itani
+- Dmitrii Khizbullin
+- Bernard Ghanem
+year: 2023
+venue: Advances in Neural Information Processing Systems
+links:
+  paper: https://proceedings.neurips.cc/paper/2023/hash/a3621ee907def47c1b952ade25c67698-Abstract-Conference.html
+area: coordination
+scale:
+- multi-agent
+type:
+- framework
+topics: []
+about: []
+infra: []
+domain:
+- general
+status: triaged
+added: '2026-10-08'
