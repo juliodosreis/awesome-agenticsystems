@@ -38,7 +38,7 @@ build.
 ## The collection
 
 <!-- gen:paper-count -->
-82 papers listed, 32 of them with a written summary.
+83 papers listed, 32 of them with a written summary.
 <!-- /gen:paper-count -->
 
 The site has filtering, search and the reading-path graph; this listing is the
@@ -204,6 +204,7 @@ How a system is measured, and how its risk is governed.
 - [Right in the Right Way: LM Training with Verifiable Rewards and Human Demonstrations](https://arxiv.org/abs/2607.01181) — `2026`  
   Augments RL with verifiable rewards with an adversarial discriminator trained on human demonstrations, so non-verifiable properties like style and structure are optimized alongside task accuracy.
 - [Runtime Policy Enforcement for MCP-Based LLM Agents](https://www.mdpi.com/2079-9292/15/13/2829) — `Electronics` · 2026
+- [Toward Trustworthy Large Language Model Agents in Healthcare](https://arxiv.org/abs/2607.05055) — `2026`
 - [Authenticated Delegation and Authorized AI Agents](https://arxiv.org/abs/2501.09674) — `2025`
 - [DRIFT: Dynamic Rule-Based Defense with Injection Isolation for Securing LLM Agents](https://proceedings.neurips.cc/paper_files/paper/2025/hash/77f3b26c7907aa27b207df9b9d43f29a-Abstract-Conference.html) — `Advances in Neural Information Processing Systems` · 2025
 - [Governance-as-a-Service: A Multi-Agent Framework for AI System Compliance and Policy Enforcement](https://arxiv.org/abs/2508.18765) — `2025`
