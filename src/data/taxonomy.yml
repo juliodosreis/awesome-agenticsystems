@@ -246,7 +246,7 @@ facets:
   infra:      [rag, knowledge-graph, sandbox, api]
   type:       [survey, position, method, benchmark, framework, empirical, case-study]
   domain:     [general, software-engineering, data, science,
-               healthcare, business, finance,
+               healthcare, education, business, finance,
                robotics, gui, web, deep-research]
 
 facet_blurbs:
@@ -291,7 +291,7 @@ domain_groups:
   vertical:
     label: "By field"
     blurb: "Which industry or discipline it operates in."
-    members: [software-engineering, science, healthcare, business, finance]
+    members: [software-engineering, science, healthcare, education, business, finance]
   pattern:
     label: "By system pattern"
     blurb: "Which shape of task it solves."

@@ -1,0 +1,31 @@
+id: windows-agent-arena-2024
+title: 'Windows Agent Arena: Evaluating Multi-Modal OS Agents at Scale'
+authors:
+- Rogerio Bonatti
+- Dan Zhao
+- Francesco Bonacci
+- Dillon Dupont
+- Sara Abdali
+- Yinheng Li
+- Yadong Lu
+- Justin Wagle
+- Kazuhito Koishida
+- Arthur Bucker
+- Lawrence Jang
+- Zack Hui
+year: 2024
+arxiv: '2409.08264'
+links:
+  paper: https://arxiv.org/abs/2409.08264
+area: evaluation
+scale:
+- single-agent
+type:
+- benchmark
+topics: []
+about: []
+infra: []
+domain:
+- gui
+status: triaged
+added: '2026-10-07'

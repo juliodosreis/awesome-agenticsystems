@@ -1,0 +1,26 @@
+id: medagentbench-2025
+title: 'MedAgentBench: A Realistic Virtual EHR Environment to Benchmark Medical LLM Agents'
+authors:
+- Yixing Jiang
+- Kameron C. Black
+- Gloria Geng
+- Danny Park
+- James Zou
+- Andrew Y. Ng
+- Jonathan H. Chen
+year: 2025
+arxiv: '2501.14654'
+links:
+  paper: https://arxiv.org/abs/2501.14654
+area: evaluation
+scale:
+- single-agent
+type:
+- benchmark
+topics: []
+about: []
+infra: []
+domain:
+- healthcare
+status: triaged
+added: '2026-10-07'

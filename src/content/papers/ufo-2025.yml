@@ -1,0 +1,32 @@
+id: ufo-2025
+title: 'UFO: A UI-Focused Agent for Windows OS Interaction'
+authors:
+- Chaoyun Zhang
+- Liqun Li
+- Shilin He
+- Xu Zhang
+- Bo Qiao
+- Si Qin
+- Minghua Ma
+- Yu Kang
+- Qingwei Lin
+- Saravan Rajmohan
+- Dongmei Zhang
+- Qi Zhang
+year: 2025
+venue: 'Proceedings of the 2025 Conference of the Nations of the Americas Chapter of the Association for
+  Computational Linguistics: Human Language Technologies (Volume 1: Long Papers)'
+links:
+  paper: https://aclanthology.org/2025.naacl-long.26/
+area: architectures
+scale:
+- multi-agent
+type:
+- framework
+topics: []
+about: []
+infra: []
+domain:
+- gui
+status: triaged
+added: '2026-10-07'

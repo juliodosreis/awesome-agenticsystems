@@ -1,0 +1,40 @@
+id: ufo2-2025
+title: 'UFO2: The Desktop AgentOS'
+authors:
+- Chaoyun Zhang
+- He Huang
+- Chiming Ni
+- Jian Mu
+- Si Qin
+- Shilin He
+- Lu Wang
+- Fangkai Yang
+- Pu Zhao
+- Chao Du
+- Liqun Li
+- Yu Kang
+- Zhao Jiang
+- Suzhen Zheng
+- Rujia Wang
+- Jiaxu Qian
+- Minghua Ma
+- Jian-Guang Lou
+- Qingwei Lin
+- Saravan Rajmohan
+- Dongmei Zhang
+year: 2025
+arxiv: '2504.14603'
+links:
+  paper: https://arxiv.org/abs/2504.14603
+area: architectures
+scale:
+- multi-agent
+type:
+- framework
+topics: []
+about: []
+infra: []
+domain:
+- gui
+status: triaged
+added: '2026-10-07'

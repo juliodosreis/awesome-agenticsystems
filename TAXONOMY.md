@@ -8,7 +8,7 @@ for filling records in by hand and for proposing changes to the vocabulary.
 Current size:
 
 <!-- gen:counts -->
-11 areas in 4 layers, 58 topics and 32 facet values across 5 facets.
+11 areas in 4 layers, 58 topics and 33 facet values across 5 facets.
 <!-- /gen:counts -->
 
 ## Vocabulary surfaces
@@ -89,7 +89,7 @@ so this document cannot go stale. The facets available on every record are:
 | `scale` | `single-agent`, `multi-agent`, `human-agent` | The scale of the system studied. "multi-agent" is recorded here and not as an area. |
 | `infra` | `rag`, `knowledge-graph`, `sandbox`, `api` | Infrastructure the system uses. A paper whose subject is the protocol itself (mcp, a2a) records that as a topic. |
 | `type` | `survey`, `position`, `method`, `benchmark`, `framework`, `empirical`, `case-study` | What kind of contribution it is. |
-| `domain` | `general`, `software-engineering`, `data`, `science`, `healthcare`, `business`, `finance`, `robotics`, `gui`, `web`, `deep-research` | Where it is applied. Generates the /domains pages. |
+| `domain` | `general`, `software-engineering`, `data`, `science`, `healthcare`, `education`, `business`, `finance`, `robotics`, `gui`, `web`, `deep-research` | Where it is applied. Generates the /domains pages. |
 <!-- /gen:facets-table -->
 
 The automated issue flow assigns `domain: [general]` by default. A record still

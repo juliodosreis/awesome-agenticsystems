@@ -1,0 +1,35 @@
+id: sequential-diagnosis-language-models-2025
+title: Sequential Diagnosis with Language Models
+authors:
+- Harsha Nori
+- Mayank Daswani
+- Christopher Kelly
+- Scott Lundberg
+- Marco Tulio Ribeiro
+- Marc Wilson
+- Xiaoxuan Liu
+- Viknesh Sounderajah
+- Jonathan Carlson
+- Matthew P Lungren
+- Bay Gross
+- Peter Hames
+- Mustafa Suleyman
+- Dominic King
+- Eric Horvitz
+year: 2025
+arxiv: '2506.22405'
+links:
+  paper: https://arxiv.org/abs/2506.22405
+area: evaluation
+scale:
+- multi-agent
+type:
+- benchmark
+- framework
+topics: []
+about: []
+infra: []
+domain:
+- healthcare
+status: triaged
+added: '2026-10-07'
