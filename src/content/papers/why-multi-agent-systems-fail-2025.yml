@@ -1,0 +1,33 @@
+id: why-multi-agent-systems-fail-2025
+title: Why Do Multi-Agent LLM Systems Fail?
+authors:
+- Mert Cemri
+- Melissa Z. Pan
+- Shuyi Yang
+- Lakshya A. Agrawal
+- Bhavya Chopra
+- Rishabh Tiwari
+- Kurt Keutzer
+- Aditya Parameswaran
+- Dan Klein
+- Kannan Ramchandran
+- Matei Zaharia
+- Joseph E. Gonzalez
+- Ion Stoica
+year: 2025
+arxiv: '2503.13657'
+links:
+  paper: https://arxiv.org/abs/2503.13657
+area: evaluation
+scale:
+- multi-agent
+type:
+- empirical
+- benchmark
+topics: []
+about: []
+infra: []
+domain:
+- general
+status: triaged
+added: '2026-10-08'
