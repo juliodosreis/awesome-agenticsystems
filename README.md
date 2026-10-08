@@ -20,7 +20,7 @@ build.
 [RSS](https://juliodosreis.github.io/awesome-agenticsystems/rss.xml)
 
 <!-- gen:counts -->
-11 areas in 4 layers, 58 topics and 32 facet values across 5 facets.
+11 areas in 4 layers, 58 topics and 33 facet values across 5 facets.
 <!-- /gen:counts -->
 
 ## Contents
