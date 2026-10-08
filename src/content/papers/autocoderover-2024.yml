@@ -1,0 +1,23 @@
+id: autocoderover-2024
+title: 'AutoCodeRover: Autonomous Program Improvement'
+authors:
+- Yuntong Zhang
+- Haifeng Ruan
+- Zhiyu Fan
+- Abhik Roychoudhury
+year: 2024
+venue: Proceedings of the 33rd ACM SIGSOFT International Symposium on Software Testing and Analysis
+links:
+  paper: https://dl.acm.org/doi/10.1145/3650212.3680384
+area: tools-context
+scale:
+- single-agent
+type:
+- method
+topics: []
+about: []
+infra: []
+domain:
+- software-engineering
+status: triaged
+added: '2026-10-08'
