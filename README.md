@@ -38,7 +38,7 @@ build.
 ## The collection
 
 <!-- gen:paper-count -->
-78 papers listed, 32 of them with a written summary.
+82 papers listed, 32 of them with a written summary.
 <!-- /gen:paper-count -->
 
 The site has filtering, search and the reading-path graph; this listing is the
@@ -55,6 +55,7 @@ Where to enter the field.
 
 - 🔥 📖 [Beyond the Leaderboard: A Synthesis of Tool-Use, Planning, and Reasoning Failures in Large Language Model Agents](https://arxiv.org/abs/2607.05775) — `2026`  
   Synthesizes 27 benchmark, taxonomy and audit papers across 19 benchmarks into six failure clusters, from tool invocation errors to measurement validity problems.
+- 📖 [LLM-Based Multi-Agent Systems for Software Engineering: Literature Review, Vision, and the Road Ahead](https://dl.acm.org/doi/10.1145/3712003) — `ACM Transactions on Software Engineering and Methodology` · 2025
 - [LLM-based agentic systems in medicine and healthcare](https://www.nature.com/articles/s42256-024-00944-1) — `Nature Machine Intelligence` · 2024
 
 
@@ -70,6 +71,7 @@ What the agent reasons about, stores, executes and learns.
 - [CEDAR: Agent-Orchestrated Tree Search for Goal-Directed Optimization of Complex Systems](https://arxiv.org/abs/2608.06871) — `2026`  
   Runs Monte Carlo Tree Search where an LLM Judge scores emergent behavior and an LLM Editor proposes variants, searching for complex systems that meet a stated behavioral goal.
 - [ClinicalAgents: Multi-Agent Orchestration for Clinical Decision Making with Dual-Memory](https://dl.acm.org/doi/10.1145/3770855.3818931) — `Proceedings of the 32nd ACM SIGKDD Conference on Knowledge Discovery and Data Mining (KDD '26)` · 2026
+- [ADaPT: As-Needed Decomposition and Planning with Language Models](https://aclanthology.org/2024.findings-naacl.264/) — `Findings of the Association for Computational Linguistics: NAACL 2024` · 2024
 - [Language Agent Tree Search Unifies Reasoning, Acting, and Planning in Language Models](https://proceedings.mlr.press/v235/zhou24r.html) — `Proceedings of the 41st International Conference on Machine Learning` · 2024
 - [Reflexion: Language Agents with Verbal Reinforcement Learning](https://arxiv.org/abs/2303.11366) — `NeurIPS 2023` · 2023  
   Turns the feedback from a failed attempt into text and stores it in episodic memory to condition the retry, without updating weights.
@@ -117,6 +119,7 @@ What the agent reasons about, stores, executes and learns.
 - [Inducing Task Models from Computer-Use Traces](https://arxiv.org/abs/2608.20319) — `2026`  
   Recovers the latent tasks inside an unconstrained computer-use trace and induces, for each, a hierarchical objective model paired with a procedure model of the control flow.
 - [Agent Workflow Memory](https://arxiv.org/abs/2409.07429) — `2024`
+- [ExpeL: LLM Agents Are Experiential Learners](https://dl.acm.org/doi/10.1609/aaai.v38i17.29936) — `Proceedings of the AAAI Conference on Artificial Intelligence` · 2024
 
 
 ### System structure
@@ -135,6 +138,7 @@ The inner loop of the system, its number of agents, and the substrate it runs on
 #### Coordination & organization ([`coordination`](https://juliodosreis.github.io/awesome-agenticsystems/areas/coordination))
 
 - [Multi-Agent Teams Hold Experts Back](https://arxiv.org/abs/2602.01011) — `2026`
+- [QUARE: Quality-Aware Requirements Analysis through Multi-Agent Dialectical Negotiation](https://arxiv.org/abs/2603.11890) — `2026`
 - [UFO3: Weaving the Digital Agent Galaxy](https://arxiv.org/abs/2511.11332) — `2026`
 - [A Knowledge-driven Adaptive Collaboration of LLMs for Enhancing Medical Decision-making](https://aclanthology.org/2025.emnlp-main.1699/) — `Proceedings of the 2025 Conference on Empirical Methods in Natural Language Processing` · 2025
 - [ChatDev: Communicative Agents for Software Development](https://aclanthology.org/2024.acl-long.810/) — `Proceedings of the 62nd Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)` · 2024
