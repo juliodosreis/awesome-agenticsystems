@@ -1,0 +1,24 @@
+id: diagnostic-socratic-teaching-2026
+title: A Diagnostic-Driven Multi-Agent Socratic Teaching System
+authors:
+- Xiulong Yang
+- ZiHang Yu
+- ShuYuan Sun
+- JiShen Yang
+year: 2026
+venue: Proceedings of the 2026 Asia-Pacific Intelligent Educational Technologies Conference (APIET 2026)
+links:
+  paper: https://doi.org/10.1145/3796114.3796119
+area: coordination
+scale:
+- multi-agent
+- human-agent
+type:
+- method
+topics: []
+about: []
+infra: []
+domain:
+- education
+status: triaged
+added: '2026-10-08'
