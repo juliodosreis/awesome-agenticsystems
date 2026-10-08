@@ -1,0 +1,29 @@
+id: mdagents-2024
+title: 'Mdagents: An adaptive collaboration of llms for medical decision-making'
+authors:
+- Yubin Kim
+- Chanwoo Park
+- Hyewon Jeong
+- Yik S Chan
+- Xuhai Xu
+- Daniel McDuff
+- Hyeonhoon Lee
+- Marzyeh Ghassemi
+- Cynthia Breazeal
+- Hae W Park
+year: 2024
+venue: Advances in Neural Information Processing Systems
+links:
+  paper: https://proceedings.neurips.cc/paper_files/paper/2024/hash/90d1fc07f46e31387978b88e7e057a31-Abstract-Conference.html
+area: coordination
+scale:
+- multi-agent
+type:
+- method
+topics: []
+about: []
+infra: []
+domain:
+- healthcare
+status: triaged
+added: '2026-10-08'
