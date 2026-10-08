@@ -1,0 +1,31 @@
+id: webarena-2024
+title: 'WebArena: A Realistic Web Environment for Building Autonomous Agents'
+authors:
+- Shuyan Zhou
+- Frank F Xu
+- Hao Zhu
+- Xuhui Zhou
+- Robert Lo
+- Abishek Sridhar
+- Xianyi Cheng
+- Tianyue Ou
+- Yonatan Bisk
+- Daniel Fried
+- Uri Alon
+- Graham Neubig
+year: 2024
+venue: International Conference on Learning Representations
+links:
+  paper: https://proceedings.iclr.cc/paper_files/paper/2024/hash/4410c0711e9154a7a2d26f9b3816d1ef-Abstract-Conference.html
+area: evaluation
+scale:
+- single-agent
+type:
+- benchmark
+topics: []
+about: []
+infra: []
+domain:
+- web
+status: triaged
+added: '2026-10-08'
