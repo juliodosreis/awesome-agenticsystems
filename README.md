@@ -38,7 +38,7 @@ build.
 ## The collection
 
 <!-- gen:paper-count -->
-90 papers listed, 32 of them with a written summary.
+93 papers listed, 32 of them with a written summary.
 <!-- /gen:paper-count -->
 
 The site has filtering, search and the reading-path graph; this listing is the
@@ -112,7 +112,7 @@ What the agent reasons about, stores, executes and learns.
 
 #### Learning, skills & self-evolution ([`learning-evolution`](https://juliodosreis.github.io/awesome-agenticsystems/areas/learning-evolution))
 
-- [EvoMAS: Evolutionary Generation of Multi-Agent Systems](https://arxiv.org/abs/2602.06511) — `ICML2026` · 2026
+- [EvoMAS: Evolutionary Generation of Multi-Agent Systems](https://arxiv.org/abs/2602.06511) — `ICML 2026` · 2026
 - [GitSkills: A Dataset of Agent Skills on GitHub](https://arxiv.org/abs/2608.10906) — `2026`  
   A dataset of 3.8M SKILL.md files mined from 282,200 public repositories, with front matter, folder contents and partial commit history.
 - [Harness-R1: Learning to Edit Executable Runtime Harnesses from Agent Failure Trajectories](https://arxiv.org/abs/2608.02276) — `2026`  
@@ -143,12 +143,15 @@ The inner loop of the system, its number of agents, and the substrate it runs on
 #### Coordination & organization ([`coordination`](https://juliodosreis.github.io/awesome-agenticsystems/areas/coordination))
 
 - [A Diagnostic-Driven Multi-Agent Socratic Teaching System](https://doi.org/10.1145/3796114.3796119) — `Proceedings of the 2026 Asia-Pacific Intelligent Educational Technologies Conference (APIET 2026)` · 2026
+- [Hetero-Designer: Automated Design of Multi-Agent Systems with Heterogeneous LLMs](https://aclanthology.org/2026.acl-long.1272/) — `Proceedings of the 64th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)` · 2026
 - [IntelliCode: A Multi-Agent LLM Tutoring System with Centralized Learner Modeling](https://aclanthology.org/2026.eacl-demo.10/) — `Proceedings of the 19th Conference of the European Chapter of the Association for Computational Linguistics (EACL 2026) -- System Demonstrations` · 2026
 - [Multi-Agent Teams Hold Experts Back](https://arxiv.org/abs/2602.01011) — `2026`
 - [QUARE: Quality-Aware Requirements Analysis through Multi-Agent Dialectical Negotiation](https://arxiv.org/abs/2603.11890) — `2026`
 - [UFO3: Weaving the Digital Agent Galaxy](https://arxiv.org/abs/2511.11332) — `2026`
 - [A Knowledge-driven Adaptive Collaboration of LLMs for Enhancing Medical Decision-making](https://aclanthology.org/2025.emnlp-main.1699/) — `Proceedings of the 2025 Conference on Empirical Methods in Natural Language Processing` · 2025
+- [AgileCoder: Dynamic Collaborative Agents for Software Development based on Agile Methodology](https://ieeexplore.ieee.org/document/11052788) — `2025 IEEE/ACM Second International Conference on AI Foundation Models and Software Engineering (Forge)` · 2025
 - [ChatDev: Communicative Agents for Software Development](https://aclanthology.org/2024.acl-long.810/) — `Proceedings of the 62nd Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)` · 2024
+- [LawLuo: A Multi-Agent Collaborative Framework for Multi-Round Chinese Legal Consultation](https://arxiv.org/abs/2407.16252) — `2024`
 - [Mdagents: An adaptive collaboration of llms for medical decision-making](https://proceedings.neurips.cc/paper_files/paper/2024/hash/90d1fc07f46e31387978b88e7e057a31-Abstract-Conference.html) — `Advances in Neural Information Processing Systems` · 2024
 - [Simulating Classroom Education with LLM-Empowered Agents](https://arxiv.org/abs/2406.19226) — `2024`
 - [AutoGen: Enabling Next-Gen LLM Applications via Multi-Agent Conversation](https://arxiv.org/abs/2308.08155) — `COLM 2024` · 2023  
