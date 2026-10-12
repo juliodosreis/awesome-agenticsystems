@@ -1,0 +1,26 @@
+id: hetero-designer-2026
+title: 'Hetero-Designer: Automated Design of Multi-Agent Systems with Heterogeneous LLMs'
+authors:
+- Zhiheng Zhang
+- Yuanzhe Zhang
+- Bohan Yu
+- Daojian Zeng
+- Kang Liu
+- Jun Zhao
+year: 2026
+venue: 'Proceedings of the 64th Annual Meeting of the Association for Computational Linguistics (Volume
+  1: Long Papers)'
+links:
+  paper: https://aclanthology.org/2026.acl-long.1272/
+area: coordination
+scale:
+- multi-agent
+type:
+- method
+topics: []
+about: []
+infra: []
+domain:
+- general
+status: triaged
+added: '2026-10-12'
