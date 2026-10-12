@@ -1,0 +1,45 @@
+id: agentschool-2026
+title: 'AgentSchool: An LLM-Powered Multi-Agent Simulation for Education'
+authors:
+- Yulei Ye
+- Wenhao Li
+- Zhong Wen
+- Yunshu Huang
+- Yichen Hu
+- Zifan Wei
+- Yige Wang
+- Xinyu Xie
+- Haoxuan Yang
+- Yanjun Huang
+- Ruijia Li
+- Hong Qian
+- Yu Song
+- Bo Jiang
+- Bingdong Li
+- Lijun Li
+- Bo Zhang
+- Pinlong Cai
+- Xingcheng Xu
+- Shuangye Chen
+- Xia Hu
+- Liang He
+- Aimin Zhou
+- Jingjing Qu
+- Jing Shao
+- Xiangfeng Wang
+year: 2026
+arxiv: '2605.30144'
+links:
+  paper: https://arxiv.org/abs/2605.30144
+area: architectures
+scale:
+- multi-agent
+type:
+- framework
+topics: []
+about: []
+infra: []
+domain:
+- education
+status: triaged
+added: '2026-10-12'

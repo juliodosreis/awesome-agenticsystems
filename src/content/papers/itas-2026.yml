@@ -1,0 +1,24 @@
+id: itas-2026
+title: 'ITAS: A Multi-Agent Architecture for LLM-Based Intelligent Tutoring'
+authors:
+- Iizalaarab Elhaimeur
+- Nikos Chrisochoides
+year: 2026
+venue: arXiv preprint arXiv:2604.24808
+arxiv: '2604.24808'
+links:
+  paper: https://arxiv.org/abs/2604.24808
+area: architectures
+scale:
+- multi-agent
+- human-agent
+type:
+- framework
+- case-study
+topics: []
+about: []
+infra: []
+domain:
+- education
+status: triaged
+added: '2026-10-12'

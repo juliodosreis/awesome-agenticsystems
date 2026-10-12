@@ -1,0 +1,22 @@
+id: legalwebagent-2025
+title: 'LegalWebAgent: Empowering Access to Justice via LLM-Based Web Agents'
+authors:
+- Jinzhe Tan
+- Karim Benyekhlef
+year: 2025
+arxiv: '2512.04105'
+links:
+  paper: https://arxiv.org/abs/2512.04105
+area: architectures
+scale:
+- single-agent
+- human-agent
+type:
+- framework
+topics: []
+about: []
+infra: []
+domain:
+- web
+status: triaged
+added: '2026-10-12'

@@ -1,0 +1,25 @@
+id: lawluo-2024
+title: 'LawLuo: A Multi-Agent Collaborative Framework for Multi-Round Chinese Legal Consultation'
+authors:
+- Jingyun Sun
+- Chengxiao Dai
+- Zhongze Luo
+- Yangbo Chang
+- Yang Li
+year: 2024
+arxiv: '2407.16252'
+links:
+  paper: https://arxiv.org/abs/2407.16252
+area: coordination
+scale:
+- multi-agent
+- human-agent
+type:
+- framework
+topics: []
+about: []
+infra: []
+domain:
+- general
+status: triaged
+added: '2026-10-12'
