@@ -1,0 +1,27 @@
+id: evomas-2026
+title: 'EvoMAS: Evolutionary Generation of Multi-Agent Systems'
+authors:
+- Yuntong Hu
+- Yuting Zhang
+- Matthew Trager
+- Yi Zhang
+- Shuo Yang
+- Wei Xia
+- Stefano Soatto
+year: 2026
+venue: ICML2026
+arxiv: '2602.06511'
+links:
+  paper: https://arxiv.org/abs/2602.06511
+area: learning-evolution
+scale:
+- multi-agent
+type:
+- method
+topics: []
+about: []
+infra: []
+domain:
+- general
+status: triaged
+added: '2026-10-12'
