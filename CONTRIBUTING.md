@@ -1,24 +1,17 @@
 # Contributing
 
-This guide covers papers. Resources (orchestration frameworks, skills,
-benchmarks without a paper, protocols, books, courses and guides) have their
-own path, described under [Resources](./README.md#resources) in the README,
-together with a table of the differences between the two collections.
+The repository holds two collections: papers, classified by the taxonomy, and
+resources, listed by kind. The differences between them are in the
+[README](./README.md#papers-and-resources). This guide covers papers first, and
+[Resources](#resources) covers the other collection.
 
-This is a collection of **papers**. Software repositories do not get a paper
-record, including when they have an associated paper. They go to the
-[Resources page](./README.md#resources), together with skills, benchmarks
-without a paper, protocols, books, courses and guides.
-
-The rule governs what gets a record. The subject matter of a paper is
-unrestricted: a paper describing a framework belongs here, recorded as
-`type: framework`. AutoGen and MetaGPT are both in the collection as papers;
-their repositories are not. A benchmark with a paper counts as a paper and
-belongs to the `evaluation` area; a leaderboard or an evaluation harness with no
-paper is a resource of kind `benchmark`.
-
-[Issue submission](#issue-submission) takes one minute and needs no setup. The
-sections after it cover filling records in by hand.
+Software repositories do not get a paper record, including when they have an
+associated paper. The rule governs what gets a record, and the subject matter
+of a paper is unrestricted: a paper describing a framework is recorded with
+`type: framework`. AutoGen and MetaGPT are in the collection as papers, and
+their repositories can be listed as resources of kind `framework`. A benchmark
+with a paper belongs to the `evaluation` area; a leaderboard or an evaluation
+harness with no paper is a resource of kind `benchmark`.
 
 ## Classification model
 
@@ -27,9 +20,6 @@ A paper is classified on two axes:
 - `area` — exactly one. Answers *"what is the contribution?"*.
 - `topics` and the facets (<!-- gen:facet-names -->`about`, `scale`, `infra`, `type`, `domain`<!-- /gen:facet-names -->) —
   as many as apply. They answer *"what is it about?"* and cross areas freely.
-
-An issue submission requires three fields: `area`, `scale` and `type`. The rest
-are optional and get filled in later, while reading the paper.
 
 ## Two paths
 
@@ -48,36 +38,32 @@ The path depends on the intended contribution:
    any other source, paste the **BibTeX** too (most publisher pages have a
    "Cite" or "Export citation" button).
 3. Pick **`area`** (see [below](#area-selection)), **`scale`** and
-   **`type`**. Each option in the form carries a one-line description.
+   **`type`**. Each option in the form carries a one-line description. When
+   the classification is unclear, pick the closest option: a debatable area
+   still records a paper that would otherwise be missing.
 4. An automated process reads the metadata, generates the `.yml` file, checks
    that the site still builds and that the tests pass, and opens a **pull
    request** for a maintainer to review. The pull request holds only the new
    `.yml` file, and nothing is merged automatically.
 
-This path requires no clone and no local setup.
+The process stops before opening a pull request when the year is missing, the
+link is invalid, a value falls outside the taxonomy, or the paper is already in
+the collection, which is checked against the arXiv id and the title as well as
+the filename. **The reason is posted as a comment on the issue** and the issue
+is labeled `needs-fix`, so it is readable without opening CI logs. Fix the
+issue and close/reopen it to retry.
 
-When the classification is unclear, pick the closest option. The pull request
-is reviewed before it is merged, and a debatable area still records a paper
-that would otherwise be missing.
-
-The submission is validated before any pull request is opened. The process
-stops when the year is missing, the link is invalid, a value falls outside the
-taxonomy, or the paper is already in the collection, which is checked against
-the arXiv id and the title as well as the filename. The site is then built with
-the new record and the test suite is run. The pull request is opened only when
-both succeed.
-
-**A failure is posted as a comment on the issue** and the issue is labeled
-`needs-fix`, so the reason is readable without opening CI logs. Fix the issue
-and close/reopen it to retry.
+`docs_sync.yml` regenerates the paper list of the README and the badge count on
+`main` after the merge, so several pull requests from issues can be open and
+merged in any order. GitHub holds `validate.yml` on these pull requests until a
+maintainer approves it; approving it is optional, since the intake job ran the
+same build and tests before opening the pull request.
 
 ### Direct edit
 
 The issue path reaches `triaged`, with no `tldr`, `notes`, `topics` or
 `about`, because those come from reading the paper. To add them, edit the
-`.yml` file directly and open a pull request. This path is open to anyone with
-a clone and requires no maintainer status. The issue form omits those fields
-deliberately, since they can only be filled in after reading.
+`.yml` file directly and open a pull request.
 
 ### Existing records
 
@@ -103,19 +89,8 @@ See the [local workflow](./TAXONOMY.md#local-workflow) and the
 
 ## Area selection
 
-The areas are grouped into layers. The criterion for picking one is the
-**main contribution** of the paper, and not its general topic.
-
-<!-- gen:areas-table -->
-| Layer | Areas |
-|---|---|
-| Overview | `foundations` |
-| Agent capabilities | `reasoning-planning`, `memory`, `tools-context`, `learning-evolution` |
-| System structure | `architectures`, `coordination`, `interoperability`, `engineering` |
-| Measurement and control | `evaluation`, `safety` |
-<!-- /gen:areas-table -->
-
-Each area with the rule for picking it:
+The criterion for picking an area is the **main contribution** of the paper,
+and not its general topic. Each area with its layer and the rule for picking it:
 
 <!-- gen:areas-detail -->
 | Area | Layer | Pick it when |
@@ -136,15 +111,8 @@ Each area with the rule for picking it:
 Every area also has its description on
 [`/areas`](https://juliodosreis.github.io/awesome-agenticsystems/areas).
 
-Two rules that resolve most ambiguous cases:
-
-- **Scale does not define the area.** A multi-agent system does not
-  automatically belong to `coordination`; the count of agents is recorded by
-  `scale: [multi-agent]`. `coordination` holds work whose central contribution
-  is the coordination mechanism itself. A paper on shared memory, for example, goes
-  to `memory` with `scale: [multi-agent]`.
-- **`architectures` means the whole loop.** If the contribution is one
-  component (memory, planning, tool use), it belongs to that component.
+The number of agents does not decide the area. A paper on memory shared between
+agents goes to `memory` with `scale: [multi-agent]`.
 
 ## Record states
 
@@ -163,9 +131,46 @@ An issue lands the paper in `triaged`, which is enough for it to appear on the
 site, and a record may stay in that state without a time limit. The cost of
 suggesting a paper is meant to stay close to zero.
 
-The schema enforces the states. Declaring `status: read` without a `tldr`
-breaks the build, with a message naming the missing field and offering
-`triaged` as the state that does not require it.
+## Resources
+
+The kinds of resource, and what each one covers, are listed under
+[Resources](./README.md#resources) in the README.
+
+### Resource submission
+
+1. Go to **Issues** → **New Issue** → **Add a Resource**.
+2. Fill in the link, the name, the kind and a description of what the material
+   contains. The related area is optional.
+3. The intake builds the record with `scripts/process_resource_issue.py` and
+   opens a pull request, as for papers. On an invalid link, a kind outside the
+   taxonomy, or a resource already listed, it comments the reason on the issue
+   and labels it `needs-fix`.
+
+The form does not ask for authors, organization or year. The reviewer adds
+`authors` or `org`, and `year`, to the pull request when they are known.
+
+### Resource records
+
+A resource can also arrive as a pull request that adds
+`src/content/resources/<id>.yml`:
+
+```yaml
+id: langgraph                     # equal to the filename
+title: "LangGraph"
+kind: framework                   # a key of resource_kinds
+url: https://github.com/langchain-ai/langgraph
+org: "LangChain"                  # or authors: ["Name"] for a person
+year: 2024                        # optional
+area: engineering                 # optional
+description: >-
+  Library for building agents as graphs of nodes over a shared state, with
+  checkpointing and interrupts for human review.
+added: "2026-10-13"
+```
+
+The schema rejects a `kind` or an `area` outside `src/data/taxonomy.yml`, and
+`npm run build` reports the valid values. A new kind is added under
+`resource_kinds` in the same file, followed by `npm run docs`.
 
 ## Questions and issues
 
@@ -173,9 +178,7 @@ breaks the build, with a message naming the missing field and offering
   template. Disagreement about an area is recorded as signal on the taxonomy.
   The correction can also arrive as a pull request on the record itself: see
   [existing records](#existing-records).
-- **Material that is not a paper.** Use the *Add a Resource* template, or
-  open a pull request that adds a file to `src/content/resources/`. The kinds
-  and the record format are in the [README](./README.md#resources).
+- **Material that is not a paper.** See [Resources](#resources).
 - **A term missing from the vocabulary.** Use the *Propose a taxonomy change*
   template. Adding topics is expected; the criteria are in
   [TAXONOMY.md](./TAXONOMY.md#changing-the-taxonomy).

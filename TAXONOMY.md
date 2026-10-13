@@ -5,12 +5,6 @@ How the vocabulary is structured, why, and what it takes to change it.
 To add a paper quickly, see [CONTRIBUTING.md](./CONTRIBUTING.md). This guide is
 for filling records in by hand and for proposing changes to the vocabulary.
 
-Current size:
-
-<!-- gen:counts -->
-11 areas in 4 layers, 58 topics and 33 facet values across 5 facets.
-<!-- /gen:counts -->
-
 ## Vocabulary surfaces
 
 Three surfaces, all generated from the same YAML file:
@@ -195,15 +189,10 @@ The system automates **validation**. Classification stays manual.
 
 ## Local workflow
 
-Requires **Node.js 22.12 or newer** (the version in `.nvmrc`). The scripts —
-`add.py`, and `npm run docs`, which wraps one — additionally need **Python
-3.11+** with `pip install -r requirements-dev.txt`. Building and browsing the
-site need only Node.
+The setup and the commands are in the [README](./README.md#local-development).
+Two of them concern records:
 
 ```bash
-npm install
-npm run dev
-
 # Create a record from arXiv metadata:
 python scripts/add.py 2210.03629
 
@@ -214,10 +203,6 @@ npm run docs
 `add.py` creates the record in the `captured` state with the classification
 fields commented out. To get the paper onto the site, uncomment `area`, `scale`
 and `type` and change `status` to `triaged`.
-
-When the site does not reflect an edit after a reload, the cause is usually the
-Astro 7 daemon: `npx astro dev stop && npm run dev`. See the
-[README](./README.md#local-development).
 
 ## Build validation
 
@@ -241,20 +226,3 @@ Beyond the per-record schema, the build also checks:
 | `relates_to` / `evaluated_on` resolve | `src/pages/papers/[id].astro` | Reading paths broken with no build error |
 | Areas, domain groups and descriptions resolve | `src/lib/taxonomy.ts` | A typo making an area vanish from the navigation |
 | Docs and issue form match the taxonomy | `docs_sync.yml` regenerates them on `main` after each merge; `npm run docs:check` locally | An issue form offering an option the validator rejects |
-
-## Repository scope
-
-This collection is for **papers** only. Software (a GitHub repository, a
-released tool) does not get a record of its own.
-
-The rule governs the record. The subject matter is unrestricted: a paper
-describing a framework is welcome and is recorded as `type: framework`.
-
-Software is listed on the Resources page, from `src/content/resources/`. That
-collection has its own schema, with a `kind` from `resource_kinds` and no
-status, topics or facets. For mixed cases (AutoGen, MetaGPT), the paper gets a
-record here and the repository can be listed as a resource of kind `framework`.
-
-Benchmarks with a paper count as papers and belong to the `evaluation` area (see
-`agentbench-2023`, `tau-bench-2024`). Their relationship to the methods they
-evaluate is expressed through `evaluated_on`.

@@ -10,9 +10,7 @@ A curated collection of papers on agentic AI systems, classified by the
 contribution of each one.
 
 Every paper is filed under a single area, its contribution, then cut across by
-topics and facets: what it is about, at what scale, in which domain. The
-vocabulary is validated at build time, so a term that stops resolving stops the
-build.
+topics and facets: what it is about, at what scale, in which domain.
 
 The site also has a [Resources](https://juliodosreis.github.io/awesome-agenticsystems/resources) page for material that is
 not a paper: orchestration frameworks, skills, benchmarks, protocols, books,
@@ -33,7 +31,6 @@ courses and guides. See [Resources](#resources).
 - [The collection](#the-collection)
 - [Resources](#resources)
 - [Design decisions](#design-decisions)
-- [Adding a paper](#adding-a-paper)
 - [The taxonomy](#the-taxonomy)
 - [Local development](#local-development)
 - [Tests](#tests)
@@ -257,8 +254,9 @@ How a system is measured, and how its risk is governed.
 
 The [Resources page](https://juliodosreis.github.io/awesome-agenticsystems/resources) lists material on agentic systems
 that is not a paper. Each entry is a link with a one or two sentence
-description, filed under one kind. Resources carry no status, topics or facets.
-An entry with an `area` also appears on that area's page, below the papers.
+description, filed under one kind. An entry with an `area` also appears on that
+area's page, below the papers. Adding a resource is described under
+[Resources](./CONTRIBUTING.md#resources) in CONTRIBUTING.md.
 
 <!-- gen:resource-kinds -->
 | Kind | Section on the site | Covers |
@@ -291,43 +289,6 @@ repository, documentation or leaderboard can be listed as a resource.
 | Intake script | `scripts/process_issue.py` | `scripts/process_resource_issue.py` |
 | Duplicate check | arXiv id, title, filename | Link, name, filename |
 
-### Adding a resource
-
-1. Go to **Issues** → **New Issue** → **Add a Resource**.
-2. Fill in the link, the name, the kind and a description of what the material
-   contains. The related area is optional.
-3. A GitHub Action (`issue_ops.yml`) builds the record with
-   `scripts/process_resource_issue.py`, runs the build and the tests, and opens
-   a pull request for a maintainer to review. On an invalid link, a kind
-   outside the taxonomy, or a resource already listed, it comments the reason
-   on the issue and labels it `needs-fix`. Close and reopen the issue to retry.
-
-The form does not ask for authors, organization or year. The reviewer adds
-`authors` or `org`, and `year`, to the pull request when they are known. The
-pull request follows the same rules as for papers, described under [issue
-submission](#issue-submission).
-
-The other path is a pull request that adds `src/content/resources/<id>.yml`:
-
-```yaml
-id: langgraph                     # equal to the filename
-title: "LangGraph"
-kind: framework                   # a key from the table above
-url: https://github.com/langchain-ai/langgraph
-org: "LangChain"                  # or authors: ["Name"] for a person
-year: 2024                        # optional
-area: engineering                 # optional
-description: >-
-  Library for building agents as graphs of nodes over a shared state, with
-  checkpointing and interrupts for human review.
-added: "2026-10-13"
-```
-
-The schema in `src/content.config.ts` rejects a `kind` or an `area` outside
-`src/data/taxonomy.yml`, and `npm run build` reports the valid values. A new
-kind is added under `resource_kinds` in the same file, followed by
-`npm run docs`.
-
 ## Design decisions
 
 - **A validated vocabulary.** The Zod schema reads the vocabulary from
@@ -340,73 +301,10 @@ kind is added under `resource_kinds` in the same file, followed by
 - **Three navigation axes**: by area (contribution), by domain (application),
   and by reading path (the `relates_to` graph between papers, navigable in
   both directions).
-- **Two-level classification.** A single area defines the contribution; topics
-  and facets (<!-- gen:facet-names -->`about`, `scale`, `infra`, `type`, `domain`<!-- /gen:facet-names -->) cut across areas
-  and say what the paper is about.
 - **Adding a paper or a resource is a GitHub issue.** A workflow turns the
   issue into a pull request that holds one file, with no local setup.
 - **Site-wide search** (Pagefind), an [RSS feed](https://juliodosreis.github.io/awesome-agenticsystems/rss.xml)
   of new additions, and a sitemap.
-
-## Adding a paper
-
-| | Who | How | Resulting status |
-|---|---|---|---|
-| Suggest a paper | Anyone | Issue with 3 fields → reviewed PR | `triaged` — visible on the site |
-| Add and read | Anyone willing to clone | Edit the `.yml` and open a pull request | `read` — includes `tldr` and `notes` |
-
-### Issue submission
-
-No cloning, no local scripts.
-
-1. Go to the **Issues** tab.
-2. Pick **New Issue** → **Add a Paper**.
-3. Paste the link to the paper. An arXiv link supplies the rest: the title,
-   authors and year are fetched automatically. For any other source, paste the
-   **BibTeX** as well.
-4. Pick **area**, **scale** and **type**. Each option in the form carries a
-   one-line description. The `triaged` state requires these three fields, and
-   reaching it makes the paper visible once the PR is merged. When the choice
-   is unclear, pick the closest option; the PR is reviewed before merging.
-5. A GitHub Action (`issue_ops.yml`) validates the data, builds the site with
-   the new record, and opens a pull request. On a missing year, an invalid
-   link, a duplicate paper, or a value outside the taxonomy, the Action
-   **comments the reason on the issue** and labels it `needs-fix` in place of
-   opening a broken PR. Close and reopen the issue to retry.
-
-The pull request holds only the new record. `docs_sync.yml` regenerates the
-paper list of this README and the badge count on `main` after the merge, so
-several pull requests from issues can be open and merged in any order. GitHub
-holds `validate.yml` on these pull requests until a maintainer approves it;
-approving it is optional, since the intake job ran the same build and tests
-before opening the pull request.
-
-### Direct edit
-
-The issue flow reaches `triaged`: no `tldr`, `notes`, `topics` or
-`about`, since those require reading the paper. To add them, edit the
-`.yml` directly. `python scripts/add.py <arxiv-id>` fetches the metadata and
-creates the record in the `captured` state with the classification fields
-commented out.
-
-Editing a record already in the collection follows the same path: change the
-file under `src/content/papers/` and open a pull request. `validate.yml` runs
-the build and the test suite on it.
-
-Incomplete classification does not block a paper. The schema enforces three
-states:
-
-<!-- gen:status-table -->
-| status | Requires | Effect |
-|---|---|---|
-| `captured` | metadata only | Kept in git, not visible on the site. |
-| `triaged` | `area`, `scale`, `type` | Visible in the index. |
-| `read` | `tldr`, `topics`, `about` | Works as a summary on the site. |
-<!-- /gen:status-table -->
-
-See [CONTRIBUTING.md](./CONTRIBUTING.md) for picking an area, and
-[TAXONOMY.md](./TAXONOMY.md) for filling a record in by hand or proposing
-changes to the vocabulary.
 
 ## The taxonomy
 
@@ -425,16 +323,8 @@ validator, the site, the guides and the issue form all read from that one file.
 The complete vocabulary, with usage counts, is at
 [`/taxonomy`](https://juliodosreis.github.io/awesome-agenticsystems/taxonomy).
 The design and the criterion behind each field are documented in
-[TAXONOMY.md](./TAXONOMY.md).
-
-Two decisions that resolve most ambiguous cases:
-
-- **Scale does not determine the area.** Having multiple agents is expressed
-  with `scale: [multi-agent]`. The `coordination` area is reserved for papers
-  whose central contribution is the coordination mechanism itself.
-- **A term belongs to exactly one vocabulary.** `mcp` and `a2a` are topics (the
-  paper is about the protocol); `rag`, `knowledge-graph`, `sandbox` and `api`
-  are `infra` values (the system uses them).
+[TAXONOMY.md](./TAXONOMY.md), and the rule for picking an area under [area
+selection](./CONTRIBUTING.md#area-selection).
 
 ## Local development
 
@@ -484,9 +374,7 @@ The dev server starts at `http://localhost:4321`.
 
 `npm run docs` also rewrites the paper listing in this README and the counts in
 `.github/badges.json`. On `main`, `docs_sync.yml` runs it after each merge that
-touches a paper or the taxonomy and commits the result. The pull requests
-opened from issues carry only the new record, so several of them can be open at
-once without editing the same block.
+touches a paper or the taxonomy and commits the result.
 
 `npm run build` gates deployment: a type error, or a paper that fails
 taxonomy validation, stops publication.
@@ -513,7 +401,6 @@ taxonomy validation, stops publication.
 ## Tests
 
 ```bash
-pip install -r requirements-dev.txt
 npm test
 ```
 
@@ -529,10 +416,15 @@ unmeasured. Skip it locally with `npm run test:fast`.
 
 ## Contributing
 
-Read [CONTRIBUTING.md](./CONTRIBUTING.md). Paper suggestions, resource
-suggestions, corrections to a classification, and proposals for new vocabulary
-each have their own issue template. Participation is covered by the
-[Code of Conduct](./CODE_OF_CONDUCT.md).
+| Contribution | Path |
+|---|---|
+| Suggest a paper | *Add a Paper* issue form. See [issue submission](./CONTRIBUTING.md#issue-submission). |
+| Suggest a resource | *Add a Resource* issue form. See [resources](./CONTRIBUTING.md#resources). |
+| Summarize a paper, or edit a record | Pull request on the `.yml` file. See [direct edit](./CONTRIBUTING.md#direct-edit). |
+| Report a misclassified paper | *Fix a classification* issue form. |
+| Propose a term for the vocabulary | *Propose a taxonomy change* issue form. See [changing the taxonomy](./TAXONOMY.md#changing-the-taxonomy). |
+
+Participation is covered by the [Code of Conduct](./CODE_OF_CONDUCT.md).
 
 ## Citing this collection
 
