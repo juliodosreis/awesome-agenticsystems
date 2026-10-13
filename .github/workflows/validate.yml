@@ -4,10 +4,10 @@ name: Validate
 # schema or the taxonomy was discovered after the merge, with the deploy
 # already broken.
 #
-# Note: pull requests opened by issue_ops.yml with GITHUB_TOKEN do NOT trigger
-# this workflow (GitHub blocks that deliberately, to avoid loops). That is why
-# issue_ops runs its own `npm run build` before opening the PR. This workflow
-# covers human pull requests: hand-edited records, taxonomy changes, site code.
+# On a pull request opened by issue_ops.yml, this workflow is triggered but
+# held at "awaiting approval" until a maintainer approves it (observed on
+# 2026-10-13). issue_ops therefore runs the same build and tests before it
+# opens the pull request, and approving this run is optional.
 on:
   pull_request:
     branches: [main]

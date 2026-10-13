@@ -6,9 +6,8 @@ name: Sync Generated Docs
 # reads main as it is when the job starts, so the result does not depend on the
 # order of the merges or on the base of each pull request.
 #
-# The push uses GITHUB_TOKEN and therefore does not trigger deploy.yml again.
-# The site does not read README.md or badges.json: the merge itself already
-# deployed the new record.
+# The site does not read README.md or badges.json, so this commit leaves the
+# deployed site unchanged: the merge itself already deployed the new record.
 on:
   push:
     branches: [main]
