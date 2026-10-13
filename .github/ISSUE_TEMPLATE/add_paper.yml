@@ -1,6 +1,6 @@
 # The dropdown options below are generated from src/data/taxonomy.yml by
 # scripts/gen_docs.py. Do not edit them by hand: edit the taxonomy and run
-# `npm run docs`. CI fails when they are out of sync. A form offering an option
+# `npm run docs`. docs_sync.yml regenerates them on main when they drift. A form offering an option
 # the validator rejects collects a submission the schema then refuses.
 name: Add a Paper
 description: Suggest a paper for the collection. Takes about a minute.

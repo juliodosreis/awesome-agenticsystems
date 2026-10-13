@@ -1,9 +1,11 @@
 # The dropdown options below are generated from src/data/taxonomy.yml by
 # scripts/gen_docs.py. Do not edit them by hand: edit the taxonomy and run
-# `npm run docs`. CI fails when they are out of sync.
+# `npm run docs`. docs_sync.yml regenerates them on main when they drift.
 #
-# No workflow processes this form. The maintainer reads the issue and adds the
-# file under src/content/resources/ by hand.
+# The `resource` label starts issue_ops.yml, which builds the record with
+# scripts/process_resource_issue.py and opens a pull request. The field labels
+# below are read by that script: renaming one breaks the intake, and
+# tests/test_process_resource_issue.py checks that they still match.
 name: Add a Resource
 description: "Suggest material that is not a paper: an orchestration framework, a skill, a benchmark, a protocol, a book, a course or a guide."
 title: "[Resource]: "
@@ -12,6 +14,8 @@ body:
   - type: markdown
     attributes:
       value: |
+        Submitting this issue opens a pull request automatically. The pull request is reviewed before it is merged.
+
         Resources are listed on the [Resources page](https://juliodosreis.github.io/awesome-agenticsystems/resources) of the site, grouped by kind. A paper goes through the *Add a Paper* form. A framework or a benchmark with a paper can be submitted through both forms: the paper there, and the repository or leaderboard here.
 
   - type: input
