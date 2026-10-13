@@ -1,0 +1,68 @@
+name: Sync Generated Docs
+
+# The intake pull requests from issue_ops.yml carry only the new record. The
+# paper list in README.md and .github/badges.json are generated from the
+# records, so they are regenerated here, on main, after each merge. Every run
+# reads main as it is when the job starts, so the result does not depend on the
+# order of the merges or on the base of each pull request.
+#
+# The push uses GITHUB_TOKEN and therefore does not trigger deploy.yml again.
+# The site does not read README.md or badges.json: the merge itself already
+# deployed the new record.
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'src/content/papers/**'
+      - 'src/data/taxonomy.yml'
+      - 'scripts/gen_docs.py'
+      - '.github/ISSUE_TEMPLATE/**'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+# One run at a time. A run that is still pending when a newer one arrives is
+# replaced by it, which loses nothing: the newer run reads a later main.
+concurrency:
+  group: docs-sync
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      # ref: main and not the triggering commit: after several merges in a row
+      # the commit that triggered this run may no longer be the tip.
+      - name: Checkout
+        uses: actions/checkout@v5
+        with:
+          ref: main
+
+      - name: Setup Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Regenerate docs
+        run: python scripts/gen_docs.py
+
+      # A merge that lands while this job runs makes the push non-fast-forward,
+      # so the commit is rebased first. The run queued for that merge then
+      # regenerates again. The rebase conflicts only when that merge edited the
+      # same generated block; the push then fails, and the queued run, which
+      # starts from the new main, produces the commit.
+      - name: Commit and push
+        run: |
+          if git diff --quiet; then
+            echo "Generated docs are already in sync."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -am "docs: regenerate paper list and badge count"
+          git pull --rebase origin main
+          git push origin HEAD:main

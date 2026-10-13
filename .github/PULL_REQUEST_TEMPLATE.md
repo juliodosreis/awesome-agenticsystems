@@ -28,9 +28,10 @@ not block the merge.
 
 **For a change to `src/data/taxonomy.yml`:**
 
-- [ ] `npm run docs` has been run and the regenerated blocks are committed. CI
-      fails otherwise, since the guides and the issue form are generated from
-      that file.
+- [ ] `npm run docs` has been run and the regenerated blocks are committed.
+      The guides and the issue form are generated from that file, and the
+      review needs the change to them in the diff. `docs_sync.yml` also
+      regenerates them on `main` after the merge.
 - [ ] A new topic would serve as a filter *today*. A new area has at least one
       paper to live in it, and an argument from the literature in
       [TAXONOMY.md](../TAXONOMY.md#bibliographic-basis).

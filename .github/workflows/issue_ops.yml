@@ -1,4 +1,4 @@
-name: Process Paper Submission
+name: Process Issue Submission
 
 on:
   issues:
@@ -15,9 +15,15 @@ permissions:
   issues: write
 
 jobs:
-  process-paper:
-    if: contains(github.event.issue.labels.*.name, 'paper')
+  # One job for both forms. The label set by the issue template picks the
+  # parser: `paper` for Add a Paper, `resource` for Add a Resource.
+  intake:
+    if: >-
+      contains(github.event.issue.labels.*.name, 'paper') ||
+      contains(github.event.issue.labels.*.name, 'resource')
     runs-on: ubuntu-latest
+    env:
+      KIND: ${{ contains(github.event.issue.labels.*.name, 'paper') && 'paper' || 'resource' }}
     steps:
       - name: Checkout
         uses: actions/checkout@v5
@@ -50,7 +56,18 @@ jobs:
         id: process
         run: |
           set -o pipefail
-          python scripts/process_issue.py issue_body.md 2>&1 | tee process.log
+          if [ "$KIND" = paper ]; then script=process_issue.py; else script=process_resource_issue.py; fi
+          python "scripts/$script" issue_body.md 2>&1 | tee process.log
+
+      # A new paper changes the generated list in README.md and the badge
+      # count, and the test suite fails when those are stale. They are
+      # regenerated here so that the tests run against the new record, and
+      # left out of the pull request (see add-paths below): every open intake
+      # pull request would otherwise edit the same block, and each merge would
+      # put the others in conflict. docs_sync.yml regenerates them on main
+      # after the merge.
+      - name: Regenerate docs
+        run: python scripts/gen_docs.py
 
       # `npm run build` is the only proof that the generated record compiles.
       # It runs HERE rather than in an `on: pull_request` workflow because pull
@@ -73,32 +90,55 @@ jobs:
           set -o pipefail
           npm test 2>&1 | tee test.log
 
+      - name: Prepare pull request
+        id: prep
+        env:
+          ISSUE: ${{ github.event.issue.number }}
+        run: |
+          if [ "$KIND" = paper ]; then
+            dir=papers
+            checks='- [ ] `area` describes the paper'"'"'s **contribution**, not the topic it discusses.
+          - [ ] `scale` reflects the scale of the system studied.
+          - [ ] It is not a duplicate of a paper already filed under a different title.'
+          else
+            dir=resources
+            checks='- [ ] The material is not a paper. A paper goes through *Add a Paper*.
+          - [ ] `kind` is the section of the Resources page the material belongs in.
+          - [ ] `description` states what the resource contains, with no judgment of its quality.
+          - [ ] `authors` or `org`, and `year`, are added when known. The form does not ask for them.
+          - [ ] It is not a duplicate of a resource already listed under a different name.'
+          fi
+          echo "dir=$dir" >> "$GITHUB_OUTPUT"
+          cat > pr_body.md <<EOF
+          Closes #${ISSUE}
+
+          Generated automatically from the issue. The pull request holds only
+          the new record; README.md and the badge count are regenerated on main
+          by docs_sync.yml after the merge.
+
+          **Already verified** before this pull request was opened: the issue
+          parser accepted the submission, \`npm run build\` succeeded with the
+          new record in place, and \`npm test\` passed.
+
+          GitHub does not run \`on: pull_request\` workflows for pull requests
+          opened by a bot, so those checks ran in the
+          [intake job](../actions/workflows/issue_ops.yml) instead of here.
+
+          This pull request is **not** approved or merged automatically.
+          Before merging, check by hand:
+          ${checks}
+          EOF
+
       - name: Create Pull Request
         id: cpr
         uses: peter-evans/create-pull-request@v7
         with:
-          commit-message: "Add new paper from issue #${{ github.event.issue.number }}"
-          title: "Add paper: ${{ github.event.issue.title }}"
-          body: |
-            Closes #${{ github.event.issue.number }}
-
-            Generated automatically from the issue.
-
-            **Already verified** before this pull request was opened:
-            `scripts/process_issue.py` accepted the submission, `npm run build`
-            succeeded with the new record in place, and `npm test` passed.
-
-            GitHub does not run `on: pull_request` workflows for pull requests
-            opened by a bot, so those checks ran in the
-            [intake job](../actions/workflows/issue_ops.yml) rather than here.
-
-            This pull request is **not** approved or merged automatically.
-            Before merging, check by hand:
-            - [ ] `area` describes the paper's **contribution**, not the topic it discusses.
-            - [ ] `scale` reflects the scale of the system studied.
-            - [ ] It is not a duplicate of a paper already filed under a different title.
-          branch: "add-paper-${{ github.event.issue.number }}"
-          labels: "paper"
+          add-paths: src/content/${{ steps.prep.outputs.dir }}/*.yml
+          commit-message: "Add new ${{ env.KIND }} from issue #${{ github.event.issue.number }}"
+          title: "Add ${{ env.KIND }}: ${{ github.event.issue.title }}"
+          body-path: pr_body.md
+          branch: "add-${{ env.KIND }}-${{ github.event.issue.number }}"
+          labels: ${{ env.KIND }}
 
       - name: Comment success
         if: success()
@@ -107,7 +147,7 @@ jobs:
           PR_URL: ${{ steps.cpr.outputs.pull-request-url }}
         run: |
           gh issue comment "${{ github.event.issue.number }}" --body \
-          "Done — the record was generated, the site builds and the tests pass. The pull request is ${PR_URL}, waiting for a maintainer to review and merge it. Thanks for adding the paper."
+          "Done — the record was generated, the site builds and the tests pass. The pull request is ${PR_URL}, waiting for a maintainer to review and merge it. Thanks for adding the ${KIND}."
 
       # The reason for the failure has to reach whoever opened the issue, not
       # the log. process_issue.py already writes actionable messages ("Valid

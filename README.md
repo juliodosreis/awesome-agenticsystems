@@ -262,8 +262,11 @@ repository, documentation or leaderboard can be listed as a resource.
 1. Go to **Issues** → **New Issue** → **Add a Resource**.
 2. Fill in the link, the name, the kind and a description of what the material
    contains. The related area is optional.
-3. A maintainer reads the issue and adds the record. No Action processes this
-   form.
+3. A GitHub Action (`issue_ops.yml`) builds the record with
+   `scripts/process_resource_issue.py`, runs the build and the tests, and opens
+   a pull request for a maintainer to review. On an invalid link, a kind
+   outside the taxonomy, or a resource already listed, it comments the reason
+   on the issue and labels it `needs-fix`. Close and reopen the issue to retry.
 
 The other path is a pull request that adds `src/content/resources/<id>.yml`:
 
@@ -427,13 +430,16 @@ The dev server starts at `http://localhost:4321`.
 | `npm run build` | Runs `astro check` (types + paper validation) and builds to `dist/` |
 | `npm run preview` | Serves `dist/` to review the final build |
 | `npm run docs` | Regenerates the doc sections and issue form from `taxonomy.yml` |
-| `npm run docs:check` | Fails if those are stale. CI runs this. |
+| `npm run docs:check` | Fails if those are stale |
 | `npm test` | Runs the full test suite (~20s) |
 | `npm run test:fast` | Skips the tests that shell out to a real build (<1s) |
 | `python scripts/add.py <arxiv-id>` | Creates a record from arXiv metadata |
 
 `npm run docs` also rewrites the paper listing in this README and the counts in
-`.github/badges.json`, so both stay true without anyone updating them by hand.
+`.github/badges.json`. On `main`, `docs_sync.yml` runs it after each merge that
+touches a paper or the taxonomy and commits the result. The pull requests
+opened from issues carry only the new record, so several of them can be open at
+once without editing the same block.
 
 `npm run build` gates deployment: a type error, or a paper that fails
 taxonomy validation, stops publication.
@@ -451,9 +457,9 @@ taxonomy validation, stops publication.
 | `src/layouts/Layout.astro` | Shared shell: header, area sidebar, client scripts. |
 | `src/pages/` | Routes: `/`, `/areas`, `/domains`, `/taxonomy`, `/papers/[id]`, `/rss.xml`. |
 | `public/` | Static files (favicon). |
-| `scripts/` | `arxiv.py` (shared metadata fetch), `add.py` (local capture), `process_issue.py` (used by the Action), `gen_docs.py` (README listing, doc blocks, issue form, badges). |
+| `scripts/` | `arxiv.py` (shared metadata fetch), `add.py` (local capture), `process_issue.py` and `process_resource_issue.py` (used by the Action), `gen_docs.py` (README listing, doc blocks, issue form, badges). |
 | `tests/` | pytest suite. `test_schema.py` is the important one: it falsifies records on purpose to prove the build rejects them. |
-| `.github/workflows/` | `issue_ops.yml` (issue intake), `validate.yml` (build on every PR), `deploy.yml` (GitHub Pages). |
+| `.github/workflows/` | `issue_ops.yml` (issue intake), `docs_sync.yml` (regenerates the docs on `main`), `validate.yml` (build on every PR), `deploy.yml` (GitHub Pages). |
 
 ## Tests
 

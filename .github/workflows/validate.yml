@@ -66,6 +66,13 @@ jobs:
           pip install -r requirements-dev.txt
           npm ci
 
+      # The generated blocks of README.md and badges.json are kept in sync on
+      # main by docs_sync.yml, and an intake pull request does not carry them.
+      # Regenerating here keeps the drift test from failing on such a pull
+      # request when a reviewer pushes a fix to it.
+      - name: Regenerate docs
+        run: python scripts/gen_docs.py
+
       # Covers the issue parser (including the arXiv fallback, deduplication
       # and vocabulary validation), the doc generator and its drift check, and
       # the build-time guards. The whole suite is ~20s, almost all of it the
