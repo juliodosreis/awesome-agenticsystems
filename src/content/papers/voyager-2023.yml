@@ -1,0 +1,27 @@
+id: voyager-2023
+title: 'Voyager: An Open-Ended Embodied Agent with Large Language Models'
+authors:
+- Guanzhi Wang
+- Yuqi Xie
+- Yunfan Jiang
+- Ajay Mandlekar
+- Chaowei Xiao
+- Yuke Zhu
+- Linxi Fan
+- Anima Anandkumar
+year: 2023
+arxiv: '2305.16291'
+links:
+  paper: https://arxiv.org/abs/2305.16291
+area: learning-evolution
+scale:
+- single-agent
+type:
+- method
+topics: []
+about: []
+infra: []
+domain:
+- general
+status: triaged
+added: '2026-10-13'
