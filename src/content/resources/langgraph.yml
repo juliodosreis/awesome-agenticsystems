@@ -1,0 +1,11 @@
+id: langgraph
+title: "LangGraph"
+kind: framework
+url: https://github.com/langchain-ai/langgraph
+org: "LangChain"
+year: 2024
+area: engineering
+description: >-
+  Library for building agents as graphs of nodes over a shared state, with
+  checkpointing and interrupts for human review.
+added: "2026-10-13"

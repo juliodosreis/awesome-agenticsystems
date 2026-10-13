@@ -1,7 +1,9 @@
 # Adding a Paper
 
-This is a collection of **papers**. Software repositories do not get a record,
-including when they have an associated paper.
+This is a collection of **papers**. Software repositories do not get a paper
+record, including when they have an associated paper. They go to the
+[Resources page](./README.md#resources), together with skills, benchmarks
+without a paper, protocols, books, courses and guides.
 
 The rule governs what gets a record. The subject matter of a paper is
 unrestricted: a paper describing a framework belongs here, recorded as
@@ -164,6 +166,9 @@ breaks the build, with a message naming the missing field and offering
   template. Disagreement about an area is recorded as signal on the taxonomy.
   The correction can also arrive as a pull request on the record itself: see
   [existing records](#existing-records).
+- **Material that is not a paper.** Use the *Add a Resource* template, or
+  open a pull request that adds a file to `src/content/resources/`. The kinds
+  and the record format are in the [README](./README.md#resources).
 - **A term missing from the vocabulary.** Use the *Propose a taxonomy change*
   template. Adding topics is expected; the criteria are in
   [TAXONOMY.md](./TAXONOMY.md#changing-the-taxonomy).

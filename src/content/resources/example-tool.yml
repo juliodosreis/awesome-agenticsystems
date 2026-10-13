@@ -1,9 +1,9 @@
 id: example-tool
-title: "Example tool or framework"
+title: "Example tool or SDK"
 kind: tool
 url: https://example.com/
 authors: ["Author Name"]
 year: 2026
 description: >-
-  Placeholder entry. Replace it with a real tool or framework.
+  Placeholder entry. Replace it with a real tool or SDK.
 added: "2026-10-07"

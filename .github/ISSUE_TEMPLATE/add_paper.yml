@@ -57,11 +57,11 @@ body:
         below.
       options:
         # gen:issue-areas
-        - foundations — A general view of the field: surveys, taxonomies, position papers.
-        - reasoning-planning — What happens between the input and the action: reasoning, planning, self-critique.
+        - "foundations — A general view of the field: surveys, taxonomies, position papers."
+        - "reasoning-planning — What happens between the input and the action: reasoning, planning, self-critique."
         - memory — What the agent stores and how it retrieves it.
         - tools-context — How the agent acts on the world and where it gets context from.
-        - learning-evolution — Changes that persist between tasks: skills, experience, tuning.
+        - "learning-evolution — Changes that persist between tasks: skills, experience, tuning."
         - architectures — The complete loop of an agent.
         - coordination — The mechanisms by which several agents divide work and communicate.
         - interoperability — Standards through which agents and tools locate and communicate with each other.

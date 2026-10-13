@@ -122,8 +122,28 @@ def test_facets_table_covers_every_facet_and_value():
 def test_issue_options_match_the_taxonomy_exactly():
     """The form must not offer an option the validator would reject."""
     options = gd.block_issue_areas().strip().split("\n")
-    offered = [line.strip().lstrip("- ").split(" — ")[0] for line in options]
+    offered = [line.strip().lstrip("- ").strip('"').split(" — ")[0] for line in options]
     assert offered == list(gd.TAXONOMY["areas"])
+
+
+def test_resource_kinds_table_covers_every_kind():
+    table = gd.block_resource_kinds()
+    for key in gd.TAXONOMY["resource_kinds"]:
+        assert f"`{key}`" in table
+        assert f"/resources#{key})" in table
+
+
+def test_issue_resource_kinds_match_the_taxonomy_exactly():
+    options = gd.block_issue_resource_kinds().strip().split("\n")
+    offered = [line.strip().lstrip("- ").strip('"').split(" — ")[0] for line in options]
+    assert offered == list(gd.TAXONOMY["resource_kinds"])
+
+
+def test_option_with_a_colon_is_quoted_so_it_parses_as_a_string():
+    """`- a — b: c` is a one-key mapping in YAML, not a string."""
+    import yaml
+    block = gd._options(["x"], {"x": "Covers this: and that."})
+    assert yaml.safe_load(block) == ["x — Covers this: and that."]
 
 
 def test_issue_option_descriptions_come_from_the_blurbs():

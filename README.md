@@ -14,8 +14,13 @@ topics and facets: what it is about, at what scale, in which domain. The
 vocabulary is validated at build time, so a term that stops resolving stops the
 build.
 
+The site also has a [Resources](https://juliodosreis.github.io/awesome-agenticsystems/resources) page for material that is
+not a paper: orchestration frameworks, skills, benchmarks, protocols, books,
+courses and guides. See [Resources](#resources).
+
 **[Browse the site](https://juliodosreis.github.io/awesome-agenticsystems)** ·
 [Suggest a paper](https://github.com/juliodosreis/awesome-agenticsystems/issues/new?template=add_paper.yml) ·
+[Suggest a resource](https://github.com/juliodosreis/awesome-agenticsystems/issues/new?template=add_resource.yml) ·
 [Contributing guide](./CONTRIBUTING.md) ·
 [RSS](https://juliodosreis.github.io/awesome-agenticsystems/rss.xml)
 
@@ -26,6 +31,7 @@ build.
 ## Contents
 
 - [The collection](#the-collection)
+- [Resources](#resources)
 - [Design decisions](#design-decisions)
 - [Adding a paper](#adding-a-paper)
 - [The taxonomy](#the-taxonomy)
@@ -227,6 +233,59 @@ How a system is measured, and how its risk is governed.
 > **Gaps.** No papers yet in `interoperability`. The areas exist in the taxonomy before anything lives in them — the gap is a reading list, and a good place to make a first contribution.
 <!-- /gen:papers -->
 
+## Resources
+
+The [Resources page](https://juliodosreis.github.io/awesome-agenticsystems/resources) lists material on agentic systems
+that is not a paper. Each entry is a link with a one or two sentence
+description, filed under one kind. Resources carry no status, topics or facets.
+An entry with an `area` also appears on that area's page, below the papers.
+
+<!-- gen:resource-kinds -->
+| Kind | Section on the site | Covers |
+|---|---|---|
+| `protocol` | [Protocols](https://juliodosreis.github.io/awesome-agenticsystems/resources#protocol) | Specifications for connecting agents to tools, to clients or to other agents. |
+| `framework` | [Orchestration Frameworks](https://juliodosreis.github.io/awesome-agenticsystems/resources#framework) | Code frameworks for orchestrating agents: control flow, state, tool calls and multi-agent workflows. |
+| `skill` | [Skills](https://juliodosreis.github.io/awesome-agenticsystems/resources#skill) | Packaged instructions, scripts and reference files that an agent loads when a task requires them. |
+| `benchmark` | [Benchmarks](https://juliodosreis.github.io/awesome-agenticsystems/resources#benchmark) | Benchmarks, leaderboards and evaluation harnesses released as a website, dataset or repository. A benchmark published as a paper also gets a record in the paper collection, under the evaluation area. |
+| `book` | [Books](https://juliodosreis.github.io/awesome-agenticsystems/resources#book) | Books covering agents, or the methods agents are built from. |
+| `course` | [Courses](https://juliodosreis.github.io/awesome-agenticsystems/resources#course) | Courses and lecture series with recorded or written material. |
+| `guide` | [Guides & Posts](https://juliodosreis.github.io/awesome-agenticsystems/resources#guide) | Articles and engineering posts on building and running agents. |
+| `tool` | [Tools & SDKs](https://juliodosreis.github.io/awesome-agenticsystems/resources#tool) | Libraries, SDKs and developer tools for building, running or observing agents. |
+<!-- /gen:resource-kinds -->
+
+A framework or a benchmark with a paper can have two entries. The paper gets a record
+in the collection, with `type: framework` or `type: benchmark`, and the
+repository, documentation or leaderboard can be listed as a resource.
+
+### Adding a resource
+
+1. Go to **Issues** → **New Issue** → **Add a Resource**.
+2. Fill in the link, the name, the kind and a description of what the material
+   contains. The related area is optional.
+3. A maintainer reads the issue and adds the record. No Action processes this
+   form.
+
+The other path is a pull request that adds `src/content/resources/<id>.yml`:
+
+```yaml
+id: langgraph                     # equal to the filename
+title: "LangGraph"
+kind: framework                   # a key from the table above
+url: https://github.com/langchain-ai/langgraph
+org: "LangChain"                  # or authors: ["Name"] for a person
+year: 2024                        # optional
+area: engineering                 # optional
+description: >-
+  Library for building agents as graphs of nodes over a shared state, with
+  checkpointing and interrupts for human review.
+added: "2026-10-13"
+```
+
+The schema in `src/content.config.ts` rejects a `kind` or an `area` outside
+`src/data/taxonomy.yml`, and `npm run build` reports the valid values. A new
+kind is added under `resource_kinds` in the same file, followed by
+`npm run docs`.
+
 ## Design decisions
 
 - **A validated vocabulary.** The Zod schema reads the vocabulary from
@@ -415,9 +474,9 @@ unmeasured. Skip it locally with `npm run test:fast`.
 
 ## Contributing
 
-Read [CONTRIBUTING.md](./CONTRIBUTING.md). Suggestions, corrections to a
-classification, and proposals for new vocabulary are all welcome, and each has
-its own issue template. Participation is covered by the
+Read [CONTRIBUTING.md](./CONTRIBUTING.md). Paper suggestions, resource
+suggestions, corrections to a classification, and proposals for new vocabulary
+each have their own issue template. Participation is covered by the
 [Code of Conduct](./CODE_OF_CONDUCT.md).
 
 ## Citing this collection
