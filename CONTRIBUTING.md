@@ -1,4 +1,9 @@
-# Adding a Paper
+# Contributing
+
+This guide covers papers. Resources (orchestration frameworks, skills,
+benchmarks without a paper, protocols, books, courses and guides) have their
+own path, described under [Resources](./README.md#resources) in the README,
+together with a table of the differences between the two collections.
 
 This is a collection of **papers**. Software repositories do not get a paper
 record, including when they have an associated paper. They go to the
@@ -8,8 +13,9 @@ without a paper, protocols, books, courses and guides.
 The rule governs what gets a record. The subject matter of a paper is
 unrestricted: a paper describing a framework belongs here, recorded as
 `type: framework`. AutoGen and MetaGPT are both in the collection as papers;
-their repositories are not. Benchmarks count as papers and belong to the
-`evaluation` area.
+their repositories are not. A benchmark with a paper counts as a paper and
+belongs to the `evaluation` area; a leaderboard or an evaluation harness with no
+paper is a resource of kind `benchmark`.
 
 [Issue submission](#issue-submission) takes one minute and needs no setup. The
 sections after it cover filling records in by hand.
@@ -45,7 +51,8 @@ The path depends on the intended contribution:
    **`type`**. Each option in the form carries a one-line description.
 4. An automated process reads the metadata, generates the `.yml` file, checks
    that the site still builds and that the tests pass, and opens a **pull
-   request** for a maintainer to review. Nothing is merged automatically.
+   request** for a maintainer to review. The pull request holds only the new
+   `.yml` file, and nothing is merged automatically.
 
 This path requires no clone and no local setup.
 

@@ -17,6 +17,13 @@ Tick what applies. An unticked box tells the reviewer where to look and does not
 - [ ] A record with `status: read` carries `tldr`, `topics` and `about`. Otherwise it is `triaged`, which is a valid end state.
 - [ ] `relates_to` is declared in **one direction only** (newer paper points at the older one). The reverse link is computed automatically.
 
+**For an added or edited resource:**
+
+- [ ] The material is not a paper. A paper goes in `src/content/papers/`.
+- [ ] `kind` is the section of the Resources page the material belongs in.
+- [ ] `description` states what the resource contains, with no judgment of its quality.
+- [ ] `id` matches the filename.
+
 **For a change to `src/data/taxonomy.yml`:**
 
 - [ ] `npm run docs` has been run and the regenerated blocks are committed. The guides and the issue form are generated from that file, and the review needs the change to them in the diff. `docs_sync.yml` also regenerates them on `main` after the merge.

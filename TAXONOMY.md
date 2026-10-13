@@ -39,6 +39,9 @@ different axis, the four kinds of vocabulary a record draws on.
 
 ## Fields of a record
 
+These are the fields of a paper record. A resource record has its own fields,
+listed under [Resources](./README.md#resources) in the README.
+
 | Field | Required | Meaning |
 |---|---|---|
 | `status` | All states | `captured`, `triaged` or `read`. Sets what else is required — see [Record states](./CONTRIBUTING.md#record-states). |
@@ -233,10 +236,11 @@ Beyond the per-record schema, the build also checks:
 |---|---|---|
 | Every value belongs to the taxonomy | `src/content.config.ts` | Invented areas, topics and facet values |
 | Each status has its required fields | `src/content.config.ts` | `status: read` with no `tldr` |
-| `id` equals the filename | `src/lib/papers.ts` | A paper published at one URL and linked from another |
+| `id` equals the filename | `src/lib/papers.ts`, `src/lib/resources.ts` | A record published at one URL and linked from another |
+| A resource `kind` and `area` belong to the taxonomy | `src/content.config.ts` | A resource filed under a section the page does not have |
 | `relates_to` / `evaluated_on` resolve | `src/pages/papers/[id].astro` | Reading paths broken with no build error |
 | Areas, domain groups and descriptions resolve | `src/lib/taxonomy.ts` | A typo making an area vanish from the navigation |
-| Docs and issue form match the taxonomy | `scripts/gen_docs.py --check` in CI | An issue form offering an option the validator rejects |
+| Docs and issue form match the taxonomy | `docs_sync.yml` regenerates them on `main` after each merge; `npm run docs:check` locally | An issue form offering an option the validator rejects |
 
 ## Repository scope
 

@@ -277,6 +277,20 @@ A framework or a benchmark with a paper can have two entries. The paper gets a r
 in the collection, with `type: framework` or `type: benchmark`, and the
 repository, documentation or leaderboard can be listed as a resource.
 
+### Papers and resources
+
+| | Papers | Resources |
+|---|---|---|
+| Records | `src/content/papers/` | `src/content/resources/` |
+| On the site | Index, `/areas`, `/domains`, `/papers/<id>` | `/resources`, and the area page when `area` is set |
+| In this README | Generated list under [The collection](#the-collection) | Kinds table above |
+| Classification | One `area`, plus topics and facets | One `kind`; `area` optional |
+| States | `captured`, `triaged`, `read` | None |
+| Metadata | From arXiv or the pasted BibTeX | From the form; `authors`, `org` and `year` added by hand |
+| Issue form | *Add a Paper* (label `paper`) | *Add a Resource* (label `resource`) |
+| Intake script | `scripts/process_issue.py` | `scripts/process_resource_issue.py` |
+| Duplicate check | arXiv id, title, filename | Link, name, filename |
+
 ### Adding a resource
 
 1. Go to **Issues** → **New Issue** → **Add a Resource**.
@@ -287,6 +301,11 @@ repository, documentation or leaderboard can be listed as a resource.
    a pull request for a maintainer to review. On an invalid link, a kind
    outside the taxonomy, or a resource already listed, it comments the reason
    on the issue and labels it `needs-fix`. Close and reopen the issue to retry.
+
+The form does not ask for authors, organization or year. The reviewer adds
+`authors` or `org`, and `year`, to the pull request when they are known. The
+pull request follows the same rules as for papers, described under [issue
+submission](#issue-submission).
 
 The other path is a pull request that adds `src/content/resources/<id>.yml`:
 
@@ -324,7 +343,8 @@ kind is added under `resource_kinds` in the same file, followed by
 - **Two-level classification.** A single area defines the contribution; topics
   and facets (<!-- gen:facet-names -->`about`, `scale`, `infra`, `type`, `domain`<!-- /gen:facet-names -->) cut across areas
   and say what the paper is about.
-- **Adding a paper is a GitHub issue**, with no local setup.
+- **Adding a paper or a resource is a GitHub issue.** A workflow turns the
+  issue into a pull request that holds one file, with no local setup.
 - **Site-wide search** (Pagefind), an [RSS feed](https://juliodosreis.github.io/awesome-agenticsystems/rss.xml)
   of new additions, and a sitemap.
 
@@ -353,6 +373,13 @@ No cloning, no local scripts.
    link, a duplicate paper, or a value outside the taxonomy, the Action
    **comments the reason on the issue** and labels it `needs-fix` in place of
    opening a broken PR. Close and reopen the issue to retry.
+
+The pull request holds only the new record. `docs_sync.yml` regenerates the
+paper list of this README and the badge count on `main` after the merge, so
+several pull requests from issues can be open and merged in any order. GitHub
+holds `validate.yml` on these pull requests until a maintainer approves it;
+approving it is optional, since the intake job ran the same build and tests
+before opening the pull request.
 
 ### Direct edit
 
@@ -447,7 +474,7 @@ The dev server starts at `http://localhost:4321`.
 | Command | What it does |
 |---|---|
 | `npm run dev` | Dev server on `localhost:4321` |
-| `npm run build` | Runs `astro check` (types + paper validation) and builds to `dist/` |
+| `npm run build` | Runs `astro check` (types + paper and resource validation) and builds to `dist/` |
 | `npm run preview` | Serves `dist/` to review the final build |
 | `npm run docs` | Regenerates the doc sections and issue form from `taxonomy.yml` |
 | `npm run docs:check` | Fails if those are stale |
@@ -469,13 +496,15 @@ taxonomy validation, stops publication.
 | Path | Contents |
 |---|---|
 | `src/content/papers/` | One `.yml` per paper. The data. |
+| `src/content/resources/` | One `.yml` per resource. |
 | `src/data/taxonomy.yml` | Single source of truth: layers, areas, topics, facets, domains and references. |
-| `src/content.config.ts` | Zod schema, built from the taxonomy vocabulary. Enforces the three paper states. |
+| `src/content.config.ts` | Zod schemas of both collections, built from the taxonomy vocabulary. Enforces the three paper states. |
 | `src/lib/taxonomy.ts` | Shared loader for `taxonomy.yml` plus integrity guards (`assertGroupsResolve`). |
 | `src/lib/papers.ts` | Collection helpers: publication logic, author formatting, id/filename check. |
+| `src/lib/resources.ts` | Resource helpers: grouping by kind, the "by" line, id/filename check. |
 | `src/lib/url.ts` | `url()` helper for internal links. The site lives under a subpath, so hardcoding routes breaks every fork. |
-| `src/layouts/Layout.astro` | Shared shell: header, area sidebar, client scripts. |
-| `src/pages/` | Routes: `/`, `/areas`, `/domains`, `/taxonomy`, `/papers/[id]`, `/rss.xml`. |
+| `src/layouts/Layout.astro` | Shared shell: header, sidebar with the areas and the resource kinds, client scripts. |
+| `src/pages/` | Routes: `/`, `/areas`, `/domains`, `/taxonomy`, `/papers/[id]`, `/resources`, `/rss.xml`. |
 | `public/` | Static files (favicon). |
 | `scripts/` | `arxiv.py` (shared metadata fetch), `add.py` (local capture), `process_issue.py` and `process_resource_issue.py` (used by the Action), `gen_docs.py` (README listing, doc blocks, issue form, badges). |
 | `tests/` | pytest suite. `test_schema.py` is the important one: it falsifies records on purpose to prove the build rejects them. |
@@ -488,8 +517,8 @@ pip install -r requirements-dev.txt
 npm test
 ```
 
-The suite covers the issue parser, the one script that runs unsupervised,
-along with the doc generator and the build-time guards. The assertions cover
+The suite covers the two issue parsers, for papers and for resources, which
+run unsupervised, along with the doc generator and the build-time guards. The assertions cover
 the error messages as well as the exit codes, since a rejection a contributor
 cannot act on leaves the submission stuck.
 
