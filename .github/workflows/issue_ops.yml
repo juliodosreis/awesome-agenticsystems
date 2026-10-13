@@ -69,21 +69,18 @@ jobs:
       - name: Regenerate docs
         run: python scripts/gen_docs.py
 
-      # `npm run build` is the only proof that the generated record compiles.
-      # It runs HERE rather than in an `on: pull_request` workflow because pull
-      # requests opened with GITHUB_TOKEN do not trigger other workflows: if we
-      # waited for the PR, it would never be validated at all.
+      # `npm run build` is the proof that the generated record compiles. It
+      # runs here because validate.yml, on a pull request opened by this job,
+      # waits for a maintainer's approval before it runs.
       - name: Validate build
         id: validate
         run: |
           set -o pipefail
           npm run build 2>&1 | tee build.log
 
-      # The test suite has to run HERE for the same reason the build does: a
-      # pull request opened with GITHUB_TOKEN does not trigger `on:
-      # pull_request`, so validate.yml never runs on it. Without this step the
-      # bot's pull request would arrive with no checks at all, and the reviewer
-      # would have nothing to go on but the diff.
+      # The tests run here for the same reason as the build: the pull request
+      # then arrives with its checks already passed, whether or not a
+      # maintainer approves the validate.yml run.
       - name: Run tests
         id: tests
         run: |
@@ -116,7 +113,7 @@ jobs:
 
           **Already verified** before this pull request was opened: the issue parser accepted the submission, \`npm run build\` succeeded with the new record in place, and \`npm test\` passed.
 
-          GitHub does not run \`on: pull_request\` workflows for pull requests opened by a bot, so those checks ran in the [intake job](../actions/workflows/issue_ops.yml) instead of here.
+          The *Validate* workflow on this pull request waits for a maintainer's approval, since the pull request was opened by \`github-actions[bot]\`. Approving it is optional: the same build and tests already ran in the [intake job](../actions/workflows/issue_ops.yml).
 
           This pull request is **not** approved or merged automatically. Before merging, check by hand:
           ${checks}
