@@ -1,0 +1,8 @@
+id: crewai
+title: CrewAI
+kind: framework
+url: https://github.com/crewAIInc/crewAI
+area: coordination
+description: Python framework for running groups of role-based agents that share tasks, with sequential
+  and hierarchical processes.
+added: '2026-10-13'
