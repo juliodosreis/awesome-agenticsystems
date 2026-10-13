@@ -1,0 +1,22 @@
+id: multitutor-2025
+title: "MultiTutor: Collaborative LLM Agents for Multimodal Student Support"
+authors: ["Edward Sun", "LeAnn Tai"]
+year: 2025
+venue: "PMLR 2025"
+links:
+  paper: https://proceedings.mlr.press/v273/sun25a.html
+
+area: coordination
+topics: [collaboration, roles, agentic-search, code-execution]
+about: [tool-use, reasoning]
+scale: [multi-agent, human-agent]
+type: [framework]
+infra: [sandbox]
+domain: [general]
+
+status: read
+tldr: "A multi-agent tutoring framework that coordinates specialized expert agents to provide personalized, multimodal educational support using internet search and code generation."
+notes: "Demonstrates the application of multi-agent collaboration in education, moving beyond single-agent tutors. Agents take on specific expert roles to synthesize information, generate visualizations, and scaffold student learning."
+relates_to: [autogen-2023, metagpt-2023]
+evaluated_on: []
+added: 2026-09-24

@@ -1,0 +1,23 @@
+id: breaking-1-58-2026
+title: "Breaking the 1.58-bit Barrier for Ternary LLMs"
+authors: ["Evangelos Georganas", "Alexander Heinecke", "Pradeep Dubey"]
+year: 2026
+# venue: ""   # fill in once published
+arxiv: "2609.16338"
+links:
+  paper: https://arxiv.org/abs/2609.16338
+
+area: engineering
+topics: [agent-ops]
+about: [reasoning]
+scale: [single-agent]
+type: [method]
+infra: []
+domain: [general]
+
+status: read
+tldr: "Explores extreme quantization for LLMs, pushing ternary weight representations below the 1.58-bit barrier to dramatically improve inference efficiency."
+notes: "Boundary case for this collection. The contribution is strictly model compression and hardware efficiency rather than an agentic mechanism. Filed under engineering alongside other inference optimization works (like Nemotron-Puzzle) because it addresses the deployment compute bottlenecks of agentic systems."
+relates_to: [nemotron-puzzle-2026]
+evaluated_on: []
+added: 2026-09-24

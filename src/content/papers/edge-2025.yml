@@ -1,0 +1,23 @@
+id: edge-2025
+title: "Edge-First Language Model Inference: Models, Metrics, and Tradeoffs"
+authors: ["SiYoung Jang", "Roberto Morabito"]
+year: 2025
+# venue: ""   # fill in once published
+arxiv: "2505.16508"
+links:
+  paper: https://arxiv.org/abs/2505.16508
+
+area: engineering
+topics: [agent-ops]
+about: [reasoning]
+scale: [single-agent]
+type: [empirical]
+infra: []
+domain: [general]
+
+status: read
+tldr: "An empirical benchmarking study of edge-first Small Language Model (SLM) inference, exploring the tradeoffs between on-device performance, energy consumption, and cloud fallback."
+notes: "A boundary case for the collection focused on deployment runtime and hardware efficiency. Demonstrates that domain-specialized SLMs on edge devices can achieve comparable accuracy to larger general models while solving latency and privacy issues. Filed under engineering alongside other inference optimization works."
+relates_to: [breaking-1-58-2026, nemotron-puzzle-2026]
+evaluated_on: []
+added: 2026-09-24

@@ -1,0 +1,23 @@
+id: memgpt-2023
+title: "MemGPT: Towards LLMs as Operating Systems"
+authors: ["Charles Packer", "Sarah Wooders", "Kevin Lin", "Vivian Fang", "Shishir G. Patil", "Ion Stoica", "Joseph E. Gonzalez"]
+year: 2023
+venue: "ICLR 2024"
+arxiv: "2310.08560"
+links:
+  paper: https://arxiv.org/abs/2310.08560
+
+area: memory
+topics: [working-memory, memory-retrieval, function-calling, context-engineering, state-management]
+about: [memory, tool-use]
+scale: [single-agent]
+type: [framework, method]
+infra: [api]
+domain: [general]
+
+status: read
+tldr: "Introduces a virtual memory hierarchy that allows LLMs to explicitly page information between their limited context window and external storage using function calls."
+notes: "Frames the LLM context window as RAM and external databases as disk storage. Crucially, the agent actively manages its own memory through self-directed pagination, moving beyond passive RAG mechanisms for long-running processes."
+relates_to: [generative-agents-2023]
+evaluated_on: []
+added: 2026-09-24

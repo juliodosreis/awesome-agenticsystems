@@ -1,0 +1,23 @@
+id: tora-2023
+title: "ToRA: A Tool-Integrated Reasoning Agent for Mathematical Problem Solving"
+authors: ["Zhibin Gou", "Zhihong Shao", "Yeyun Gong", "Yelong Shen", "Yujiu Yang", "Minlie Huang", "Nan Duan", "Weizhu Chen"]
+year: 2023
+venue: "ICLR 2024"
+arxiv: "2309.17452"
+links:
+  paper: https://arxiv.org/abs/2309.17452
+
+area: reasoning-planning
+topics: [tool-use, code-execution, chain-of-thought]
+about: [reasoning, tool-use]
+scale: [single-agent]
+type: [method]
+infra: [sandbox]
+domain: [science]
+
+status: read
+tldr: "An agent that solves complex mathematical problems by interleaving natural language reasoning with programmatic code execution."
+notes: "Addresses calculation bottlenecks in LLMs by offloading math operations to an external Python environment during the reasoning loop. Expands the ReAct logic specifically for symbolic computation and mathematical logic."
+relates_to: [react-2022, toolformer-2023]
+evaluated_on: []
+added: 2026-09-24

@@ -1,0 +1,23 @@
+id: voyager-2023
+title: "Voyager: An Open-Ended Embodied Agent with Large Language Models"
+authors: ["Guanzhi Wang", "Yuqi Xie", "Yunfan Jiang", "Ajay Mandlekar", "Chaowei Xiao", "Yuke Zhu", "Linxi Fan", "Anima Anandkumar"]
+year: 2023
+arxiv: "2305.16291"
+links:
+  paper: https://arxiv.org/abs/2305.16291
+  code: https://github.com/MineDojo/Voyager
+
+area: learning-evolution
+topics: [skill-learning, procedural-memory, self-evolution, code-execution, self-correction]
+about: [learning, self-evolution, planning]
+scale: [single-agent]
+type: [framework, method]
+infra: [sandbox, rag]
+domain: [general]
+
+status: read
+tldr: "An embodied agent that continuously explores a 3D environment by writing, refining, and retrieving executable code from a procedural skill library."
+notes: "Pioneers procedural memory by storing acquired skills as executable code (JavaScript) rather than textual descriptions. The automatic curriculum acts as an open-ended exploration mechanism, allowing the agent to continuously expand its capabilities without human intervention."
+relates_to: [react-2022, reflexion-2023]
+evaluated_on: []
+added: 2026-09-24
