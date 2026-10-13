@@ -112,20 +112,13 @@ jobs:
           cat > pr_body.md <<EOF
           Closes #${ISSUE}
 
-          Generated automatically from the issue. The pull request holds only
-          the new record; README.md and the badge count are regenerated on main
-          by docs_sync.yml after the merge.
+          Generated automatically from the issue. The pull request holds only the new record; README.md and the badge count are regenerated on main by docs_sync.yml after the merge.
 
-          **Already verified** before this pull request was opened: the issue
-          parser accepted the submission, \`npm run build\` succeeded with the
-          new record in place, and \`npm test\` passed.
+          **Already verified** before this pull request was opened: the issue parser accepted the submission, \`npm run build\` succeeded with the new record in place, and \`npm test\` passed.
 
-          GitHub does not run \`on: pull_request\` workflows for pull requests
-          opened by a bot, so those checks ran in the
-          [intake job](../actions/workflows/issue_ops.yml) instead of here.
+          GitHub does not run \`on: pull_request\` workflows for pull requests opened by a bot, so those checks ran in the [intake job](../actions/workflows/issue_ops.yml) instead of here.
 
-          This pull request is **not** approved or merged automatically.
-          Before merging, check by hand:
+          This pull request is **not** approved or merged automatically. Before merging, check by hand:
           ${checks}
           EOF
 
@@ -167,9 +160,6 @@ jobs:
           ${LOG}
           \`\`\`
 
-          Edit the issue with the fix, then close and reopen it — that runs the
-          intake again. If the error mentions the taxonomy, the full list of
-          valid values is at
-          [\`/taxonomy\`](https://juliodosreis.github.io/awesome-agenticsystems/taxonomy).
+          Edit the issue with the fix, then close and reopen it — that runs the intake again. If the error mentions the taxonomy, the full list of valid values is at [\`/taxonomy\`](https://juliodosreis.github.io/awesome-agenticsystems/taxonomy).
           EOF
           )"
