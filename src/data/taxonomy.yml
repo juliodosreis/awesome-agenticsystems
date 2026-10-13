@@ -299,13 +299,23 @@ domain_groups:
 
 # ---------------------------------------------------------------------------
 # RESOURCE KINDS — for the /resources page, which lists material that is not a
-# paper: protocol specs, books, courses, posts and software.
+# paper: protocol specs, orchestration frameworks, skills, benchmarks, books,
+# courses, posts and other software.
 # The order here is the order of the sidebar links and of the page sections.
 # ---------------------------------------------------------------------------
 resource_kinds:
   protocol:
     label: "Protocols"
     blurb: "Specifications for connecting agents to tools, to clients or to other agents."
+  framework:
+    label: "Orchestration Frameworks"
+    blurb: "Code frameworks for orchestrating agents: control flow, state, tool calls and multi-agent workflows."
+  skill:
+    label: "Skills"
+    blurb: "Packaged instructions, scripts and reference files that an agent loads when a task requires them."
+  benchmark:
+    label: "Benchmarks"
+    blurb: "Benchmarks, leaderboards and evaluation harnesses released as a website, dataset or repository. A benchmark published as a paper also gets a record in the paper collection, under the evaluation area."
   book:
     label: "Books"
     blurb: "Books covering agents, or the methods agents are built from."
@@ -316,8 +326,8 @@ resource_kinds:
     label: "Guides & Posts"
     blurb: "Articles and engineering posts on building and running agents."
   tool:
-    label: "Tools & Frameworks"
-    blurb: "Libraries and SDKs for building agentic systems."
+    label: "Tools & SDKs"
+    blurb: "Libraries, SDKs and developer tools for building, running or observing agents."
 
 # ---------------------------------------------------------------------------
 # STATUSES — a paper moves forward; it never blocks the submission.

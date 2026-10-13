@@ -246,10 +246,11 @@ released tool) does not get a record of its own.
 The rule governs the record. The subject matter is unrestricted: a paper
 describing a framework is welcome and is recorded as `type: framework`.
 
-For mixed cases (AutoGen, MetaGPT), only the paper is included; the tool
-itself is not. A separate `ecosystem/` collection with its own schema may
-exist in the future. Until it does, software should not be added.
+Software is listed on the Resources page, from `src/content/resources/`. That
+collection has its own schema, with a `kind` from `resource_kinds` and no
+status, topics or facets. For mixed cases (AutoGen, MetaGPT), the paper gets a
+record here and the repository can be listed as a resource of kind `framework`.
 
-Benchmarks count as papers and belong to the `evaluation` area (see
+Benchmarks with a paper count as papers and belong to the `evaluation` area (see
 `agentbench-2023`, `tau-bench-2024`). Their relationship to the methods they
 evaluate is expressed through `evaluated_on`.

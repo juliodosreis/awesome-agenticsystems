@@ -1,0 +1,89 @@
+# The dropdown options below are generated from src/data/taxonomy.yml by
+# scripts/gen_docs.py. Do not edit them by hand: edit the taxonomy and run
+# `npm run docs`. CI fails when they are out of sync.
+#
+# No workflow processes this form. The maintainer reads the issue and adds the
+# file under src/content/resources/ by hand.
+name: Add a Resource
+description: "Suggest material that is not a paper: an orchestration framework, a skill, a benchmark, a protocol, a book, a course or a guide."
+title: "[Resource]: "
+labels: ["resource"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Resources are listed on the [Resources page](https://juliodosreis.github.io/awesome-agenticsystems/resources) of the site, grouped by kind. A paper goes through the *Add a Paper* form. A framework or a benchmark with a paper can be submitted through both forms: the paper there, and the repository or leaderboard here.
+
+  - type: input
+    id: link
+    attributes:
+      label: Link
+      description: The official page, the repository, or the documentation.
+      placeholder: https://github.com/langchain-ai/langgraph
+    validations:
+      required: true
+
+  - type: input
+    id: name
+    attributes:
+      label: Name
+      placeholder: LangGraph
+    validations:
+      required: true
+
+  - type: dropdown
+    id: kind
+    attributes:
+      label: Kind
+      description: The section of the Resources page the material belongs in.
+      options:
+        # gen:issue-resource-kinds
+        - protocol — Specifications for connecting agents to tools, to clients or to other agents.
+        - "framework — Code frameworks for orchestrating agents: control flow, state, tool calls and multi-agent workflows."
+        - skill — Packaged instructions, scripts and reference files that an agent loads when a task requires them.
+        - benchmark — Benchmarks, leaderboards and evaluation harnesses released as a website, dataset or repository.
+        - book — Books covering agents, or the methods agents are built from.
+        - course — Courses and lecture series with recorded or written material.
+        - guide — Articles and engineering posts on building and running agents.
+        - tool — Libraries, SDKs and developer tools for building, running or observing agents.
+        # /gen:issue-resource-kinds
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: >-
+        One or two sentences on what the material contains or does. The text
+        is used as the description on the site, so it states what the resource
+        is and leaves out judgments about its quality.
+      placeholder: >-
+        Library for building agents as graphs of nodes with shared state,
+        with checkpointing and human-in-the-loop interrupts.
+    validations:
+      required: true
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: Related area (optional)
+      description: >-
+        The area of the taxonomy the resource relates to. A resource with an
+        area is also listed on that area's page, under the papers.
+      options:
+        # gen:issue-areas
+        - "foundations — A general view of the field: surveys, taxonomies, position papers."
+        - "reasoning-planning — What happens between the input and the action: reasoning, planning, self-critique."
+        - memory — What the agent stores and how it retrieves it.
+        - tools-context — How the agent acts on the world and where it gets context from.
+        - "learning-evolution — Changes that persist between tasks: skills, experience, tuning."
+        - architectures — The complete loop of an agent.
+        - coordination — The mechanisms by which several agents divide work and communicate.
+        - interoperability — Standards through which agents and tools locate and communicate with each other.
+        - engineering — The runtime substrate around the model, and how it is operated.
+        - evaluation — How an agent or a multi-agent system is measured.
+        - safety — Risk, security, trust and control.
+        # /gen:issue-areas
+    validations:
+      required: false

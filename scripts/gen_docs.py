@@ -152,6 +152,16 @@ def block_references_table():
     return "\n".join(rows)
 
 
+def block_resource_kinds():
+    """Every resource kind with its blurb, in the order of the /resources page."""
+    rows = ["| Kind | Section on the site | Covers |", "|---|---|---|"]
+    for key, kind in TAXONOMY["resource_kinds"].items():
+        blurb = " ".join(str(kind["blurb"]).split())
+        link = f"[{kind['label']}]({SITE}/resources#{key})"
+        rows.append(f"| `{key}` | {link} | {blurb} |")
+    return "\n".join(rows)
+
+
 def _paper_line(paper):
     """One listing entry: markers, linked title, year, venue, one-line summary."""
     marks = ""
@@ -261,8 +271,13 @@ def _options(values, blurbs, indent="        ", multi=False):
                 f"cannot be told apart from that separator. Rewrite the "
                 f"description without a comma."
             )
-        suffix = f" — {blurb}" if blurb else ""
-        lines.append(f"{indent}- {value}{suffix}")
+        option = f"{value} — {blurb}" if blurb else value
+        # A ": " inside a plain scalar turns the option into a one-key
+        # mapping, and the form then holds an object where GitHub expects a
+        # string. JSON string syntax is valid YAML double-quoted syntax.
+        if ": " in option or " #" in option:
+            option = json.dumps(option, ensure_ascii=False)
+        lines.append(f"{indent}- {option}")
     return "\n".join(lines)
 
 
@@ -283,6 +298,11 @@ def block_issue_type():
     )
 
 
+def block_issue_resource_kinds():
+    blurbs = {k: v["blurb"] for k, v in TAXONOMY["resource_kinds"].items()}
+    return _options(list(TAXONOMY["resource_kinds"]), blurbs)
+
+
 BLOCKS = {
     "papers": block_papers,
     "paper-count": block_paper_count,
@@ -293,9 +313,11 @@ BLOCKS = {
     "facets-table": block_facets_table,
     "status-table": block_status_table,
     "references-table": block_references_table,
+    "resource-kinds": block_resource_kinds,
     "issue-areas": block_issue_areas,
     "issue-scale": block_issue_scale,
     "issue-type": block_issue_type,
+    "issue-resource-kinds": block_issue_resource_kinds,
 }
 
 TARGETS = [
@@ -303,6 +325,7 @@ TARGETS = [
     ROOT / "CONTRIBUTING.md",
     ROOT / "TAXONOMY.md",
     ROOT / ".github" / "ISSUE_TEMPLATE" / "add_paper.yml",
+    ROOT / ".github" / "ISSUE_TEMPLATE" / "add_resource.yml",
 ]
 
 
