@@ -1,0 +1,13 @@
+id: building-effective-agents
+title: "Building effective agents"
+kind: guide
+url: https://www.anthropic.com/engineering/building-effective-agents
+org: "Anthropic"
+year: 2024
+area: architectures
+description: >-
+  Article that separates workflows, where LLMs and tools follow predefined code
+  paths, from agents, where the LLM directs its own tool use. Describes prompt
+  chaining, routing, parallelization, orchestrator-workers and
+  evaluator-optimizer.
+added: "2026-10-13"

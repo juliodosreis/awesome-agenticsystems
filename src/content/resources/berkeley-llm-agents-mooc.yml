@@ -1,0 +1,13 @@
+id: berkeley-llm-agents-mooc
+title: "Large Language Model Agents (MOOC, Fall 2024)"
+kind: course
+url: https://llmagents-learning.org/f24
+authors: ["Dawn Song", "Xinyun Chen"]
+org: "UC Berkeley"
+year: 2024
+area: foundations
+description: >-
+  Lecture series with recordings and slides, given by guest speakers, on LLM
+  reasoning, the history of LLM agents, agent frameworks such as AutoGen,
+  agents for software development and robotics.
+added: "2026-10-13"
