@@ -1,0 +1,23 @@
+id: masgar-2025
+title: 'Designing an LLM-based Multiagent System for Generating Activities and Their Rubrics: A Study
+  on Data Mining'
+authors:
+- Eryck Silva
+- Julio Cesar dos Reis
+year: 2025
+venue: Simpósio Brasileiro de Informática na Educação (SBIE)
+links:
+  paper: https://doi.org/10.5753/sbie.2025.12723
+area: architectures
+scale:
+- multi-agent
+type:
+- framework
+topics: []
+about: []
+infra: []
+domain:
+- education
+status: triaged
+notes: "Proposes the MASGAR architecture, in which evaluator agents review the generated activities and rubrics and request revisions; the course study ran the workflow as GPT-4-Turbo prompts."
+added: '2026-10-14'
