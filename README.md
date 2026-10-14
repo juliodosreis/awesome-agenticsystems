@@ -41,7 +41,7 @@ courses and guides. See [Resources](#resources).
 ## The collection
 
 <!-- gen:paper-count -->
-120 papers listed, 42 of them with a written summary.
+122 papers listed, 42 of them with a written summary.
 <!-- /gen:paper-count -->
 
 The site has filtering, search and the reading-path graph; this listing is the
@@ -193,6 +193,10 @@ The inner loop of the system, its number of agents, and the substrate it runs on
 - [MetaGPT: Meta Programming for a Multi-Agent Collaborative Framework](https://arxiv.org/abs/2308.00352) — `ICLR 2024` · 2023  
   Encodes the standard operating procedures of a software company as agent roles chained by structured artifacts.
 
+#### Interoperability & protocols ([`interoperability`](https://juliodosreis.com/awesome-agenticsystems/areas/interoperability))
+
+- 📖 [A survey of agent interoperability protocols: Model Context Protocol (MCP), Agent Communication Protocol (ACP), Agent-to-Agent Protocol (A2A), and Agent Network Protocol (ANP)](https://arxiv.org/abs/2505.02279) — `arXiv preprint arXiv:2505.02279` · 2025
+
 #### Harness, scaffolding & AgentOps ([`engineering`](https://juliodosreis.com/awesome-agenticsystems/areas/engineering))
 
 - [Agent Lightning v1.0: Towards Harnessed Agentic RL](https://arxiv.org/abs/2608.17528) — `2026`  
@@ -231,6 +235,7 @@ How a system is measured, and how its risk is governed.
 - ⚖️ [Protocol Agent: What If Agents Could Use Cryptography In Everyday Life?](https://arxiv.org/abs/2602.01304) — `2026`
 - [Rethinking the Evaluation of Harness Evolution for Agents](https://arxiv.org/abs/2607.12227) — `2026`  
   Argues automatic harness evolution must be compared against test-time scaling under matched feedback and inference budgets, and finds it does not outperform that baseline or generalize to held-out tasks.
+- ⚖️ [AI Hospital: Benchmarking Large Language Models in a Multi-agent Medical Interaction Simulator](https://aclanthology.org/2025.coling-main.680.pdf) — `Proceedings of the 31st International Conference on Computational Linguistics` · 2025
 - ⚖️ [AutoPenBench: A Vulnerability Testing Benchmark for Generative Agents](https://aclanthology.org/2025.emnlp-industry.114/) — `Proceedings of the 2025 Conference on Empirical Methods in Natural Language Processing: Industry Track` · 2025
 - ⚖️ [MedAgentBench: A Realistic Virtual EHR Environment to Benchmark Medical LLM Agents](https://arxiv.org/abs/2501.14654) — `2025`
 - ⚖️ [Sequential Diagnosis with Language Models](https://arxiv.org/abs/2506.22405) — `2025`
@@ -260,9 +265,6 @@ How a system is measured, and how its risk is governed.
 - [Governance-as-a-Service: A Multi-Agent Framework for AI System Compliance and Policy Enforcement](https://arxiv.org/abs/2508.18765) — `2025`
 - [Graph-Symbolic Policy Enforcement and Control (G-SPEC): A Neuro-Symbolic Framework for Safe Agentic AI in 5G Autonomous Networks](https://arxiv.org/abs/2512.20275) — `2025`
 - [MiniScope: Authorizing Agents with Least-Privilege Permissions](https://arxiv.org/abs/2512.11147) — `2025`
-
-
-> **Gaps.** No papers yet in `interoperability`. The areas exist in the taxonomy before anything lives in them — the gap is a reading list, and a good place to make a first contribution.
 <!-- /gen:papers -->
 
 ## Resources
