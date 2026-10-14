@@ -1,0 +1,24 @@
+id: agentic-ai-education-2025
+title: 'Agentic AI in Education: State of the Art and Future Directions'
+authors:
+- Georgios Kostopoulos
+- Vasileios Gkamas
+- Maria Rigou
+- Sotiris Kotsiantis
+year: 2025
+venue: IEEE Access
+links:
+  paper: https://ieeexplore.ieee.org/abstract/document/11201263
+area: foundations
+scale:
+- single-agent
+- human-agent
+type:
+- survey
+topics: []
+about: []
+infra: []
+domain:
+- education
+status: triaged
+added: '2026-10-14'
