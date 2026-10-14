@@ -41,7 +41,7 @@ courses and guides. See [Resources](#resources).
 ## The collection
 
 <!-- gen:paper-count -->
-131 papers listed, 42 of them with a written summary.
+133 papers listed, 42 of them with a written summary.
 <!-- /gen:paper-count -->
 
 The site has filtering, search and the reading-path graph; this listing is the
@@ -261,6 +261,7 @@ How a system is measured, and how its risk is governed.
 #### Safety, trust & governance ([`safety`](https://juliodosreis.com/awesome-agenticsystems/areas/safety))
 
 - 📖 [The Attack and Defense Landscape of Agentic AI: A Comprehensive Survey](https://arxiv.org/abs/2603.11088) — `2026`
+- 📖 [Toward Safe LLM Agents: A Survey of Specification, Verification, and Enforcement](https://arxiv.org/abs/2608.14590) — `2026`
 - [Auditable Agents](https://arxiv.org/abs/2604.05485) — `2026`
 - [Capability Gates Are Not Authorization: Confused-Deputy Failures in LLM Agent Frameworks](https://arxiv.org/abs/2606.28679) — `2026`
 - [Governance Architecture for Autonomous Agent Systems: Threats, Framework, and Engineering Practice](https://arxiv.org/abs/2603.07191) — `2026`
@@ -269,6 +270,7 @@ How a system is measured, and how its risk is governed.
   Augments RL with verifiable rewards with an adversarial discriminator trained on human demonstrations, so non-verifiable properties like style and structure are optimized alongside task accuracy.
 - [Runtime Policy Enforcement for MCP-Based LLM Agents](https://www.mdpi.com/2079-9292/15/13/2829) — `Electronics` · 2026
 - [Toward Trustworthy Large Language Model Agents in Healthcare](https://arxiv.org/abs/2607.05055) — `2026`
+- [AgentSpec: Customizable Runtime Enforcement for Safe and Reliable LLM Agents](https://arxiv.org/abs/2503.18666) — `Proc. ICSE'26, pages 2938-2950. ACM, 2026` · 2025
 - [Authenticated Delegation and Authorized AI Agents](https://arxiv.org/abs/2501.09674) — `2025`
 - [DRIFT: Dynamic Rule-Based Defense with Injection Isolation for Securing LLM Agents](https://proceedings.neurips.cc/paper_files/paper/2025/hash/77f3b26c7907aa27b207df9b9d43f29a-Abstract-Conference.html) — `Advances in Neural Information Processing Systems` · 2025
 - [Governance-as-a-Service: A Multi-Agent Framework for AI System Compliance and Policy Enforcement](https://arxiv.org/abs/2508.18765) — `2025`
