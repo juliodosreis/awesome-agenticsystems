@@ -28,7 +28,7 @@ A curated collection of material on agentic AI systems, in two parts:
 | | Papers | Resources |
 |---|---|---|
 | Holds | Papers on agentic systems: surveys, methods, benchmarks, frameworks, empirical studies | Links to protocols, frameworks, skills, benchmarks, books, courses, guides and tools |
-| Entries | <!-- gen:paper-total -->147<!-- /gen:paper-total --> | <!-- gen:resource-total -->7<!-- /gen:resource-total --> |
+| Entries | <!-- gen:paper-total -->150<!-- /gen:paper-total --> | <!-- gen:resource-total -->7<!-- /gen:resource-total --> |
 | Classified by | One `area`, plus topics and facets | One `kind`, plus an optional `area` |
 | On the site | [Index](https://juliodosreis.com/awesome-agenticsystems), [areas](https://juliodosreis.com/awesome-agenticsystems/areas), [domains](https://juliodosreis.com/awesome-agenticsystems/domains) | [Resources](https://juliodosreis.com/awesome-agenticsystems/resources), and the page of its area when one is set |
 | In this README | [Papers](#papers), grouped by area | [Resources](#resources), grouped by kind |
@@ -52,7 +52,7 @@ A framework or a benchmark published with a paper has an entry in each part. The
 ## Papers
 
 <!-- gen:paper-count -->
-147 papers listed, 42 of them with a written summary.
+150 papers listed, 42 of them with a written summary.
 <!-- /gen:paper-count -->
 
 Each paper is filed under one area, the one its main contribution belongs to. The areas are grouped in layers, listed below in order. The site adds filtering, search and the reading-path graph over the same data.
@@ -134,6 +134,7 @@ What the agent reasons about, stores, executes and learns.
   A training-free inference method that builds a query-conditioned evidence pool from the model's own relevance signals and replays it before generation, without pruning the original context.
 - [Retrieval-Augmented Tutoring for Algorithm Tracing and Problem-Solving in AI Education](https://arxiv.org/abs/2605.12988) — `2026`  
   A retrieval-augmented agentic tutoring system designed to assist students with algorithm tracing and problem-solving in computer science education.
+- [Construção de Agente Inteligente para a Resolução de Questões de Vestibular com LLM](https://hdl.handle.net/11449/315755) — `Undergraduate thesis, Universidade Estadual Paulista (UNESP)` · 2025
 - [RAG-MCP: Mitigating Prompt Bloat in LLM Tool Selection via Retrieval-Augmented Generation](https://arxiv.org/abs/2505.03275) — `2025`
 - [AutoCodeRover: Autonomous Program Improvement](https://dl.acm.org/doi/10.1145/3650212.3680384) — `Proceedings of the 33rd ACM SIGSOFT International Symposium on Software Testing and Analysis` · 2024
 - [DRAGIN: Dynamic Retrieval Augmented Generation based on the Real-time Information Needs of Large Language Models](https://aclanthology.org/2024.acl-long.702.pdf) — `Proceedings of the 62nd Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)` · 2024
@@ -168,6 +169,7 @@ The inner loop of the system, its number of agents, and the substrate it runs on
 - [An Agentic AI Control Plane for 6G Network Slice Orchestration, Monitoring, and Trading](https://arxiv.org/abs/2602.13227) — `2026`
 - [An Artificial Intelligence-Enhanced Assessment Framework for Analyzing Middle School Science Students' Written Responses](https://onlinelibrary.wiley.com/doi/10.1111/jedm.70044) — `Journal of Educational Measurement` · 2026
 - [ITAS: A Multi-Agent Architecture for LLM-Based Intelligent Tutoring](https://arxiv.org/abs/2604.24808) — `arXiv preprint arXiv:2604.24808` · 2026
+- [PenExpert: A Multi-Agent Hybrid LLM–Expert System Framework for Autonomous Penetration Testing](https://www.sciencedirect.com/science/article/pii/S0957417426021937?via%3Dihub) — `Expert Systems with Applications` · 2026
 - [Towards conversational artificial intelligence for disease management](https://www.nature.com/articles/s41586-026-10764-5) — `Nature` · 2026
 - [A Multi-agent LLM System for Automated Requirements Analysis: A Study on User Story Generation and Prioritization](https://link.springer.com/chapter/10.1007/978-3-032-04200-2_12) — `Euromicro Conference on Software Engineering and Advanced Applications (SEAA 2025)` · 2025
 - [Agent Laboratory: Using LLM Agents as Research Assistants](https://arxiv.org/abs/2501.04227) — `2025`
@@ -193,6 +195,7 @@ The inner loop of the system, its number of agents, and the substrate it runs on
 
 - [A Diagnostic-Driven Multi-Agent Socratic Teaching System](https://doi.org/10.1145/3796114.3796119) — `Proceedings of the 2026 Asia-Pacific Intelligent Educational Technologies Conference (APIET 2026)` · 2026
 - [A Multi-Agent AI System for Automated High School Transcript Processing: Collaborative Document Analysis at Scale](https://arxiv.org/abs/2606.13916) — `2026`
+- [Artifact validity under varying agent configurations in LLM-assisted software development: A comparative analysis](https://www.sciencedirect.com/science/article/abs/pii/S095058492600011X) — `Information and Software Technology` · 2026
 - [Graph-of-Agents: A Graph-based Framework for Multi-Agent LLM Collaboration](https://arxiv.org/abs/2604.17148) — `2026`
 - [Hetero-Designer: Automated Design of Multi-Agent Systems with Heterogeneous LLMs](https://aclanthology.org/2026.acl-long.1272/) — `Proceedings of the 64th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)` · 2026
 - [IntelliCode: A Multi-Agent LLM Tutoring System with Centralized Learner Modeling](https://aclanthology.org/2026.eacl-demo.10/) — `Proceedings of the 19th Conference of the European Chapter of the Association for Computational Linguistics (EACL 2026) -- System Demonstrations` · 2026
