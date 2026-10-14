@@ -1,0 +1,27 @@
+id: autopenbench-2025
+title: 'AutoPenBench: A Vulnerability Testing Benchmark for Generative Agents'
+authors:
+- Luca Gioacchini
+- Alexander Delsanto
+- Idilio Drago
+- Marco Mellia
+- Giuseppe Siracusano
+- Roberto Bifulco
+year: 2025
+venue: 'Proceedings of the 2025 Conference on Empirical Methods in Natural Language Processing: Industry
+  Track'
+links:
+  paper: https://aclanthology.org/2025.emnlp-industry.114/
+area: evaluation
+scale:
+- single-agent
+- human-agent
+type:
+- benchmark
+topics: []
+about: []
+infra: []
+domain:
+- general
+status: triaged
+added: '2026-10-14'
