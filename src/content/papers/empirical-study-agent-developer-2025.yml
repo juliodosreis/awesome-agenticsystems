@@ -1,0 +1,26 @@
+id: empirical-study-agent-developer-2025
+title: An Empirical Study of Agent Developer Practices in AI Agent Frameworks
+authors:
+- Yanlin Wang
+- Xinyi Xu
+- Jiachi Chen
+- Tingting Bi
+- Wenchao Gu
+- Zibin Zheng
+year: 2025
+arxiv: '2512.01939'
+links:
+  paper: https://arxiv.org/abs/2512.01939
+area: engineering
+scale:
+- single-agent
+- multi-agent
+type:
+- empirical
+topics: []
+about: []
+infra: []
+domain:
+- general
+status: triaged
+added: '2026-10-14'
