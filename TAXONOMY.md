@@ -34,7 +34,7 @@ different axis, the four kinds of vocabulary a record draws on.
 ## Fields of a record
 
 These are the fields of a paper record. A resource record has its own fields,
-listed under [Resources](./README.md#resources) in the README.
+listed under [resource records](./CONTRIBUTING.md#resource-records) in CONTRIBUTING.md.
 
 | Field | Required | Meaning |
 |---|---|---|
