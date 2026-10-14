@@ -41,7 +41,7 @@ courses and guides. See [Resources](#resources).
 ## The collection
 
 <!-- gen:paper-count -->
-110 papers listed, 42 of them with a written summary.
+114 papers listed, 42 of them with a written summary.
 <!-- /gen:paper-count -->
 
 The site has filtering, search and the reading-path graph; this listing is the
@@ -149,6 +149,7 @@ The inner loop of the system, its number of agents, and the substrate it runs on
 #### Agent architectures ([`architectures`](https://juliodosreis.com/awesome-agenticsystems/areas/architectures))
 
 - [AgentSchool: An LLM-Powered Multi-Agent Simulation for Education](https://arxiv.org/abs/2605.30144) — `2026`
+- [An Agentic AI Control Plane for 6G Network Slice Orchestration, Monitoring, and Trading](https://arxiv.org/abs/2602.13227) — `2026`
 - [ITAS: A Multi-Agent Architecture for LLM-Based Intelligent Tutoring](https://arxiv.org/abs/2604.24808) — `arXiv preprint arXiv:2604.24808` · 2026
 - [Towards conversational artificial intelligence for disease management](https://www.nature.com/articles/s41586-026-10764-5) — `Nature` · 2026
 - [Agent Laboratory: Using LLM Agents as Research Assistants](https://arxiv.org/abs/2501.04227) — `2025`
@@ -159,7 +160,10 @@ The inner loop of the system, its number of agents, and the substrate it runs on
 - [UFO2: The Desktop AgentOS](https://arxiv.org/abs/2504.14603) — `2025`
 - [UFO: A UI-Focused Agent for Windows OS Interaction](https://aclanthology.org/2025.naacl-long.26/) — `Proceedings of the 2025 Conference of the Nations of the Americas Chapter of the Association for Computational Linguistics: Human Language Technologies (Volume 1: Long Papers)` · 2025
 - [Agent S: An Open Agentic Framework that Uses Computers Like a Human](https://arxiv.org/abs/2410.08164) — `2024`
+- [PENTEST-AI: An LLM-Powered Multi-Agents Framework for Penetration Testing Automation Leveraging MITRE ATT&CK](https://ieeexplore.ieee.org/document/10679480) — `2024 IEEE International Conference on Cyber Security and Resilience (CSR)` · 2024
+- ⚖️ [PentestGPT: Evaluating and Harnessing Large Language Models for Automated Penetration Testing](https://www.usenix.org/conference/usenixsecurity24/presentation/deng) — `33rd USENIX Security Symposium (USENIX Security 24)` · 2024
 - ⚖️ [WebVoyager: Building an End-to-End Web Agent with Large Multimodal Models](https://aclanthology.org/2024.acl-long.371/) — `Proceedings of the 62nd Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)` · 2024
+- [Large Language Model Enhanced Multi-Agent Systems for 6G Communications](https://arxiv.org/abs/2312.07850) — `2023`
 
 #### Coordination & organization ([`coordination`](https://juliodosreis.com/awesome-agenticsystems/areas/coordination))
 
