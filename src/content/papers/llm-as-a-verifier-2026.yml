@@ -19,5 +19,5 @@ status: read
 tldr: "Scores candidate solutions by taking the expectation over scoring-token logits. Verification then scales with granularity, repetition and criteria decomposition."
 notes: "Argues verification is a scaling axis alongside pre-training, post-training and test-time compute. The same continuous signal also serves as a task-progress estimate and as dense reward for RL."
 relates_to: [reflexion-2023]
-evaluated_on: []
+evaluated_on: [swe-bench-2024, medagentbench-2025]
 added: 2026-08-24

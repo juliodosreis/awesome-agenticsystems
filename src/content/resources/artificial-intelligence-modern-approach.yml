@@ -1,0 +1,12 @@
+id: artificial-intelligence-modern-approach
+title: "Artificial Intelligence: A Modern Approach (4th edition)"
+kind: book
+url: https://aima.cs.berkeley.edu/
+authors: ["Stuart Russell", "Peter Norvig"]
+year: 2020
+area: foundations
+description: >-
+  Textbook on artificial intelligence. Chapter 2 defines intelligent agents and
+  their environments, and later chapters cover search, planning, knowledge
+  representation and learning.
+added: "2026-10-13"

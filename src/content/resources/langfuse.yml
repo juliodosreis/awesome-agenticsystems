@@ -1,0 +1,10 @@
+id: langfuse
+title: "Langfuse"
+kind: tool
+url: https://github.com/langfuse/langfuse
+org: "Langfuse"
+area: engineering
+description: >-
+  Open-source platform for tracing LLM applications and agents, with
+  evaluations, prompt management and datasets.
+added: "2026-10-13"

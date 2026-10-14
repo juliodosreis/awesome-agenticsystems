@@ -11,8 +11,8 @@ Three surfaces, all generated from the same YAML file:
 
 | Surface | Location |
 |---|---|
-| The complete vocabulary, with usage counts | [`/taxonomy`](https://juliodosreis.github.io/awesome-agenticsystems/taxonomy) — terms nobody uses yet are shown in gray and are still valid. |
-| The areas with their descriptions, grouped by layer | [`/areas`](https://juliodosreis.github.io/awesome-agenticsystems/areas) — empty areas have a dashed border. |
+| The complete vocabulary, with usage counts | [`/taxonomy`](https://juliodosreis.com/awesome-agenticsystems/taxonomy) — terms nobody uses yet are shown in gray and are still valid. |
+| The areas with their descriptions, grouped by layer | [`/areas`](https://juliodosreis.com/awesome-agenticsystems/areas) — empty areas have a dashed border. |
 | The source of truth, with a comment explaining each decision | [`src/data/taxonomy.yml`](./src/data/taxonomy.yml) |
 
 Terms outside this vocabulary are not accepted: the build rejects unknown
@@ -76,7 +76,7 @@ multi-agent systems.
 ## Available facets
 
 The complete topic list lives on
-[`/taxonomy`](https://juliodosreis.github.io/awesome-agenticsystems/taxonomy)
+[`/taxonomy`](https://juliodosreis.com/awesome-agenticsystems/taxonomy)
 so this document cannot go stale. The facets available on every record are:
 
 <!-- gen:facets-table -->
@@ -89,9 +89,8 @@ so this document cannot go stale. The facets available on every record are:
 | `domain` | `general`, `software-engineering`, `data`, `science`, `healthcare`, `education`, `business`, `finance`, `robotics`, `gui`, `web`, `deep-research` | Where it is applied. Generates the /domains pages. |
 <!-- /gen:facets-table -->
 
-The automated issue flow assigns `domain: [general]` by default. A record still
-carrying `general` after somebody has read the paper is an oversight worth
-revisiting.
+The automated issue flow assigns `domain: [general]` by default. Whoever reads
+the paper replaces it when the work targets one of the listed domains.
 
 ### Deliberate overlaps
 

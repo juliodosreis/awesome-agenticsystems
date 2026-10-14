@@ -9,7 +9,7 @@ one was the highest barrier in the whole flow, and for an arXiv link there is
 nothing to paste.
 
 Fails loudly on anything that would break the Astro build (missing year,
-invalid link, area/level/type outside the taxonomy, duplicate paper). A failed
+invalid link, area/scale/type outside the taxonomy, duplicate paper). A failed
 Action beats a pull request that does not compile — and issue_ops.yml posts
 whatever this prints back to the issue, so the messages are written for the
 contributor, not for a log.
@@ -31,8 +31,14 @@ STOP = {"a", "an", "the", "of", "for", "and", "with", "in", "on", "to", "via"}
 
 
 def slugify(title, year):
-    head = re.split(r"[:\-–]", title)[0].lower()
-    words = [w for w in re.findall(r"[a-z0-9]+", head) if w not in STOP]
+    """`SWE-agent: Agent-Computer Interfaces...` -> `swe-agent-2024`.
+
+    The subtitle starts at a colon or at a dash between spaces. A hyphen inside
+    a word belongs to the name: cutting there turned SWE-agent and SWE-bench
+    into the same `swe-2024`, and the second one was rejected as a duplicate.
+    """
+    head = re.split(r":|\s[-–—]\s", title)[0].lower()
+    words = [w for w in re.findall(r"[a-z0-9]+(?:-[a-z0-9]+)*", head) if w not in STOP]
     return "-".join(words[:4] or ["paper"]) + (f"-{year}" if year else "")
 
 
@@ -233,7 +239,7 @@ def main():
             f"of adding a second copy."
         )
 
-    # area + level + type is exactly what the schema asks for `triaged`, so the
+    # area + scale + type is exactly what the schema asks for `triaged`, so the
     # paper shows up in the index as soon as the pull request is merged.
     record = {
         "id": slug,

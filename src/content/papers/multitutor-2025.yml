@@ -12,7 +12,7 @@ about: [tool-use, reasoning]
 scale: [multi-agent, human-agent]
 type: [framework]
 infra: [sandbox]
-domain: [general]
+domain: [education]
 
 status: read
 tldr: "A multi-agent tutoring framework that coordinates specialized expert agents to provide personalized, multimodal educational support using internet search and code generation."

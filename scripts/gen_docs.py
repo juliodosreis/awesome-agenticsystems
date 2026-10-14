@@ -26,7 +26,7 @@ import yaml
 
 ROOT = Path(__file__).resolve().parent.parent
 TAXONOMY = yaml.safe_load((ROOT / "src" / "data" / "taxonomy.yml").read_text(encoding="utf-8"))
-SITE = "https://juliodosreis.github.io/awesome-agenticsystems"
+SITE = "https://juliodosreis.com/awesome-agenticsystems"
 PAPERS_DIR = ROOT / "src" / "content" / "papers"
 
 # Markers on a listing entry. Everyone who browses these repos on GitHub scans

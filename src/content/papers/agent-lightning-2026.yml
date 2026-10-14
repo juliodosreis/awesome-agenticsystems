@@ -18,5 +18,5 @@ status: read
 tldr: "A framework for harnessed agentic RL, where the deploy-time harness runs the environment loop and the trainer receives only request-response pairs."
 notes: "Introduces the term harnessed agentic RL and states its cost: retokenization, sample merging, advantage calculation and loss normalization become open problems once the trainer no longer runs the loop."
 relates_to: []
-evaluated_on: []
+evaluated_on: [swe-bench-2024]
 added: 2026-08-24
