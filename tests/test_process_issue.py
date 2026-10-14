@@ -52,6 +52,19 @@ def test_strip_description_keeps_only_the_value():
     assert pi.strip_description("single-agent — One agent.") == "single-agent"
 
 
+@pytest.mark.parametrize("title,year,slug", [
+    ("SWE-agent: Agent-Computer Interfaces Enable Automated Software Engineering", 2024, "swe-agent-2024"),
+    ("SWE-bench: Can Language Models Resolve Real-World GitHub Issues?", 2024, "swe-bench-2024"),
+    ("L-MARS: Legal Multi-Agent System", 2026, "l-mars-2026"),
+    ("Self-Refine: Iterative Refinement with Self-Feedback", 2023, "self-refine-2023"),
+    ("Voyager: An Open-Ended Embodied Agent", 2023, "voyager-2023"),
+    ("Agents in the Wild - A Field Study", 2025, "agents-wild-2025"),
+])
+def test_slugify_keeps_hyphenated_names_and_drops_the_subtitle(title, year, slug):
+    # Cutting at the first hyphen gave swe-2024 for both SWE papers.
+    assert pi.slugify(title, year) == slug
+
+
 def test_field_treats_no_response_as_empty():
     body = "### BibTeX\n\n_No response_\n\n### Area\n\nmemory\n"
     assert pi.field(body, "BibTeX") == ""
