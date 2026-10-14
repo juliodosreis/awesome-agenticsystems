@@ -89,9 +89,8 @@ so this document cannot go stale. The facets available on every record are:
 | `domain` | `general`, `software-engineering`, `data`, `science`, `healthcare`, `education`, `business`, `finance`, `robotics`, `gui`, `web`, `deep-research` | Where it is applied. Generates the /domains pages. |
 <!-- /gen:facets-table -->
 
-The automated issue flow assigns `domain: [general]` by default. A record still
-carrying `general` after somebody has read the paper is an oversight worth
-revisiting.
+The automated issue flow assigns `domain: [general]` by default. Whoever reads
+the paper replaces it when the work targets one of the listed domains.
 
 ### Deliberate overlaps
 

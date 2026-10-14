@@ -20,4 +20,5 @@ infra: []
 domain:
 - software-engineering
 status: triaged
+evaluated_on: [swe-bench-2024]
 added: '2026-10-08'

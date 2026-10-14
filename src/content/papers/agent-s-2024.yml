@@ -22,4 +22,5 @@ infra: []
 domain:
 - gui
 status: triaged
+evaluated_on: [osworld-2024, windows-agent-arena-2024]
 added: '2026-10-07'

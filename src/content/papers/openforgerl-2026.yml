@@ -18,5 +18,5 @@ status: read
 tldr: "Trains agents inside the real inference harness they are deployed with, by proxying the harness's model calls into a standard RL codebase and running each rollout in its own container."
 notes: "Harness choice changes how learnable a task is, and RL improves self-verification and tool coverage while error recovery stays weak. Reports pass^3 alongside pass@3, the same capability-versus-reliability split tau-bench argues for."
 relates_to: [tau-bench-2024]
-evaluated_on: []
+evaluated_on: [osworld-2024, webvoyager-2024]
 added: 2026-08-24
