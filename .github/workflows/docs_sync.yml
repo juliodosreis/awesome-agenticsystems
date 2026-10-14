@@ -1,8 +1,8 @@
 name: Sync Generated Docs
 
 # The intake pull requests from issue_ops.yml carry only the new record. The
-# paper list in README.md and .github/badges.json are generated from the
-# records, so they are regenerated here, on main, after each merge. Every run
+# paper and resource lists in README.md and .github/badges.json are generated
+# from the records, so they are regenerated here, on main, after each merge. Every run
 # reads main as it is when the job starts, so the result does not depend on the
 # order of the merges or on the base of each pull request.
 #
@@ -13,6 +13,7 @@ on:
     branches: [main]
     paths:
       - 'src/content/papers/**'
+      - 'src/content/resources/**'
       - 'src/data/taxonomy.yml'
       - 'scripts/gen_docs.py'
       - '.github/ISSUE_TEMPLATE/**'
@@ -62,6 +63,6 @@ jobs:
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git commit -am "docs: regenerate paper list and badge count"
+          git commit -am "docs: regenerate collection lists and badge counts"
           git pull --rebase origin main
           git push origin HEAD:main

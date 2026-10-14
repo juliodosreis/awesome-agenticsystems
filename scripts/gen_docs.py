@@ -28,6 +28,7 @@ ROOT = Path(__file__).resolve().parent.parent
 TAXONOMY = yaml.safe_load((ROOT / "src" / "data" / "taxonomy.yml").read_text(encoding="utf-8"))
 SITE = "https://juliodosreis.com/awesome-agenticsystems"
 PAPERS_DIR = ROOT / "src" / "content" / "papers"
+RESOURCES_DIR = ROOT / "src" / "content" / "resources"
 
 # Markers on a listing entry. Everyone who browses these repos on GitHub scans
 # for exactly this: what is a survey (where to start), what is a benchmark
@@ -52,6 +53,15 @@ def load_papers():
             continue
         papers.append(data)
     return papers
+
+
+def load_resources():
+    """Every resource record, sorted by title as the /resources page sorts them."""
+    resources = []
+    for path in sorted(RESOURCES_DIR.glob("*.yml")):
+        data = yaml.safe_load(path.read_text(encoding="utf-8")) or {}
+        resources.append(data)
+    return sorted(resources, key=lambda r: str(r.get("title", "")).lower())
 
 
 def rel(path):
@@ -152,6 +162,23 @@ def block_references_table():
     return "\n".join(rows)
 
 
+def _value_table(facet):
+    """One facet's values with the description the issue form shows for each."""
+    blurbs = TAXONOMY["value_blurbs"][facet]
+    rows = ["| Value | Meaning |", "|---|---|"]
+    for value in TAXONOMY["facets"][facet]:
+        rows.append(f"| `{value}` | {' '.join(str(blurbs.get(value, '')).split())} |")
+    return "\n".join(rows)
+
+
+def block_type_values():
+    return _value_table("type")
+
+
+def block_scale_values():
+    return _value_table("scale")
+
+
 def block_resource_kinds():
     """Every resource kind with its blurb, in the order of the /resources page."""
     rows = ["| Kind | Section on the site | Covers |", "|---|---|---|"]
@@ -240,6 +267,66 @@ def block_papers():
     return "\n".join(out).rstrip()
 
 
+def _resource_line(resource):
+    """One listing entry: linked title, the "by" line of the site card, description."""
+    title = str(resource.get("title", "")).replace("|", "\\|")
+    line = f"- [{title}]({resource.get('url', '')})"
+
+    # Same rule as formatBy() in src/lib/resources.ts.
+    who = " · ".join(
+        x for x in [", ".join(resource.get("authors") or []), resource.get("org") or ""] if x
+    )
+    by = ", ".join(str(x) for x in [who, resource.get("year") or ""] if x)
+    if by:
+        line += f" — {by}"
+
+    description = " ".join(str(resource.get("description", "")).split())
+    if description:
+        line += f"  \n  {description}"
+    return line
+
+
+def block_resources():
+    """The resource collection, grouped by kind in the order of the /resources page."""
+    resources = load_resources()
+    out = []
+    for key, kind in TAXONOMY["resource_kinds"].items():
+        in_kind = [r for r in resources if r.get("kind") == key]
+        if not in_kind:
+            continue
+        out.append(f"### {kind['label']} ([`{key}`]({SITE}/resources#{key}))\n")
+        out.append(f"{' '.join(str(kind['blurb']).split())}\n")
+        out.extend(_resource_line(r) for r in in_kind)
+        out.append("")
+
+    empty = [k for k in TAXONOMY["resource_kinds"] if not any(r.get("kind") == k for r in resources)]
+    if empty:
+        out.append(
+            "> **Gaps.** No resources yet of kind "
+            + ", ".join(f"`{k}`" for k in empty)
+            + "."
+        )
+    return "\n".join(out).rstrip()
+
+
+def block_resource_count():
+    resources = load_resources()
+    kinds = {r.get("kind") for r in resources}
+    return (
+        f"{len(resources)} resources listed, in {len(kinds)} of the "
+        f"{len(TAXONOMY['resource_kinds'])} kinds."
+    )
+
+
+def block_paper_total():
+    """The bare number, for inline use in a table cell."""
+    return str(len(load_papers()))
+
+
+def block_resource_total():
+    return str(len(load_resources()))
+
+
 def block_paper_count():
     papers = load_papers()
     read = sum(1 for p in papers if p.get("status") == "read")
@@ -313,6 +400,12 @@ BLOCKS = {
     "facets-table": block_facets_table,
     "status-table": block_status_table,
     "references-table": block_references_table,
+    "type-values": block_type_values,
+    "scale-values": block_scale_values,
+    "resources": block_resources,
+    "resource-count": block_resource_count,
+    "paper-total": block_paper_total,
+    "resource-total": block_resource_total,
     "resource-kinds": block_resource_kinds,
     "issue-areas": block_issue_areas,
     "issue-scale": block_issue_scale,
@@ -383,6 +476,7 @@ def badges_json():
     payload = {
         "papers": len(papers),
         "read": sum(1 for p in papers if p.get("status") == "read"),
+        "resources": len(load_resources()),
         "areas": len(TAXONOMY["areas"]),
         "topics": len(TAXONOMY["topics"]),
     }

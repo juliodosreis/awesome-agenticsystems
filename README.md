@@ -1,34 +1,45 @@
 # Awesome Agentic Systems
 
-[![Papers](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2Fjuliodosreis%2Fawesome-agenticsystems%2Fmain%2F.github%2Fbadges.json&query=%24.papers&label=papers&color=58a6ff)](#the-collection)
+[![Papers](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2Fjuliodosreis%2Fawesome-agenticsystems%2Fmain%2F.github%2Fbadges.json&query=%24.papers&label=papers&color=58a6ff)](#papers)
+[![Resources](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2Fjuliodosreis%2Fawesome-agenticsystems%2Fmain%2F.github%2Fbadges.json&query=%24.resources&label=resources&color=a371f7)](#resources)
 [![Deploy](https://github.com/juliodosreis/awesome-agenticsystems/actions/workflows/deploy.yml/badge.svg)](https://github.com/juliodosreis/awesome-agenticsystems/actions/workflows/deploy.yml)
 [![Code: MIT](https://img.shields.io/badge/code-MIT-green.svg)](./LICENSE)
 [![Papers: CC0](https://img.shields.io/badge/papers-CC0--1.0-lightgrey.svg)](./LICENSE)
 [![PRs welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](./CONTRIBUTING.md)
 
-A curated collection of papers on agentic AI systems, classified by the
-contribution of each one.
+A curated collection of material on agentic AI systems, in two parts:
 
-Every paper is filed under a single area, its contribution, then cut across by
-topics and facets: what it is about, at what scale, in which domain.
+- **[Papers](#papers)**: research papers, each filed under the area of its contribution and described by topics and facets (what it is about, at what scale, in which domain).
+- **[Resources](#resources)**: material that is not a paper, such as protocols, orchestration frameworks, skills, benchmarks, books, courses, guides and tools. Each resource is filed under one kind.
 
-The site also has a [Resources](https://juliodosreis.com/awesome-agenticsystems/resources) page for material that is
-not a paper: orchestration frameworks, skills, benchmarks, protocols, books,
-courses and guides. See [Resources](#resources).
+<p align="center">
+  <a href="https://juliodosreis.com/awesome-agenticsystems"><img alt="Browse the site" src="https://img.shields.io/badge/Browse_the_site-0969da?style=for-the-badge"></a>
+  <a href="https://github.com/juliodosreis/awesome-agenticsystems/issues/new?template=add_paper.yml"><img alt="Suggest a paper" src="https://img.shields.io/badge/Suggest_a_paper-2da44e?style=for-the-badge&logo=github"></a>
+  <a href="https://github.com/juliodosreis/awesome-agenticsystems/issues/new?template=add_resource.yml"><img alt="Suggest a resource" src="https://img.shields.io/badge/Suggest_a_resource-8250df?style=for-the-badge&logo=github"></a>
+  <a href="./CONTRIBUTING.md"><img alt="Contributing guide" src="https://img.shields.io/badge/Contributing_guide-57606a?style=for-the-badge"></a>
+</p>
 
-**[Browse the site](https://juliodosreis.com/awesome-agenticsystems)** ·
-[Suggest a paper](https://github.com/juliodosreis/awesome-agenticsystems/issues/new?template=add_paper.yml) ·
-[Suggest a resource](https://github.com/juliodosreis/awesome-agenticsystems/issues/new?template=add_resource.yml) ·
-[Contributing guide](./CONTRIBUTING.md) ·
-[RSS](https://juliodosreis.com/awesome-agenticsystems/rss.xml)
+<p align="center">
+  <a href="https://juliodosreis.com/awesome-agenticsystems/rss.xml">RSS feed of new additions</a>
+</p>
 
-<!-- gen:counts -->
-11 areas in 4 layers, 58 topics and 33 facet values across 5 facets.
-<!-- /gen:counts -->
+## Collection overview
+
+| | Papers | Resources |
+|---|---|---|
+| Holds | Papers on agentic systems: surveys, methods, benchmarks, frameworks, empirical studies | Links to protocols, frameworks, skills, benchmarks, books, courses, guides and tools |
+| Entries | <!-- gen:paper-total -->136<!-- /gen:paper-total --> | <!-- gen:resource-total -->7<!-- /gen:resource-total --> |
+| Classified by | One `area`, plus topics and facets | One `kind`, plus an optional `area` |
+| On the site | [Index](https://juliodosreis.com/awesome-agenticsystems), [areas](https://juliodosreis.com/awesome-agenticsystems/areas), [domains](https://juliodosreis.com/awesome-agenticsystems/domains) | [Resources](https://juliodosreis.com/awesome-agenticsystems/resources), and the page of its area when one is set |
+| In this README | [Papers](#papers), grouped by area | [Resources](#resources), grouped by kind |
+| Suggest one | [*Add a Paper* form](https://github.com/juliodosreis/awesome-agenticsystems/issues/new?template=add_paper.yml) | [*Add a Resource* form](https://github.com/juliodosreis/awesome-agenticsystems/issues/new?template=add_resource.yml) |
+
+A framework or a benchmark published with a paper has an entry in each part. The paper goes to the paper collection, with `type: framework` or `type: benchmark`, and its repository, documentation or leaderboard goes to the resources. AutoGen and MetaGPT, for example, are papers in the collection, and their repositories can be listed as resources of kind `framework`.
 
 ## Contents
 
-- [The collection](#the-collection)
+- [Collection overview](#collection-overview)
+- [Papers](#papers)
 - [Resources](#resources)
 - [Design decisions](#design-decisions)
 - [The taxonomy](#the-taxonomy)
@@ -38,14 +49,13 @@ courses and guides. See [Resources](#resources).
 - [Citing this collection](#citing-this-collection)
 - [License](#license)
 
-## The collection
+## Papers
 
 <!-- gen:paper-count -->
 136 papers listed, 42 of them with a written summary.
 <!-- /gen:paper-count -->
 
-The site has filtering, search and the reading-path graph; this listing is the
-same data, flattened for reading on GitHub.
+Each paper is filed under one area, the one its main contribution belongs to. The areas are grouped in layers, listed below in order. The site adds filtering, search and the reading-path graph over the same data.
 
 <!-- gen:papers -->
 *🔥 essential · 📖 survey · ⚖️ benchmark. Surveys first within each area, then newest first.*
@@ -283,64 +293,75 @@ How a system is measured, and how its risk is governed.
 
 ## Resources
 
-The [Resources page](https://juliodosreis.com/awesome-agenticsystems/resources) lists material on agentic systems
-that is not a paper. Each entry is a link with a one or two sentence
-description, filed under one kind. An entry with an `area` also appears on that
-area's page, below the papers. Adding a resource is described under
-[Resources](./CONTRIBUTING.md#resources) in CONTRIBUTING.md.
+<!-- gen:resource-count -->
+7 resources listed, in 6 of the 8 kinds.
+<!-- /gen:resource-count -->
 
-<!-- gen:resource-kinds -->
-| Kind | Section on the site | Covers |
-|---|---|---|
-| `protocol` | [Protocols](https://juliodosreis.com/awesome-agenticsystems/resources#protocol) | Specifications for connecting agents to tools, to clients or to other agents. |
-| `framework` | [Orchestration Frameworks](https://juliodosreis.com/awesome-agenticsystems/resources#framework) | Code frameworks for orchestrating agents: control flow, state, tool calls and multi-agent workflows. |
-| `skill` | [Skills](https://juliodosreis.com/awesome-agenticsystems/resources#skill) | Packaged instructions, scripts and reference files that an agent loads when a task requires them. |
-| `benchmark` | [Benchmarks](https://juliodosreis.com/awesome-agenticsystems/resources#benchmark) | Benchmarks, leaderboards and evaluation harnesses released as a website, dataset or repository. A benchmark published as a paper also gets a record in the paper collection, under the evaluation area. |
-| `book` | [Books](https://juliodosreis.com/awesome-agenticsystems/resources#book) | Books covering agents, or the methods agents are built from. |
-| `course` | [Courses](https://juliodosreis.com/awesome-agenticsystems/resources#course) | Courses and lecture series with recorded or written material. |
-| `guide` | [Guides & Posts](https://juliodosreis.com/awesome-agenticsystems/resources#guide) | Articles and engineering posts on building and running agents. |
-| `tool` | [Tools & SDKs](https://juliodosreis.com/awesome-agenticsystems/resources#tool) | Libraries, SDKs and developer tools for building, running or observing agents. |
-<!-- /gen:resource-kinds -->
+Each entry is a link with a one or two sentence description, filed under one kind. An entry with an `area` also appears on that area's page of the site, below the papers. The kinds and the rule for each one are listed under [resource kinds](./CONTRIBUTING.md#resource-kinds) in CONTRIBUTING.md.
 
-A framework or a benchmark with a paper can have two entries. The paper gets a record
-in the collection, with `type: framework` or `type: benchmark`, and the
-repository, documentation or leaderboard can be listed as a resource.
+<!-- gen:resources -->
+### Protocols ([`protocol`](https://juliodosreis.com/awesome-agenticsystems/resources#protocol))
 
-### Papers and resources
+Specifications for connecting agents to tools, to clients or to other agents.
 
-| | Papers | Resources |
-|---|---|---|
-| Records | `src/content/papers/` | `src/content/resources/` |
-| On the site | Index, `/areas`, `/domains`, `/papers/<id>` | `/resources`, and the area page when `area` is set |
-| In this README | Generated list under [The collection](#the-collection) | Kinds table above |
-| Classification | One `area`, plus topics and facets | One `kind`; `area` optional |
-| States | `captured`, `triaged`, `read` | None |
-| Metadata | From arXiv or the pasted BibTeX | From the form; `authors`, `org` and `year` added by hand |
-| Issue form | *Add a Paper* (label `paper`) | *Add a Resource* (label `resource`) |
-| Intake script | `scripts/process_issue.py` | `scripts/process_resource_issue.py` |
-| Duplicate check | arXiv id, title, filename | Link, name, filename |
+- [Model Context Protocol (MCP)](https://modelcontextprotocol.io/) — Agentic AI Foundation, 2024  
+  Client-server protocol over JSON-RPC. A server exposes tools, resources and prompts, and an LLM application connects to it as a client.
+
+### Orchestration Frameworks ([`framework`](https://juliodosreis.com/awesome-agenticsystems/resources#framework))
+
+Code frameworks for orchestrating agents: control flow, state, tool calls and multi-agent workflows.
+
+- [CrewAI](https://github.com/crewAIInc/crewAI)  
+  Python framework for running groups of role-based agents that share tasks, with sequential and hierarchical processes.
+- [LangGraph](https://github.com/langchain-ai/langgraph) — LangChain, 2024  
+  Library for building agents as graphs of nodes over a shared state, with checkpointing and interrupts for human review.
+
+### Books ([`book`](https://juliodosreis.com/awesome-agenticsystems/resources#book))
+
+Books covering agents, or the methods agents are built from.
+
+- [Artificial Intelligence: A Modern Approach (4th edition)](https://aima.cs.berkeley.edu/) — Stuart Russell, Peter Norvig, 2020  
+  Textbook on artificial intelligence. Chapter 2 defines intelligent agents and their environments, and later chapters cover search, planning, knowledge representation and learning.
+
+### Courses ([`course`](https://juliodosreis.com/awesome-agenticsystems/resources#course))
+
+Courses and lecture series with recorded or written material.
+
+- [Large Language Model Agents (MOOC, Fall 2024)](https://llmagents-learning.org/f24) — Dawn Song, Xinyun Chen · UC Berkeley, 2024  
+  Lecture series with recordings and slides, given by guest speakers, on LLM reasoning, the history of LLM agents, agent frameworks such as AutoGen, agents for software development and robotics.
+
+### Guides & Posts ([`guide`](https://juliodosreis.com/awesome-agenticsystems/resources#guide))
+
+Articles and engineering posts on building and running agents.
+
+- [Building effective agents](https://www.anthropic.com/engineering/building-effective-agents) — Anthropic, 2024  
+  Article that separates workflows, where LLMs and tools follow predefined code paths, from agents, where the LLM directs its own tool use. Describes prompt chaining, routing, parallelization, orchestrator-workers and evaluator-optimizer.
+
+### Tools & SDKs ([`tool`](https://juliodosreis.com/awesome-agenticsystems/resources#tool))
+
+Libraries, SDKs and developer tools for building, running or observing agents.
+
+- [Langfuse](https://github.com/langfuse/langfuse) — Langfuse  
+  Open-source platform for tracing LLM applications and agents, with evaluations, prompt management and datasets.
+
+> **Gaps.** No resources yet of kind `skill`, `benchmark`.
+<!-- /gen:resources -->
 
 ## Design decisions
 
-- **A validated vocabulary.** The Zod schema reads the vocabulary from
-  `taxonomy.yml`. A nonexistent area or topic breaks the build
-  and prints the valid values. The taxonomy validates itself too: an area
-  pointing at a missing layer, or an orphaned domain, stops compilation.
-- **A taxonomy with a declared bibliographic basis** (CoALA, Wang et al. 2024,
-  Luo et al. 2025, harness survey 2026), browsable at `/taxonomy`. Each
-  reference states which part of the vocabulary it supports.
-- **Three navigation axes**: by area (contribution), by domain (application),
-  and by reading path (the `relates_to` graph between papers, navigable in
-  both directions).
-- **Adding a paper or a resource is a GitHub issue.** A workflow turns the
-  issue into a pull request that holds one file, with no local setup.
-- **Site-wide search** (Pagefind), an [RSS feed](https://juliodosreis.com/awesome-agenticsystems/rss.xml)
-  of new additions, and a sitemap.
+- **A validated vocabulary.** The Zod schema reads the vocabulary from `taxonomy.yml`. A nonexistent area or topic breaks the build and prints the valid values. The taxonomy validates itself too: an area pointing at a missing layer, or an orphaned domain, stops compilation.
+- **A taxonomy with a declared bibliographic basis** (CoALA, Wang et al. 2024, Luo et al. 2025, harness survey 2026), browsable at `/taxonomy`. Each reference states which part of the vocabulary it supports.
+- **Three navigation axes for papers**: by area (contribution), by domain (application), and by reading path (the `relates_to` graph between papers, navigable in both directions). Resources are grouped by kind on `/resources`, and a resource with an `area` is also listed on that area's page.
+- **Adding a paper or a resource is a GitHub issue.** A workflow turns the issue into a pull request that holds one file, with no local setup.
+- **Site-wide search** (Pagefind), an [RSS feed](https://juliodosreis.com/awesome-agenticsystems/rss.xml) of new additions, and a sitemap.
 
 ## The taxonomy
 
-It lives in `src/data/taxonomy.yml` (v3) and is the single source of truth: the
-validator, the site, the guides and the issue form all read from that one file.
+<!-- gen:counts -->
+11 areas in 4 layers, 58 topics and 33 facet values across 5 facets.
+<!-- /gen:counts -->
+
+It lives in `src/data/taxonomy.yml` (v3) and is the single source of truth: the validator, the site, the guides and the issue forms all read from that one file. Besides the paper vocabulary below, the file defines the resource kinds, listed under [resource kinds](./CONTRIBUTING.md#resource-kinds).
 
 <!-- gen:areas-table -->
 | Layer | Areas |
@@ -351,24 +372,18 @@ validator, the site, the guides and the issue form all read from that one file.
 | Measurement and control | `evaluation`, `safety` |
 <!-- /gen:areas-table -->
 
-The complete vocabulary, with usage counts, is at
-[`/taxonomy`](https://juliodosreis.com/awesome-agenticsystems/taxonomy).
-The design and the criterion behind each field are documented in
-[TAXONOMY.md](./TAXONOMY.md), and the rule for picking an area under [area
-selection](./CONTRIBUTING.md#area-selection).
+The complete vocabulary, with usage counts, is at [`/taxonomy`](https://juliodosreis.com/awesome-agenticsystems/taxonomy). The design and the criterion behind each field are documented in [TAXONOMY.md](./TAXONOMY.md), and the rule for picking an area under [area selection](./CONTRIBUTING.md#area-selection).
 
 ## Local development
 
-Requires Node.js 22.12 or newer (an Astro 7 requirement). The exact version is
-in `.nvmrc`, which is also what CI uses: `nvm use` picks it up.
+Requires Node.js 22.12 or newer (an Astro 7 requirement). The exact version is in `.nvmrc`, which is also what CI uses: `nvm use` picks it up.
 
 ```bash
 npm install
 npm run dev
 ```
 
-Python 3.11+ is needed only for the scripts: `npm run docs`, `npm test` and
-`scripts/add.py`. Browsing and building the site need nothing but Node.
+Python 3.11+ is needed only for the scripts: `npm run docs`, `npm test` and `scripts/add.py`. Browsing and building the site need nothing but Node.
 
 ```bash
 pip install -r requirements-dev.txt
@@ -376,13 +391,9 @@ pip install -r requirements-dev.txt
 
 The dev server starts at `http://localhost:4321`.
 
-> The search box in the header is powered by Pagefind, which indexes the
-> **built** HTML. Under `astro dev` it returns nothing, which is expected. To
-> exercise search, run `npm run build && npm run preview`.
+> The search box in the header is powered by Pagefind, which indexes the **built** HTML. Under `astro dev` it returns nothing, which is expected. To exercise search, run `npm run build && npm run preview`.
 
-> Note: as of Astro 7 the dev server runs as a background daemon. Ctrl+C does
-> not stop it, and a later `npm run dev` attaches to the existing instance,
-> which can serve a stale version of the site. To stop it:
+> Note: as of Astro 7 the dev server runs as a background daemon. Ctrl+C does not stop it, and a later `npm run dev` attaches to the existing instance, which can serve a stale version of the site. To stop it:
 >
 > ```bash
 > npx astro dev stop      # stop the server
@@ -403,18 +414,15 @@ The dev server starts at `http://localhost:4321`.
 | `npm run test:fast` | Skips the tests that shell out to a real build (<1s) |
 | `python scripts/add.py <arxiv-id>` | Creates a record from arXiv metadata |
 
-`npm run docs` also rewrites the paper listing in this README and the counts in
-`.github/badges.json`. On `main`, `docs_sync.yml` runs it after each merge that
-touches a paper or the taxonomy and commits the result.
+`npm run docs` also rewrites the paper and resource listings in this README and the counts in `.github/badges.json`. On `main`, `docs_sync.yml` runs it after each merge that touches a paper, a resource or the taxonomy, and commits the result.
 
-`npm run build` gates deployment: a type error, or a paper that fails
-taxonomy validation, stops publication.
+`npm run build` gates deployment: a type error, or a paper or resource that fails taxonomy validation, stops publication.
 
 ### Layout
 
 | Path | Contents |
 |---|---|
-| `src/content/papers/` | One `.yml` per paper. The data. |
+| `src/content/papers/` | One `.yml` per paper. |
 | `src/content/resources/` | One `.yml` per resource. |
 | `src/data/taxonomy.yml` | Single source of truth: layers, areas, topics, facets, domains and references. |
 | `src/content.config.ts` | Zod schemas of both collections, built from the taxonomy vocabulary. Enforces the three paper states. |
@@ -425,7 +433,7 @@ taxonomy validation, stops publication.
 | `src/layouts/Layout.astro` | Shared shell: header, sidebar with the areas and the resource kinds, client scripts. |
 | `src/pages/` | Routes: `/`, `/areas`, `/domains`, `/taxonomy`, `/papers/[id]`, `/resources`, `/rss.xml`. |
 | `public/` | Static files (favicon). |
-| `scripts/` | `arxiv.py` (shared metadata fetch), `add.py` (local capture), `process_issue.py` and `process_resource_issue.py` (used by the Action), `gen_docs.py` (README listing, doc blocks, issue form, badges). |
+| `scripts/` | `arxiv.py` (shared metadata fetch), `add.py` (local capture), `process_issue.py` and `process_resource_issue.py` (used by the Action), `gen_docs.py` (README listings, doc blocks, issue form, badges). |
 | `tests/` | pytest suite. `test_schema.py` is the important one: it falsifies records on purpose to prove the build rejects them. |
 | `.github/workflows/` | `issue_ops.yml` (issue intake), `docs_sync.yml` (regenerates the docs on `main`), `validate.yml` (build on every PR), `deploy.yml` (GitHub Pages). |
 
@@ -435,43 +443,31 @@ taxonomy validation, stops publication.
 npm test
 ```
 
-The suite covers the two issue parsers, for papers and for resources, which
-run unsupervised, along with the doc generator and the build-time guards. The assertions cover
-the error messages as well as the exit codes, since a rejection a contributor
-cannot act on leaves the submission stuck.
+The suite covers the two issue parsers, for papers and for resources, which run unsupervised, along with the doc generator and the build-time guards. The assertions cover the error messages as well as the exit codes, since a rejection a contributor cannot act on leaves the submission stuck.
 
-`tests/test_schema.py` is deliberately slow. It falsifies a record or the
-taxonomy and runs a real `npm run build` per case. A passing `npm run build`
-proves only that valid data compiles, and leaves the behavior of the guards
-unmeasured. Skip it locally with `npm run test:fast`.
+`tests/test_schema.py` is deliberately slow. It falsifies a record or the taxonomy and runs a real `npm run build` per case. A passing `npm run build` proves only that valid data compiles, and leaves the behavior of the guards unmeasured. Skip it locally with `npm run test:fast`.
 
 ## Contributing
 
 | Contribution | Path |
 |---|---|
 | Suggest a paper | *Add a Paper* issue form. See [issue submission](./CONTRIBUTING.md#issue-submission). |
-| Suggest a resource | *Add a Resource* issue form. See [resources](./CONTRIBUTING.md#resources). |
-| Summarize a paper, or edit a record | Pull request on the `.yml` file. See [direct edit](./CONTRIBUTING.md#direct-edit). |
-| Report a misclassified paper | *Fix a classification* issue form. |
+| Suggest a resource | *Add a Resource* issue form. See [resource submission](./CONTRIBUTING.md#resource-submission). |
+| Summarize a paper, or edit a paper or resource record | Pull request on the `.yml` file. See [direct edit](./CONTRIBUTING.md#direct-edit) and [resource records](./CONTRIBUTING.md#resource-records). |
+| Report a misclassified paper | *Fix a classification* issue form. See [questions and issues](./CONTRIBUTING.md#questions-and-issues). |
 | Propose a term for the vocabulary | *Propose a taxonomy change* issue form. See [changing the taxonomy](./TAXONOMY.md#changing-the-taxonomy). |
 
 Participation is covered by the [Code of Conduct](./CODE_OF_CONDUCT.md).
 
 ## Citing this collection
 
-For citing the taxonomy or the collection, the repository carries a
-[CITATION.cff](./CITATION.cff), which GitHub's "Cite this repository" button
-reads. It covers the classification work only. The papers themselves are cited
-directly.
+For citing the taxonomy or the collection, the repository carries a [CITATION.cff](./CITATION.cff), which GitHub's "Cite this repository" button reads. It covers the classification work only. The papers themselves are cited directly.
 
 ## License
 
 Two licenses, because the repository holds two different things:
 
 - **Code** (`src/`, `scripts/`, `.github/`): [MIT](./LICENSE).
-- **The paper collection** (`src/content/papers/`) and the taxonomy
-  (`src/data/taxonomy.yml`): [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/).
-  Bibliographic metadata is reusable without conditions.
+- **The paper collection** (`src/content/papers/`) and the taxonomy (`src/data/taxonomy.yml`): [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/). Bibliographic metadata is reusable without conditions.
 
-The papers themselves carry no license from this repository. They stay under
-the terms their publishers set. See [LICENSE](LICENSE).
+The papers themselves carry no license from this repository. They stay under the terms their publishers set. See [LICENSE](LICENSE).

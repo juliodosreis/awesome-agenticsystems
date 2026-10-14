@@ -230,9 +230,57 @@ def test_papers_block_escapes_pipes_in_titles(tmp_path, monkeypatch):
     assert r"A \| B" in gd.block_papers()
 
 
+def test_value_tables_cover_every_type_and_scale():
+    for facet, block in (("type", gd.block_type_values), ("scale", gd.block_scale_values)):
+        table = block()
+        for value in gd.TAXONOMY["facets"][facet]:
+            assert f"| `{value}` |" in table
+
+
+def _write_resource(directory, **fields):
+    import yaml
+    (directory / f"{fields['id']}.yml").write_text(yaml.safe_dump(fields), encoding="utf-8")
+
+
+def test_resources_block_groups_by_kind_in_taxonomy_order(tmp_path, monkeypatch):
+    resources = tmp_path / "resources"
+    resources.mkdir()
+    _write_resource(resources, id="zeta", title="Zeta Tool", kind="tool",
+                    url="https://example.org/z", org="Org", year=2025,
+                    description="Does a thing.")
+    _write_resource(resources, id="alpha", title="Alpha Protocol", kind="protocol",
+                    url="https://example.org/a", authors=["A. Person"],
+                    description="Specifies a thing.")
+    monkeypatch.setattr(gd, "RESOURCES_DIR", resources)
+
+    block = gd.block_resources()
+    kinds = list(gd.TAXONOMY["resource_kinds"])
+    assert kinds.index("protocol") < kinds.index("tool")
+    assert block.index("Alpha Protocol") < block.index("Zeta Tool")
+    assert "- [Zeta Tool](https://example.org/z) — Org, 2025  \n  Does a thing." in block
+    assert "- [Alpha Protocol](https://example.org/a) — A. Person  \n" in block
+    # Kinds with nothing in them are named once, as gaps, with no empty heading.
+    assert "`framework`" in block.split("**Gaps.**")[1]
+    assert "/resources#framework)" not in block
+
+
+def test_resource_count_names_the_kinds_in_use(tmp_path, monkeypatch):
+    resources = tmp_path / "resources"
+    resources.mkdir()
+    for i in range(2):
+        _write_resource(resources, id=f"r{i}", title=f"R{i}", kind="book",
+                        url=f"https://example.org/{i}", description="x")
+    monkeypatch.setattr(gd, "RESOURCES_DIR", resources)
+    total = len(gd.TAXONOMY["resource_kinds"])
+    assert gd.block_resource_count() == f"2 resources listed, in 1 of the {total} kinds."
+
+
 def test_badges_json_is_valid_and_counts_papers():
     payload = json.loads(gd.badges_json())
     assert payload["papers"] == len(gd.load_papers())
+    assert payload["resources"] == len(gd.load_resources())
+    assert gd.block_paper_total() == str(payload["papers"])
+    assert gd.block_resource_total() == str(payload["resources"])
     assert payload["areas"] == len(gd.TAXONOMY["areas"])
     assert payload["topics"] == len(gd.TAXONOMY["topics"])
 
