@@ -1,0 +1,31 @@
+id: user-story-prioritization-agents-2025
+title: 'A Multi-agent LLM System for Automated Requirements Analysis: A Study on User Story Generation
+  and Prioritization'
+authors:
+- Malik Abdul Sami
+- Zheying Zhang
+- Muhammad Waseem
+- Kai-Kristian Kemell
+- Zeeshan Rasheed
+- Tomas Herda
+- Md. Toufique Hasan
+- Jussi Rasku
+- Pekka Abrahamsson
+year: 2025
+venue: Euromicro Conference on Software Engineering and Advanced Applications (SEAA 2025)
+links:
+  paper: https://link.springer.com/chapter/10.1007/978-3-032-04200-2_12
+area: architectures
+scale:
+- multi-agent
+type:
+- framework
+- empirical
+topics: []
+about: []
+infra: []
+domain:
+- software-engineering
+status: triaged
+notes: "Product owner, developer and quality assurance agents score the user stories in parallel, and a Manager agent aggregates their allocations into the final ranking in one pass."
+added: '2026-10-14'
