@@ -28,7 +28,7 @@ A curated collection of material on agentic AI systems, in two parts:
 | | Papers | Resources |
 |---|---|---|
 | Holds | Papers on agentic systems: surveys, methods, benchmarks, frameworks, empirical studies | Links to protocols, frameworks, skills, benchmarks, books, courses, guides and tools |
-| Entries | <!-- gen:paper-total -->144<!-- /gen:paper-total --> | <!-- gen:resource-total -->7<!-- /gen:resource-total --> |
+| Entries | <!-- gen:paper-total -->147<!-- /gen:paper-total --> | <!-- gen:resource-total -->7<!-- /gen:resource-total --> |
 | Classified by | One `area`, plus topics and facets | One `kind`, plus an optional `area` |
 | On the site | [Index](https://juliodosreis.com/awesome-agenticsystems), [areas](https://juliodosreis.com/awesome-agenticsystems/areas), [domains](https://juliodosreis.com/awesome-agenticsystems/domains) | [Resources](https://juliodosreis.com/awesome-agenticsystems/resources), and the page of its area when one is set |
 | In this README | [Papers](#papers), grouped by area | [Resources](#resources), grouped by kind |
@@ -52,7 +52,7 @@ A framework or a benchmark published with a paper has an entry in each part. The
 ## Papers
 
 <!-- gen:paper-count -->
-144 papers listed, 42 of them with a written summary.
+147 papers listed, 42 of them with a written summary.
 <!-- /gen:paper-count -->
 
 Each paper is filed under one area, the one its main contribution belongs to. The areas are grouped in layers, listed below in order. The site adds filtering, search and the reading-path graph over the same data.
@@ -136,6 +136,7 @@ What the agent reasons about, stores, executes and learns.
   A retrieval-augmented agentic tutoring system designed to assist students with algorithm tracing and problem-solving in computer science education.
 - [RAG-MCP: Mitigating Prompt Bloat in LLM Tool Selection via Retrieval-Augmented Generation](https://arxiv.org/abs/2505.03275) — `2025`
 - [AutoCodeRover: Autonomous Program Improvement](https://dl.acm.org/doi/10.1145/3650212.3680384) — `Proceedings of the 33rd ACM SIGSOFT International Symposium on Software Testing and Analysis` · 2024
+- [DRAGIN: Dynamic Retrieval Augmented Generation based on the Real-time Information Needs of Large Language Models](https://aclanthology.org/2024.acl-long.702.pdf) — `Proceedings of the 62nd Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)` · 2024
 - [SWE-agent: Agent-Computer Interfaces Enable Automated Software Engineering](https://proceedings.neurips.cc/paper_files/paper/2024/file/5a7c947568c1b1328ccc5230172e1e7c-Paper-Conference.pdf) — `Advances in Neural Information Processing Systems` · 2024
 - [Toolformer: Language Models Can Teach Themselves to Use Tools](https://arxiv.org/abs/2302.04761) — `NeurIPS 2023` · 2023  
   The model self-annotates where to insert API calls and keeps the ones that reduce perplexity, learning tool use without human supervision.
@@ -150,6 +151,7 @@ What the agent reasons about, stores, executes and learns.
   Post-trains a separate 9B harness engineer with online RL to turn batches of agent failures into validated executable patches to the runtime harness, rewarded by the target agent's realized success.
 - [Inducing Task Models from Computer-Use Traces](https://arxiv.org/abs/2608.20319) — `2026`  
   Recovers the latent tasks inside an unconstrained computer-use trace and induces, for each, a hierarchical objective model paired with a procedure model of the control flow.
+- [Towards conversational diagnostic artificial intelligence](https://www.nature.com/articles/s41586-025-08866-7) — `Nature` · 2025
 - [Agent Workflow Memory](https://arxiv.org/abs/2409.07429) — `2024`
 - [ExpeL: LLM Agents Are Experiential Learners](https://dl.acm.org/doi/10.1609/aaai.v38i17.29936) — `Proceedings of the AAAI Conference on Artificial Intelligence` · 2024
 - [Voyager: An Open-Ended Embodied Agent with Large Language Models](https://arxiv.org/abs/2305.16291) — `2023`  
@@ -177,6 +179,7 @@ The inner loop of the system, its number of agents, and the substrate it runs on
 - [MedScrubCrew: A Medical Multi-Agent Framework for Automating Appointment Scheduling Based on Patient-Provider Profile Resource Matching](https://www.mdpi.com/2227-9032/13/14/1649) — `Healthcare` · 2025
 - [PentestAgent: Incorporating LLM Agents to Automated Penetration Testing](https://dl.acm.org/doi/10.1145/3708821.3733882) — `Proceedings of the 20th ACM Asia Conference on Computer and Communications Security` · 2025
 - [Scaling Equitable Reflection Assessment in Education via Large Language Models and Role-Based Feedback Agents](https://arxiv.org/abs/2511.11772) — `2025`
+- [Towards AI-Powered Real-Time Negotiation Agent](https://ceur-ws.org/Vol-3977/SemGenAge-5.pdf) — `SemGenAge Workshop (CEUR-WS Vol-3977)` · 2025
 - [UFO2: The Desktop AgentOS](https://arxiv.org/abs/2504.14603) — `2025`
 - [UFO: A UI-Focused Agent for Windows OS Interaction](https://aclanthology.org/2025.naacl-long.26/) — `Proceedings of the 2025 Conference of the Nations of the Americas Chapter of the Association for Computational Linguistics: Human Language Technologies (Volume 1: Long Papers)` · 2025
 - [Agent S: An Open Agentic Framework that Uses Computers Like a Human](https://arxiv.org/abs/2410.08164) — `2024`
