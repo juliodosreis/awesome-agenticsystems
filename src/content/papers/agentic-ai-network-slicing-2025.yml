@@ -1,0 +1,26 @@
+id: agentic-ai-network-slicing-2025
+title: Agentic AI in Network Slicing
+authors:
+- Anshul Anilkumar Mundakatil
+- Anjan Phani Raj Narla
+- Akshil Anilkumar Mundakatil
+- Sai Srinivas Muriki
+- Ahmed Hambaba
+year: 2025
+venue: 2025 9th International Conference on Computer, Software and Modeling (ICCSM)
+links:
+  paper: https://ieeexplore.ieee.org/document/11450023
+area: architectures
+scale:
+- multi-agent
+- human-agent
+type:
+- framework
+topics: []
+about: []
+infra: []
+domain:
+- general
+status: triaged
+notes: "Five agents cover intent capture, retrieval-based slice modeling, monitoring, traffic classification and resource management; a language model runs the chatbot and the slice modeling step, and the paper describes the workflow without an evaluation."
+added: '2026-10-14'
