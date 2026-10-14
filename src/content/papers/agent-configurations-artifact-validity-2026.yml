@@ -1,0 +1,21 @@
+id: agent-configurations-artifact-validity-2026
+title: 'Artifact validity under varying agent configurations in LLM-assisted software development: A comparative
+  analysis'
+authors:
+- Dae-Kyoo Kim
+year: 2026
+venue: Information and Software Technology
+links:
+  paper: https://www.sciencedirect.com/science/article/abs/pii/S095058492600011X
+area: coordination
+scale:
+- multi-agent
+type:
+- empirical
+topics: []
+about: []
+infra: []
+domain:
+- software-engineering
+status: triaged
+added: '2026-10-14'
