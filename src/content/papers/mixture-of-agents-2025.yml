@@ -1,0 +1,25 @@
+id: mixture-of-agents-2025
+title: Mixture-of-Agents Enhances Large Language Model Capabilities
+authors:
+- Junlin Wang
+- Jue WANG
+- Ben Athiwaratkun
+- Ce Zhang
+- James Zou
+year: 2025
+venue: The Thirteenth International Conference on Learning Representations
+arxiv: '2406.04692'
+links:
+  paper: https://openreview.net/forum?id=h0ZfDIrj7T
+area: coordination
+scale:
+- multi-agent
+type:
+- method
+topics: []
+about: []
+infra: []
+domain:
+- general
+status: triaged
+added: '2026-10-14'
