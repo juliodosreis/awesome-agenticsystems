@@ -41,7 +41,7 @@ courses and guides. See [Resources](#resources).
 ## The collection
 
 <!-- gen:paper-count -->
-114 papers listed, 42 of them with a written summary.
+118 papers listed, 42 of them with a written summary.
 <!-- /gen:paper-count -->
 
 The site has filtering, search and the reading-path graph; this listing is the
@@ -157,6 +157,7 @@ The inner loop of the system, its number of agents, and the substrate it runs on
 - [LegalWebAgent: Empowering Access to Justice via LLM-Based Web Agents](https://arxiv.org/abs/2512.04105) — `2025`
 - [Leveraging Multi-Agent System (MAS) and Fine-Tuned Small Language Models (SLMs) for Automated Telecom Network Troubleshooting](https://arxiv.org/abs/2511.00651) — `2025`
 - [MedScrubCrew: A Medical Multi-Agent Framework for Automating Appointment Scheduling Based on Patient-Provider Profile Resource Matching](https://www.mdpi.com/2227-9032/13/14/1649) — `Healthcare` · 2025
+- [PentestAgent: Incorporating LLM Agents to Automated Penetration Testing](https://dl.acm.org/doi/10.1145/3708821.3733882) — `Proceedings of the 20th ACM Asia Conference on Computer and Communications Security` · 2025
 - [UFO2: The Desktop AgentOS](https://arxiv.org/abs/2504.14603) — `2025`
 - [UFO: A UI-Focused Agent for Windows OS Interaction](https://aclanthology.org/2025.naacl-long.26/) — `Proceedings of the 2025 Conference of the Nations of the Americas Chapter of the Association for Computational Linguistics: Human Language Technologies (Volume 1: Long Papers)` · 2025
 - [Agent S: An Open Agentic Framework that Uses Computers Like a Human](https://arxiv.org/abs/2410.08164) — `2024`
@@ -171,10 +172,12 @@ The inner loop of the system, its number of agents, and the substrate it runs on
 - [Hetero-Designer: Automated Design of Multi-Agent Systems with Heterogeneous LLMs](https://aclanthology.org/2026.acl-long.1272/) — `Proceedings of the 64th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)` · 2026
 - [IntelliCode: A Multi-Agent LLM Tutoring System with Centralized Learner Modeling](https://aclanthology.org/2026.eacl-demo.10/) — `Proceedings of the 19th Conference of the European Chapter of the Association for Computational Linguistics (EACL 2026) -- System Demonstrations` · 2026
 - [Multi-Agent Teams Hold Experts Back](https://arxiv.org/abs/2602.01011) — `2026`
+- [PentestLLM: A Cyber Kill Chain-driven Multi-Agent Large Language Model Framework Enabling Automatic Penetration Testing](https://ieeexplore.ieee.org/document/11645571) — `2026 IEEE 50th Annual Computers, Software, and Applications Conference (COMPSAC)` · 2026
 - [QUARE: Quality-Aware Requirements Analysis through Multi-Agent Dialectical Negotiation](https://arxiv.org/abs/2603.11890) — `2026`
 - [UFO3: Weaving the Digital Agent Galaxy](https://arxiv.org/abs/2511.11332) — `2026`
 - [A Knowledge-driven Adaptive Collaboration of LLMs for Enhancing Medical Decision-making](https://aclanthology.org/2025.emnlp-main.1699/) — `Proceedings of the 2025 Conference on Empirical Methods in Natural Language Processing` · 2025
 - [AgileCoder: Dynamic Collaborative Agents for Software Development based on Agile Methodology](https://ieeexplore.ieee.org/document/11052788) — `2025 IEEE/ACM Second International Conference on AI Foundation Models and Software Engineering (Forge)` · 2025
+- [Controller Makes Pentesting Better: An Improved Multi-Agent Automated Penetration Testing Framework](https://ieeexplore.ieee.org/document/11354714) — `2025 IEEE 24th International Conference on Trust, Security and Privacy in Computing and Communications (TrustCom)` · 2025
 - [MultiTutor: Collaborative LLM Agents for Multimodal Student Support](https://proceedings.mlr.press/v273/sun25a.html) — `PMLR 2025` · 2025  
   A multi-agent tutoring framework that coordinates specialized expert agents to provide personalized, multimodal educational support using internet search and code generation.
 - [ChatDev: Communicative Agents for Software Development](https://aclanthology.org/2024.acl-long.810/) — `Proceedings of the 62nd Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)` · 2024
@@ -226,6 +229,7 @@ How a system is measured, and how its risk is governed.
 - ⚖️ [Protocol Agent: What If Agents Could Use Cryptography In Everyday Life?](https://arxiv.org/abs/2602.01304) — `2026`
 - [Rethinking the Evaluation of Harness Evolution for Agents](https://arxiv.org/abs/2607.12227) — `2026`  
   Argues automatic harness evolution must be compared against test-time scaling under matched feedback and inference budgets, and finds it does not outperform that baseline or generalize to held-out tasks.
+- ⚖️ [AutoPenBench: A Vulnerability Testing Benchmark for Generative Agents](https://aclanthology.org/2025.emnlp-industry.114/) — `Proceedings of the 2025 Conference on Empirical Methods in Natural Language Processing: Industry Track` · 2025
 - ⚖️ [MedAgentBench: A Realistic Virtual EHR Environment to Benchmark Medical LLM Agents](https://arxiv.org/abs/2501.14654) — `2025`
 - ⚖️ [Sequential Diagnosis with Language Models](https://arxiv.org/abs/2506.22405) — `2025`
 - ⚖️ [Why Do Multi-Agent LLM Systems Fail?](https://arxiv.org/abs/2503.13657) — `2025`
