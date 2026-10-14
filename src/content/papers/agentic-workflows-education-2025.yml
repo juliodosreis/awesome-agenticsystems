@@ -1,0 +1,27 @@
+id: agentic-workflows-education-2025
+title: 'Evolution of AI in Education: Agentic Workflows'
+authors:
+- Firuz Kamalov
+- David Santandreu Calonge
+- Linda Smail
+- Dilshod Azizov
+- Dimple R. Thadani
+- Theresa Kwong
+- Amara Atif
+year: 2025
+arxiv: '2504.20082'
+links:
+  paper: https://arxiv.org/abs/2504.20082v2
+area: foundations
+scale:
+- multi-agent
+type:
+- survey
+- framework
+topics: []
+about: []
+infra: []
+domain:
+- education
+status: triaged
+added: '2026-10-14'
