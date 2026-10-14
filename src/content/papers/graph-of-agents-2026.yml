@@ -1,0 +1,27 @@
+id: graph-of-agents-2026
+title: 'Graph-of-Agents: A Graph-based Framework for Multi-Agent LLM Collaboration'
+authors:
+- Sukwon Yun
+- Jie Peng
+- Pingzhi Li
+- Wendong Fan
+- Jie Chen
+- James Zou
+- Guohao Li
+- Tianlong Chen
+year: 2026
+arxiv: '2604.17148'
+links:
+  paper: https://arxiv.org/abs/2604.17148
+area: coordination
+scale:
+- multi-agent
+type:
+- method
+topics: []
+about: []
+infra: []
+domain:
+- general
+status: triaged
+added: '2026-10-14'

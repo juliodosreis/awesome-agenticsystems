@@ -1,0 +1,23 @@
+id: toward-safe-llm-agents-2026
+title: 'Toward Safe LLM Agents: A Survey of Specification, Verification, and Enforcement'
+authors:
+- Pierre Dantas
+- Lucas Cordeiro
+- Ehsan Nowroozi
+- Tihanyi Norbert
+year: 2026
+arxiv: '2608.14590'
+links:
+  paper: https://arxiv.org/abs/2608.14590
+area: safety
+scale:
+- single-agent
+type:
+- survey
+topics: []
+about: []
+infra: []
+domain:
+- general
+status: triaged
+added: '2026-10-14'

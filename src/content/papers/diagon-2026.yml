@@ -1,0 +1,23 @@
+id: diagon-2026
+title: 'Diagon: A Programmable Testbed for AI-Agent Cognitive Labor Markets'
+authors:
+- Xuan Liu
+- Haoyang Shang
+- Haojian Jin
+year: 2026
+venue: arXiv preprint arXiv:2604.06688
+arxiv: '2604.06688'
+links:
+  paper: https://arxiv.org/abs/2604.06688
+area: evaluation
+scale:
+- multi-agent
+type:
+- benchmark
+topics: []
+about: []
+infra: []
+domain:
+- general
+status: triaged
+added: '2026-10-14'

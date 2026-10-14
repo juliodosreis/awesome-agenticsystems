@@ -1,0 +1,22 @@
+id: marketbench-2026
+title: 'MarketBench: Evaluating AI Agents as Market Participants'
+authors:
+- Andrey Fradkin
+- Rohit Krishnan
+year: 2026
+venue: arXiv preprint arXiv:2604.23897
+arxiv: '2604.23897'
+links:
+  paper: https://arxiv.org/abs/2604.23897
+area: evaluation
+scale:
+- multi-agent
+type:
+- benchmark
+topics: []
+about: []
+infra: []
+domain:
+- general
+status: triaged
+added: '2026-10-14'

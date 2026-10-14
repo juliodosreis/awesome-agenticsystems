@@ -41,7 +41,7 @@ courses and guides. See [Resources](#resources).
 ## The collection
 
 <!-- gen:paper-count -->
-124 papers listed, 42 of them with a written summary.
+136 papers listed, 42 of them with a written summary.
 <!-- /gen:paper-count -->
 
 The site has filtering, search and the reading-path graph; this listing is the
@@ -61,6 +61,7 @@ Where to enter the field.
 - 📖 [The Hitchhiker's Guide to Agentic AI: From Foundations to Systems](https://arxiv.org/abs/2606.24937) — `2026`
 - 📖 [Agentic AI in Education: State of the Art and Future Directions](https://ieeexplore.ieee.org/abstract/document/11201263) — `IEEE Access` · 2025
 - 📖 [Agentic AI: A Comprehensive Survey of Architectures, Applications, and Future Directions](https://arxiv.org/abs/2510.25445) — `2025`
+- 📖 [Evolution of AI in Education: Agentic Workflows](https://arxiv.org/abs/2504.20082v2) — `2025`
 - 📖 [From Multi-Agent Systems and the Semantic Web to Agentic AI: A Unified Narrative of the Web of Agents](https://arxiv.org/abs/2507.10644) — `arXiv preprint arXiv:2507.10644` · 2025
 - 📖 [LLM-Based Multi-Agent Systems for Software Engineering: Literature Review, Vision, and the Road Ahead](https://dl.acm.org/doi/10.1145/3712003) — `ACM Transactions on Software Engineering and Methodology` · 2025
 - 📖 [The Rise and Potential of Large Language Model Based Agents: A Survey](https://arxiv.org/abs/2309.07864) — `2023`
@@ -131,6 +132,7 @@ What the agent reasons about, stores, executes and learns.
 
 #### Learning, skills & self-evolution ([`learning-evolution`](https://juliodosreis.com/awesome-agenticsystems/areas/learning-evolution))
 
+- 📖 [A Comprehensive Survey on Agent Skills: Taxonomy, Techniques, and Applications](https://arxiv.org/abs/2605.07358) — `2026`
 - [EvoMAS: Evolutionary Generation of Multi-Agent Systems](https://arxiv.org/abs/2602.06511) — `ICML 2026` · 2026
 - [GitSkills: A Dataset of Agent Skills on GitHub](https://arxiv.org/abs/2608.10906) — `2026`  
   A dataset of 3.8M SKILL.md files mined from 282,200 public repositories, with front matter, folder contents and partial commit history.
@@ -172,6 +174,7 @@ The inner loop of the system, its number of agents, and the substrate it runs on
 #### Coordination & organization ([`coordination`](https://juliodosreis.com/awesome-agenticsystems/areas/coordination))
 
 - [A Diagnostic-Driven Multi-Agent Socratic Teaching System](https://doi.org/10.1145/3796114.3796119) — `Proceedings of the 2026 Asia-Pacific Intelligent Educational Technologies Conference (APIET 2026)` · 2026
+- [Graph-of-Agents: A Graph-based Framework for Multi-Agent LLM Collaboration](https://arxiv.org/abs/2604.17148) — `2026`
 - [Hetero-Designer: Automated Design of Multi-Agent Systems with Heterogeneous LLMs](https://aclanthology.org/2026.acl-long.1272/) — `Proceedings of the 64th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)` · 2026
 - [IntelliCode: A Multi-Agent LLM Tutoring System with Centralized Learner Modeling](https://aclanthology.org/2026.eacl-demo.10/) — `Proceedings of the 19th Conference of the European Chapter of the Association for Computational Linguistics (EACL 2026) -- System Demonstrations` · 2026
 - [Multi-Agent Teams Hold Experts Back](https://arxiv.org/abs/2602.01011) — `2026`
@@ -198,6 +201,7 @@ The inner loop of the system, its number of agents, and the substrate it runs on
 #### Interoperability & protocols ([`interoperability`](https://juliodosreis.com/awesome-agenticsystems/areas/interoperability))
 
 - 📖 [A survey of agent interoperability protocols: Model Context Protocol (MCP), Agent Communication Protocol (ACP), Agent-to-Agent Protocol (A2A), and Agent Network Protocol (ANP)](https://arxiv.org/abs/2505.02279) — `arXiv preprint arXiv:2505.02279` · 2025
+- [Beyond DNS: Unlocking the Internet of AI Agents via the NANDA Index and Verified AgentFacts](https://arxiv.org/abs/2507.14263) — `2025`
 
 #### Harness, scaffolding & AgentOps ([`engineering`](https://juliodosreis.com/awesome-agenticsystems/areas/engineering))
 
@@ -230,8 +234,10 @@ How a system is measured, and how its risk is governed.
 - [Benchmarking large language model-based agent systems for clinical decision tasks](https://www.nature.com/articles/s41746-026-02443-6) — `npj Digital Medicine` · 2026
 - ⚖️ [ContinualSkillBench: Can LLM Agents Truly Evolve Their Capabilities?](https://arxiv.org/abs/2608.03874) — `2026`  
   Five domains of 100 interconnected subtasks ordered by difficulty, built to separate skill consolidation from adaptation to recent context.
+- ⚖️ [Diagon: A Programmable Testbed for AI-Agent Cognitive Labor Markets](https://arxiv.org/abs/2604.06688) — `arXiv preprint arXiv:2604.06688` · 2026
 - 🔥 [LLM-as-a-Verifier: A General-Purpose Verification Framework](https://arxiv.org/abs/2607.05391) — `2026`  
   Scores candidate solutions by taking the expectation over scoring-token logits. Verification then scales with granularity, repetition and criteria decomposition.
+- ⚖️ [MarketBench: Evaluating AI Agents as Market Participants](https://arxiv.org/abs/2604.23897) — `arXiv preprint arXiv:2604.23897` · 2026
 - 🔥 ⚖️ [One Success Isn't Reliability: Thinkingbox, a Sandbox and Benchmark for Agents in Stateful Business Workflows](https://arxiv.org/abs/2608.19741) — `2026`  
   507 policy-conditioned workflows in an MCP-compatible sandbox, scored on the persistent backend state an agent leaves behind.
 - ⚖️ [Protocol Agent: What If Agents Could Use Cryptography In Everyday Life?](https://arxiv.org/abs/2602.01304) — `2026`
@@ -242,6 +248,7 @@ How a system is measured, and how its risk is governed.
 - ⚖️ [MedAgentBench: A Realistic Virtual EHR Environment to Benchmark Medical LLM Agents](https://arxiv.org/abs/2501.14654) — `2025`
 - ⚖️ [Sequential Diagnosis with Language Models](https://arxiv.org/abs/2506.22405) — `2025`
 - ⚖️ [Why Do Multi-Agent LLM Systems Fail?](https://arxiv.org/abs/2503.13657) — `2025`
+- ⚖️ [Evaluating Language Model Agency through Negotiations](https://arxiv.org/abs/2401.04536) — `International Conference on Learning Representations` · 2024
 - ⚖️ [OSWorld: Benchmarking Multimodal Agents for Open-Ended Tasks in Real Computer Environments](https://arxiv.org/abs/2404.07972) — `2024`
 - ⚖️ [SWE-bench: Can Language Models Resolve Real-world Github Issues?](https://proceedings.iclr.cc/paper_files/paper/2024/hash/edac78c3e300629acfe6cbe9ca88fb84-Abstract-Conference.html) — `International Conference on Learning Representations` · 2024
 - ⚖️ [WebArena: A Realistic Web Environment for Building Autonomous Agents](https://proceedings.iclr.cc/paper_files/paper/2024/hash/4410c0711e9154a7a2d26f9b3816d1ef-Abstract-Conference.html) — `International Conference on Learning Representations` · 2024
@@ -254,6 +261,7 @@ How a system is measured, and how its risk is governed.
 #### Safety, trust & governance ([`safety`](https://juliodosreis.com/awesome-agenticsystems/areas/safety))
 
 - 📖 [The Attack and Defense Landscape of Agentic AI: A Comprehensive Survey](https://arxiv.org/abs/2603.11088) — `2026`
+- 📖 [Toward Safe LLM Agents: A Survey of Specification, Verification, and Enforcement](https://arxiv.org/abs/2608.14590) — `2026`
 - [Auditable Agents](https://arxiv.org/abs/2604.05485) — `2026`
 - [Capability Gates Are Not Authorization: Confused-Deputy Failures in LLM Agent Frameworks](https://arxiv.org/abs/2606.28679) — `2026`
 - [Governance Architecture for Autonomous Agent Systems: Threats, Framework, and Engineering Practice](https://arxiv.org/abs/2603.07191) — `2026`
@@ -261,12 +269,16 @@ How a system is measured, and how its risk is governed.
 - [Right in the Right Way: LM Training with Verifiable Rewards and Human Demonstrations](https://arxiv.org/abs/2607.01181) — `2026`  
   Augments RL with verifiable rewards with an adversarial discriminator trained on human demonstrations, so non-verifiable properties like style and structure are optimized alongside task accuracy.
 - [Runtime Policy Enforcement for MCP-Based LLM Agents](https://www.mdpi.com/2079-9292/15/13/2829) — `Electronics` · 2026
+- [The Verifier Tax: Horizon Dependent Safety Success Tradeoffs in Tool Using LLM Agents](https://arxiv.org/abs/2603.19328) — `2026`
 - [Toward Trustworthy Large Language Model Agents in Healthcare](https://arxiv.org/abs/2607.05055) — `2026`
+- [AgentSpec: Customizable Runtime Enforcement for Safe and Reliable LLM Agents](https://arxiv.org/abs/2503.18666) — `Proc. ICSE'26, pages 2938-2950. ACM, 2026` · 2025
 - [Authenticated Delegation and Authorized AI Agents](https://arxiv.org/abs/2501.09674) — `2025`
 - [DRIFT: Dynamic Rule-Based Defense with Injection Isolation for Securing LLM Agents](https://proceedings.neurips.cc/paper_files/paper/2025/hash/77f3b26c7907aa27b207df9b9d43f29a-Abstract-Conference.html) — `Advances in Neural Information Processing Systems` · 2025
+- [Enforcing Temporal Constraints for LLM Agents](https://arxiv.org/abs/2512.23738) — `2025`
 - [Governance-as-a-Service: A Multi-Agent Framework for AI System Compliance and Policy Enforcement](https://arxiv.org/abs/2508.18765) — `2025`
 - [Graph-Symbolic Policy Enforcement and Control (G-SPEC): A Neuro-Symbolic Framework for Safe Agentic AI in 5G Autonomous Networks](https://arxiv.org/abs/2512.20275) — `2025`
 - [MiniScope: Authorizing Agents with Least-Privilege Permissions](https://arxiv.org/abs/2512.11147) — `2025`
+- [VeriGuard: Enhancing LLM Agent Safety via Verified Code Generation](https://arxiv.org/abs/2510.05156) — `2025`
 <!-- /gen:papers -->
 
 ## Resources

@@ -1,0 +1,24 @@
+id: lm-agency-negotiations-2024
+title: Evaluating Language Model Agency through Negotiations
+authors:
+- Tim R Davidson
+- Veniamin Veselovsky
+- Michal Kosinski
+- Robert West
+year: 2024
+venue: International Conference on Learning Representations
+arxiv: '2401.04536'
+links:
+  paper: https://arxiv.org/abs/2401.04536
+area: evaluation
+scale:
+- multi-agent
+type:
+- benchmark
+topics: []
+about: []
+infra: []
+domain:
+- general
+status: triaged
+added: '2026-10-14'

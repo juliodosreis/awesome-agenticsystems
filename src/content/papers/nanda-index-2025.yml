@@ -1,0 +1,37 @@
+id: nanda-index-2025
+title: 'Beyond DNS: Unlocking the Internet of AI Agents via the NANDA Index and Verified AgentFacts'
+authors:
+- Ramesh Raskar
+- Pradyumna Chari
+- John Zinky
+- Mahesh Lambe
+- Jared James Grogan
+- Sichao Wang
+- Rajesh Ranjan
+- Rekha Singhal
+- Shailja Gupta
+- Robert Lincourt
+- Raghu Bala
+- Aditi Joshi
+- Abhishek Singh
+- Ayush Chopra
+- Dimitris Stripelis
+- Bhuwan B
+- Sumit Kumar
+- Maria Gorskikh
+year: 2025
+arxiv: '2507.14263'
+links:
+  paper: https://arxiv.org/abs/2507.14263
+area: interoperability
+scale:
+- multi-agent
+type:
+- framework
+topics: []
+about: []
+infra: []
+domain:
+- general
+status: triaged
+added: '2026-10-14'
