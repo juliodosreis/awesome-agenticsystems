@@ -28,7 +28,7 @@ A curated collection of material on agentic AI systems, in two parts:
 | | Papers | Resources |
 |---|---|---|
 | Holds | Papers on agentic systems: surveys, methods, benchmarks, frameworks, empirical studies | Links to protocols, frameworks, skills, benchmarks, books, courses, guides and tools |
-| Entries | <!-- gen:paper-total -->152<!-- /gen:paper-total --> | <!-- gen:resource-total -->7<!-- /gen:resource-total --> |
+| Entries | <!-- gen:paper-total -->154<!-- /gen:paper-total --> | <!-- gen:resource-total -->7<!-- /gen:resource-total --> |
 | Classified by | One `area`, plus topics and facets | One `kind`, plus an optional `area` |
 | On the site | [Index](https://juliodosreis.com/awesome-agenticsystems), [areas](https://juliodosreis.com/awesome-agenticsystems/areas), [domains](https://juliodosreis.com/awesome-agenticsystems/domains) | [Resources](https://juliodosreis.com/awesome-agenticsystems/resources), and the page of its area when one is set |
 | In this README | [Papers](#papers), grouped by area | [Resources](#resources), grouped by kind |
@@ -52,7 +52,7 @@ A framework or a benchmark published with a paper has an entry in each part. The
 ## Papers
 
 <!-- gen:paper-count -->
-152 papers listed, 42 of them with a written summary.
+154 papers listed, 42 of them with a written summary.
 <!-- /gen:paper-count -->
 
 Each paper is filed under one area, the one its main contribution belongs to. The areas are grouped in layers, listed below in order. The site adds filtering, search and the reading-path graph over the same data.
@@ -165,7 +165,9 @@ The inner loop of the system, its number of agents, and the substrate it runs on
 
 #### Agent architectures ([`architectures`](https://juliodosreis.com/awesome-agenticsystems/areas/architectures))
 
+- [A Multi-Agent System for Feedback Quality Assurance: Evaluate, Revise, and Validate at Scale](https://proceedings.mlr.press/v339/bulut26a.html) — `Impactful and Responsible AI Systems for Education Workshop (IRAISE), PMLR 339` · 2026
 - [AgentSchool: An LLM-Powered Multi-Agent Simulation for Education](https://arxiv.org/abs/2605.30144) — `2026`
+- [Agentic Learning Ecosystem for Open, Negotiated, and Accountable Education](https://panosd.eu/asi2026/Papers/ASI2026_paper_12.pdf) — `Workshop on Agents for Societal Impact (ASI) at AAMAS 2026` · 2026
 - [An Agentic AI Control Plane for 6G Network Slice Orchestration, Monitoring, and Trading](https://arxiv.org/abs/2602.13227) — `2026`
 - [An Artificial Intelligence-Enhanced Assessment Framework for Analyzing Middle School Science Students' Written Responses](https://onlinelibrary.wiley.com/doi/10.1111/jedm.70044) — `Journal of Educational Measurement` · 2026
 - [ITAS: A Multi-Agent Architecture for LLM-Based Intelligent Tutoring](https://arxiv.org/abs/2604.24808) — `arXiv preprint arXiv:2604.24808` · 2026

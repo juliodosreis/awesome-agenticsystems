@@ -1,0 +1,22 @@
+id: alec-2026
+title: Agentic Learning Ecosystem for Open, Negotiated, and Accountable Education
+authors:
+- Julio Cesar dos Reis
+year: 2026
+venue: Workshop on Agents for Societal Impact (ASI) at AAMAS 2026
+links:
+  paper: https://panosd.eu/asi2026/Papers/ASI2026_paper_12.pdf
+area: architectures
+scale:
+- multi-agent
+- human-agent
+type:
+- position
+topics: []
+about: []
+infra: []
+domain:
+- education
+status: triaged
+notes: "Position paper: proposes the ALEc architecture of learner, provider and institution agents with an economic and a governance layer, illustrated by a scenario and not evaluated."
+added: '2026-10-14'
