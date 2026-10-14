@@ -41,7 +41,7 @@ courses and guides. See [Resources](#resources).
 ## The collection
 
 <!-- gen:paper-count -->
-124 papers listed, 42 of them with a written summary.
+126 papers listed, 42 of them with a written summary.
 <!-- /gen:paper-count -->
 
 The site has filtering, search and the reading-path graph; this listing is the
@@ -230,6 +230,7 @@ How a system is measured, and how its risk is governed.
 - [Benchmarking large language model-based agent systems for clinical decision tasks](https://www.nature.com/articles/s41746-026-02443-6) — `npj Digital Medicine` · 2026
 - ⚖️ [ContinualSkillBench: Can LLM Agents Truly Evolve Their Capabilities?](https://arxiv.org/abs/2608.03874) — `2026`  
   Five domains of 100 interconnected subtasks ordered by difficulty, built to separate skill consolidation from adaptation to recent context.
+- ⚖️ [Diagon: A Programmable Testbed for AI-Agent Cognitive Labor Markets](https://arxiv.org/abs/2604.06688) — `arXiv preprint arXiv:2604.06688` · 2026
 - 🔥 [LLM-as-a-Verifier: A General-Purpose Verification Framework](https://arxiv.org/abs/2607.05391) — `2026`  
   Scores candidate solutions by taking the expectation over scoring-token logits. Verification then scales with granularity, repetition and criteria decomposition.
 - 🔥 ⚖️ [One Success Isn't Reliability: Thinkingbox, a Sandbox and Benchmark for Agents in Stateful Business Workflows](https://arxiv.org/abs/2608.19741) — `2026`  
@@ -242,6 +243,7 @@ How a system is measured, and how its risk is governed.
 - ⚖️ [MedAgentBench: A Realistic Virtual EHR Environment to Benchmark Medical LLM Agents](https://arxiv.org/abs/2501.14654) — `2025`
 - ⚖️ [Sequential Diagnosis with Language Models](https://arxiv.org/abs/2506.22405) — `2025`
 - ⚖️ [Why Do Multi-Agent LLM Systems Fail?](https://arxiv.org/abs/2503.13657) — `2025`
+- ⚖️ [Evaluating Language Model Agency through Negotiations](https://arxiv.org/abs/2401.04536) — `International Conference on Learning Representations` · 2024
 - ⚖️ [OSWorld: Benchmarking Multimodal Agents for Open-Ended Tasks in Real Computer Environments](https://arxiv.org/abs/2404.07972) — `2024`
 - ⚖️ [SWE-bench: Can Language Models Resolve Real-world Github Issues?](https://proceedings.iclr.cc/paper_files/paper/2024/hash/edac78c3e300629acfe6cbe9ca88fb84-Abstract-Conference.html) — `International Conference on Learning Representations` · 2024
 - ⚖️ [WebArena: A Realistic Web Environment for Building Autonomous Agents](https://proceedings.iclr.cc/paper_files/paper/2024/hash/4410c0711e9154a7a2d26f9b3816d1ef-Abstract-Conference.html) — `International Conference on Learning Representations` · 2024
