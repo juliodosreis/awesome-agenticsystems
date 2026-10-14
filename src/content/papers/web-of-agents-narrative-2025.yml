@@ -1,0 +1,26 @@
+id: web-of-agents-narrative-2025
+title: 'From Multi-Agent Systems and the Semantic Web to Agentic AI: A Unified Narrative of the Web of
+  Agents'
+authors:
+- Tatiana Petrova
+- Boris Bliznioukov
+- Aleksandr Puzikov
+- Radu State
+year: 2025
+venue: arXiv preprint arXiv:2507.10644
+arxiv: '2507.10644'
+links:
+  paper: https://arxiv.org/abs/2507.10644
+area: foundations
+scale:
+- multi-agent
+type:
+- survey
+- position
+topics: []
+about: []
+infra: []
+domain:
+- general
+status: triaged
+added: '2026-10-14'
