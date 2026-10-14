@@ -1,0 +1,31 @@
+id: agentic-control-plane-6g-slicing-2026
+title: An Agentic AI Control Plane for 6G Network Slice Orchestration, Monitoring, and Trading
+authors:
+- Eranga Bandara
+- Ross Gore
+- Sachin Shetty
+- Ravi Mukkamala
+- Tharaka Hewa
+- Abdul Rahman
+- Xueping Liang
+- Safdar H. Bouk
+- Amin Hass
+- Peter Foytik
+- Ng Wee Keong
+- Kasun De Zoysa
+year: 2026
+arxiv: '2602.13227'
+links:
+  paper: https://arxiv.org/abs/2602.13227
+area: architectures
+scale:
+- multi-agent
+type:
+- framework
+topics: []
+about: []
+infra: []
+domain:
+- general
+status: triaged
+added: '2026-10-14'
