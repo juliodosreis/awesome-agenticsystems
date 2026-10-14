@@ -1,0 +1,23 @@
+id: realtime-negotiation-agent-2025
+title: Towards AI-Powered Real-Time Negotiation Agent
+authors:
+- Martin Žust
+- Marko Grobelnik
+- Adrian M Grobelnik
+- Abdul Sittar
+year: 2025
+venue: SemGenAge Workshop (CEUR-WS Vol-3977)
+links:
+  paper: https://ceur-ws.org/Vol-3977/SemGenAge-5.pdf
+area: architectures
+scale:
+- human-agent
+type:
+- framework
+topics: []
+about: []
+infra: []
+domain:
+- general
+status: triaged
+added: '2026-10-14'
