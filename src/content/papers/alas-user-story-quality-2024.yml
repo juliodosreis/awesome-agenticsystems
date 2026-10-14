@@ -1,0 +1,25 @@
+id: alas-user-story-quality-2024
+title: 'LLM-based agents for automating the enhancement of user story quality: An early report'
+authors:
+- Zheying Zhang
+- Maruf Rayhan
+- Tomas Herda
+- Manuel Goisauf
+- Pekka Abrahamsson
+year: 2024
+arxiv: '2403.09442'
+links:
+  paper: https://arxiv.org/abs/2403.09442
+area: architectures
+scale:
+- multi-agent
+type:
+- framework
+- case-study
+topics: []
+about: []
+infra: []
+domain:
+- software-engineering
+status: triaged
+added: '2026-10-14'

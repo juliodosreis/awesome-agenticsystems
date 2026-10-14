@@ -1,0 +1,46 @@
+id: amie-diagnostic-dialogue-2025
+title: Towards conversational diagnostic artificial intelligence
+authors:
+- Tao Tu
+- Mike Schaekermann
+- Anil Palepu
+- Khaled Saab
+- Jan Freyberg
+- Ryutaro Tanno
+- Amy Wang
+- Brenna Li
+- Mohamed Amin
+- Yong Cheng
+- Elahe Vedadi
+- Nenad Tomasev
+- Shekoofeh Azizi
+- Karan Singhal
+- Le Hou
+- Albert Webson
+- Kavita Kulkarni
+- S. Sara Mahdavi
+- Christopher Semturs
+- Juraj Gottweis
+- Joelle Barral
+- Katherine Chou
+- Greg S. Corrado
+- Yossi Matias
+- Alan Karthikesalingam
+- Vivek Natarajan
+year: 2025
+venue: Nature
+links:
+  paper: https://www.nature.com/articles/s41586-025-08866-7
+area: learning-evolution
+scale:
+- single-agent
+- human-agent
+type:
+- framework
+topics: []
+about: []
+infra: []
+domain:
+- healthcare
+status: triaged
+added: '2026-10-14'

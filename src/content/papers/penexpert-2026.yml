@@ -1,0 +1,27 @@
+id: penexpert-2026
+title: 'PenExpert: A Multi-Agent Hybrid LLM–Expert System Framework for Autonomous Penetration Testing'
+authors:
+- Zhi Li
+- Tianyang Zhou
+- Junhu Zhu
+- Dongyang Li
+- Xiaodong Zhu
+- Dongze Wei
+- Jinghu Liu
+- Mengbo Song
+year: 2026
+venue: Expert Systems with Applications
+links:
+  paper: https://www.sciencedirect.com/science/article/pii/S0957417426021937?via%3Dihub
+area: architectures
+scale:
+- multi-agent
+type:
+- framework
+topics: []
+about: []
+infra: []
+domain:
+- general
+status: triaged
+added: '2026-10-14'

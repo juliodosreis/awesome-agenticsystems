@@ -1,0 +1,20 @@
+id: vestibular-llm-agent-2025
+title: Construção de Agente Inteligente para a Resolução de Questões de Vestibular com LLM
+authors:
+- Sofia Azevedo Rosa
+year: 2025
+venue: Undergraduate thesis, Universidade Estadual Paulista (UNESP)
+links:
+  paper: https://hdl.handle.net/11449/315755
+area: tools-context
+scale:
+- single-agent
+type:
+- empirical
+topics: []
+about: []
+infra: []
+domain:
+- education
+status: triaged
+added: '2026-10-14'
