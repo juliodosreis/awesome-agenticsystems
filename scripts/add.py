@@ -7,10 +7,10 @@
 
 Downloads title, authors and year from the arXiv API and leaves the
 classification fields commented out, with status: captured. You pick area,
-level and type.
+scale and type.
 
 A `captured` paper is valid but does not show up on the site: it is a saved
-link. To get it into the index, uncomment area/level/type and switch status
+link. To get it into the index, uncomment area/scale/type and switch status
 to `triaged`.
 """
 import datetime

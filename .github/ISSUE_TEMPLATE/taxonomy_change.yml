@@ -14,7 +14,7 @@ body:
       label: What kind of change
       options:
         - Add a topic
-        - Add a facet value (capability / level / type / infra / domain)
+        - Add a facet value (about / scale / type / infra / domain)
         - Add an area
         - Rename or remove something
         - Restructure (layers, how facets are cut)
@@ -63,5 +63,5 @@ body:
     attributes:
       label: Before submitting
       options:
-        - label: I checked [/taxonomy](https://juliodosreis.github.io/awesome-agenticsystems/taxonomy) and the term is not already there under another name.
+        - label: I checked [/taxonomy](https://juliodosreis.com/awesome-agenticsystems/taxonomy) and the term is not already there under another name.
           required: true

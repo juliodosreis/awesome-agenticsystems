@@ -1,5 +1,5 @@
-# Test dependencies. Runtime deps live in requirements.txt, which the Action
-# installs on its own — keeping them apart means a test-only package can never
-# end up in the issue-intake job.
+# Test dependencies, on top of the runtime ones in requirements.txt. The intake
+# job (issue_ops.yml) installs this file, since it runs the test suite before
+# opening a pull request; docs_sync.yml installs requirements.txt alone.
 -r requirements.txt
 pytest>=8,<10

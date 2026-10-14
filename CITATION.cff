@@ -4,13 +4,13 @@ cff-version: 1.2.0
 message: >-
   If this collection or its taxonomy is useful in your work, you can cite it
   as below. Please cite the individual papers as well — this record covers the
-  classification work, not the research it organises.
+  classification work, not the research it organizes.
 title: "Awesome Agentic Systems: a classified collection of papers on agentic AI systems"
 abstract: >-
   A curated, machine-validated collection of papers on LLM-based agentic
   systems. Each paper is filed under exactly one area describing its
   contribution, and cut across by a flat topic vocabulary and five facets
-  (capability, level, type, infra, domain). The taxonomy is derived from
+  (about, scale, type, infra, domain). The taxonomy is derived from
   published surveys and is validated at build time, so no record can carry a
   term outside the declared vocabulary.
 type: dataset
@@ -18,7 +18,7 @@ authors:
   - family-names: dos Reis
     given-names: Julio Cesar
 repository-code: https://github.com/juliodosreis/awesome-agenticsystems
-url: https://juliodosreis.github.io/awesome-agenticsystems
+url: https://juliodosreis.com/awesome-agenticsystems
 license: CC0-1.0
 keywords:
   - llm-agents

@@ -91,7 +91,12 @@ jobs:
         id: prep
         env:
           ISSUE: ${{ github.event.issue.number }}
+          ISSUE_TITLE: ${{ github.event.issue.title }}
         run: |
+          # The issue title already starts with "[Paper]: " or "[Resource]: ";
+          # the pull request title says "Add paper: " in its place.
+          title=$(printf '%s' "$ISSUE_TITLE" | sed -E 's/^\[(Paper|Resource)\]:[[:space:]]*//')
+          echo "title=$title" >> "$GITHUB_OUTPUT"
           if [ "$KIND" = paper ]; then
             dir=papers
             checks='- [ ] `area` describes the paper'"'"'s **contribution**, not the topic it discusses.
@@ -125,7 +130,7 @@ jobs:
         with:
           add-paths: src/content/${{ steps.prep.outputs.dir }}/*.yml
           commit-message: "Add new ${{ env.KIND }} from issue #${{ github.event.issue.number }}"
-          title: "Add ${{ env.KIND }}: ${{ github.event.issue.title }}"
+          title: "Add ${{ env.KIND }}: ${{ steps.prep.outputs.title }}"
           body-path: pr_body.md
           branch: "add-${{ env.KIND }}-${{ github.event.issue.number }}"
           labels: ${{ env.KIND }}
@@ -157,6 +162,6 @@ jobs:
           ${LOG}
           \`\`\`
 
-          Edit the issue with the fix, then close and reopen it — that runs the intake again. If the error mentions the taxonomy, the full list of valid values is at [\`/taxonomy\`](https://juliodosreis.github.io/awesome-agenticsystems/taxonomy).
+          Edit the issue with the fix, then close and reopen it — that runs the intake again. If the error mentions the taxonomy, the full list of valid values is at [\`/taxonomy\`](https://juliodosreis.com/awesome-agenticsystems/taxonomy).
           EOF
           )"

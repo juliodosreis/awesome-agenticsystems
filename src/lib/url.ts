@@ -7,7 +7,7 @@
  * the build never noticed, because to Astro they are just strings.
  *
  * BASE_URL may or may not carry a trailing slash depending on config, so we
- * normalise it.
+ * normalize it.
  *
  *   url()                     -> "/awesome-agenticsystems/"
  *   url('/areas')             -> "/awesome-agenticsystems/areas"

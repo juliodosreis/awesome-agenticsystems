@@ -109,7 +109,7 @@ and not its general topic. Each area with its layer and the rule for picking it:
 <!-- /gen:areas-detail -->
 
 Every area also has its description on
-[`/areas`](https://juliodosreis.github.io/awesome-agenticsystems/areas).
+[`/areas`](https://juliodosreis.com/awesome-agenticsystems/areas).
 
 The number of agents does not decide the area. A paper on memory shared between
 agents goes to `memory` with `scale: [multi-agent]`.
@@ -194,5 +194,5 @@ Participation is covered by the [Code of Conduct](./CODE_OF_CONDUCT.md).
   topics and facets, the criteria for changing the taxonomy, and the
   bibliography behind it. Read it before filling records in by hand or
   proposing changes to the vocabulary.
-- **[`/taxonomy`](https://juliodosreis.github.io/awesome-agenticsystems/taxonomy)** — The complete vocabulary. Terms nobody
+- **[`/taxonomy`](https://juliodosreis.com/awesome-agenticsystems/taxonomy)** — The complete vocabulary. Terms nobody
   uses yet are shown in gray and are still valid.

@@ -12,15 +12,15 @@ contribution of each one.
 Every paper is filed under a single area, its contribution, then cut across by
 topics and facets: what it is about, at what scale, in which domain.
 
-The site also has a [Resources](https://juliodosreis.github.io/awesome-agenticsystems/resources) page for material that is
+The site also has a [Resources](https://juliodosreis.com/awesome-agenticsystems/resources) page for material that is
 not a paper: orchestration frameworks, skills, benchmarks, protocols, books,
 courses and guides. See [Resources](#resources).
 
-**[Browse the site](https://juliodosreis.github.io/awesome-agenticsystems)** ·
+**[Browse the site](https://juliodosreis.com/awesome-agenticsystems)** ·
 [Suggest a paper](https://github.com/juliodosreis/awesome-agenticsystems/issues/new?template=add_paper.yml) ·
 [Suggest a resource](https://github.com/juliodosreis/awesome-agenticsystems/issues/new?template=add_resource.yml) ·
 [Contributing guide](./CONTRIBUTING.md) ·
-[RSS](https://juliodosreis.github.io/awesome-agenticsystems/rss.xml)
+[RSS](https://juliodosreis.com/awesome-agenticsystems/rss.xml)
 
 <!-- gen:counts -->
 11 areas in 4 layers, 58 topics and 33 facet values across 5 facets.
@@ -54,7 +54,7 @@ same data, flattened for reading on GitHub.
 
 Where to enter the field.
 
-#### Foundations & surveys ([`foundations`](https://juliodosreis.github.io/awesome-agenticsystems/areas/foundations))
+#### Foundations & surveys ([`foundations`](https://juliodosreis.com/awesome-agenticsystems/areas/foundations))
 
 - 🔥 📖 [Beyond the Leaderboard: A Synthesis of Tool-Use, Planning, and Reasoning Failures in Large Language Model Agents](https://arxiv.org/abs/2607.05775) — `2026`  
   Synthesizes 27 benchmark, taxonomy and audit papers across 19 benchmarks into six failure clusters, from tool invocation errors to measurement validity problems.
@@ -66,7 +66,7 @@ Where to enter the field.
 
 What the agent reasons about, stores, executes and learns.
 
-#### Reasoning, planning & reflection ([`reasoning-planning`](https://juliodosreis.github.io/awesome-agenticsystems/areas/reasoning-planning))
+#### Reasoning, planning & reflection ([`reasoning-planning`](https://juliodosreis.com/awesome-agenticsystems/areas/reasoning-planning))
 
 - 🔥 📖 [Metacognition in LLMs: Foundations, Progress, and Opportunities](https://arxiv.org/abs/2607.11881) — `2026`  
   A survey of metacognition in LLMs: how it is measured, how it can be elicited or improved, and where the evidence for it is limited.
@@ -86,7 +86,7 @@ What the agent reasons about, stores, executes and learns.
 - [ReAct: Synergizing Reasoning and Acting in Language Models](https://arxiv.org/abs/2210.03629) — `ICLR 2023` · 2022  
   Interleaves reasoning traces with actions on the environment, so that each observation corrects the reasoning that follows.
 
-#### Memory ([`memory`](https://juliodosreis.github.io/awesome-agenticsystems/areas/memory))
+#### Memory ([`memory`](https://juliodosreis.com/awesome-agenticsystems/areas/memory))
 
 - 🔥 📖 [Always-On Agents: A Survey of Persistent Memory, State, and Governance in LLM Agents](https://arxiv.org/abs/2606.30306) — `2026`  
   Surveys 435 works on agents whose behavior depends on durable state, along six axes (authority, scope, mutability, provenance, recoverability, actionability) and a write-to-rollback lifecycle.
@@ -108,7 +108,7 @@ What the agent reasons about, stores, executes and learns.
 - [MemGPT: Towards LLMs as Operating Systems](https://arxiv.org/abs/2310.08560) — `ICLR 2024` · 2023  
   Introduces a virtual memory hierarchy that allows LLMs to explicitly page information between their limited context window and external storage using function calls.
 
-#### Tools, environment & context ([`tools-context`](https://juliodosreis.github.io/awesome-agenticsystems/areas/tools-context))
+#### Tools, environment & context ([`tools-context`](https://juliodosreis.com/awesome-agenticsystems/areas/tools-context))
 
 - [A11y-Compressor: A Framework for Enhancing the Efficiency of GUI Agent Observations through Visual Context Reconstruction and Redundancy Reduction](https://aclanthology.org/2026.acl-srw.50/) — `Proceedings of the 64th Annual Meeting of the Association for Computational Linguistics (Volume 4: Student Research Workshop)` · 2026
 - [Do Context Files Help Coding Agents? A Two-Agent Ablation Study on Real Repositories](https://arxiv.org/abs/2607.27250) — `2026`  
@@ -124,7 +124,7 @@ What the agent reasons about, stores, executes and learns.
 - [Toolformer: Language Models Can Teach Themselves to Use Tools](https://arxiv.org/abs/2302.04761) — `NeurIPS 2023` · 2023  
   The model self-annotates where to insert API calls and keeps the ones that reduce perplexity, learning tool use without human supervision.
 
-#### Learning, skills & self-evolution ([`learning-evolution`](https://juliodosreis.github.io/awesome-agenticsystems/areas/learning-evolution))
+#### Learning, skills & self-evolution ([`learning-evolution`](https://juliodosreis.com/awesome-agenticsystems/areas/learning-evolution))
 
 - [EvoMAS: Evolutionary Generation of Multi-Agent Systems](https://arxiv.org/abs/2602.06511) — `ICML 2026` · 2026
 - [GitSkills: A Dataset of Agent Skills on GitHub](https://arxiv.org/abs/2608.10906) — `2026`  
@@ -143,7 +143,7 @@ What the agent reasons about, stores, executes and learns.
 
 The inner loop of the system, its number of agents, and the substrate it runs on.
 
-#### Agent architectures ([`architectures`](https://juliodosreis.github.io/awesome-agenticsystems/areas/architectures))
+#### Agent architectures ([`architectures`](https://juliodosreis.com/awesome-agenticsystems/areas/architectures))
 
 - [AgentSchool: An LLM-Powered Multi-Agent Simulation for Education](https://arxiv.org/abs/2605.30144) — `2026`
 - [ITAS: A Multi-Agent Architecture for LLM-Based Intelligent Tutoring](https://arxiv.org/abs/2604.24808) — `arXiv preprint arXiv:2604.24808` · 2026
@@ -157,7 +157,7 @@ The inner loop of the system, its number of agents, and the substrate it runs on
 - [Agent S: An Open Agentic Framework that Uses Computers Like a Human](https://arxiv.org/abs/2410.08164) — `2024`
 - ⚖️ [WebVoyager: Building an End-to-End Web Agent with Large Multimodal Models](https://aclanthology.org/2024.acl-long.371/) — `Proceedings of the 62nd Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)` · 2024
 
-#### Coordination & organization ([`coordination`](https://juliodosreis.github.io/awesome-agenticsystems/areas/coordination))
+#### Coordination & organization ([`coordination`](https://juliodosreis.com/awesome-agenticsystems/areas/coordination))
 
 - [A Diagnostic-Driven Multi-Agent Socratic Teaching System](https://doi.org/10.1145/3796114.3796119) — `Proceedings of the 2026 Asia-Pacific Intelligent Educational Technologies Conference (APIET 2026)` · 2026
 - [Hetero-Designer: Automated Design of Multi-Agent Systems with Heterogeneous LLMs](https://aclanthology.org/2026.acl-long.1272/) — `Proceedings of the 64th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)` · 2026
@@ -180,7 +180,7 @@ The inner loop of the system, its number of agents, and the substrate it runs on
 - [MetaGPT: Meta Programming for a Multi-Agent Collaborative Framework](https://arxiv.org/abs/2308.00352) — `ICLR 2024` · 2023  
   Encodes the standard operating procedures of a software company as agent roles chained by structured artifacts.
 
-#### Harness, scaffolding & AgentOps ([`engineering`](https://juliodosreis.github.io/awesome-agenticsystems/areas/engineering))
+#### Harness, scaffolding & AgentOps ([`engineering`](https://juliodosreis.com/awesome-agenticsystems/areas/engineering))
 
 - [Agent Lightning v1.0: Towards Harnessed Agentic RL](https://arxiv.org/abs/2608.17528) — `2026`  
   A framework for harnessed agentic RL, where the deploy-time harness runs the environment loop and the trainer receives only request-response pairs.
@@ -205,7 +205,7 @@ The inner loop of the system, its number of agents, and the substrate it runs on
 
 How a system is measured, and how its risk is governed.
 
-#### Evaluation & benchmarks ([`evaluation`](https://juliodosreis.github.io/awesome-agenticsystems/areas/evaluation))
+#### Evaluation & benchmarks ([`evaluation`](https://juliodosreis.com/awesome-agenticsystems/areas/evaluation))
 
 - [Benchmarking large language model-based agent systems for clinical decision tasks](https://www.nature.com/articles/s41746-026-02443-6) — `npj Digital Medicine` · 2026
 - ⚖️ [ContinualSkillBench: Can LLM Agents Truly Evolve Their Capabilities?](https://arxiv.org/abs/2608.03874) — `2026`  
@@ -229,7 +229,7 @@ How a system is measured, and how its risk is governed.
 - 🔥 ⚖️ [AgentBench: Evaluating LLMs as Agents](https://arxiv.org/abs/2308.03688) — `ICLR 2024` · 2023  
   Gathers eight heterogeneous interactive environments to measure agents on multi-turn tasks under a common protocol.
 
-#### Safety, trust & governance ([`safety`](https://juliodosreis.github.io/awesome-agenticsystems/areas/safety))
+#### Safety, trust & governance ([`safety`](https://juliodosreis.com/awesome-agenticsystems/areas/safety))
 
 - 📖 [The Attack and Defense Landscape of Agentic AI: A Comprehensive Survey](https://arxiv.org/abs/2603.11088) — `2026`
 - [Auditable Agents](https://arxiv.org/abs/2604.05485) — `2026`
@@ -252,7 +252,7 @@ How a system is measured, and how its risk is governed.
 
 ## Resources
 
-The [Resources page](https://juliodosreis.github.io/awesome-agenticsystems/resources) lists material on agentic systems
+The [Resources page](https://juliodosreis.com/awesome-agenticsystems/resources) lists material on agentic systems
 that is not a paper. Each entry is a link with a one or two sentence
 description, filed under one kind. An entry with an `area` also appears on that
 area's page, below the papers. Adding a resource is described under
@@ -261,14 +261,14 @@ area's page, below the papers. Adding a resource is described under
 <!-- gen:resource-kinds -->
 | Kind | Section on the site | Covers |
 |---|---|---|
-| `protocol` | [Protocols](https://juliodosreis.github.io/awesome-agenticsystems/resources#protocol) | Specifications for connecting agents to tools, to clients or to other agents. |
-| `framework` | [Orchestration Frameworks](https://juliodosreis.github.io/awesome-agenticsystems/resources#framework) | Code frameworks for orchestrating agents: control flow, state, tool calls and multi-agent workflows. |
-| `skill` | [Skills](https://juliodosreis.github.io/awesome-agenticsystems/resources#skill) | Packaged instructions, scripts and reference files that an agent loads when a task requires them. |
-| `benchmark` | [Benchmarks](https://juliodosreis.github.io/awesome-agenticsystems/resources#benchmark) | Benchmarks, leaderboards and evaluation harnesses released as a website, dataset or repository. A benchmark published as a paper also gets a record in the paper collection, under the evaluation area. |
-| `book` | [Books](https://juliodosreis.github.io/awesome-agenticsystems/resources#book) | Books covering agents, or the methods agents are built from. |
-| `course` | [Courses](https://juliodosreis.github.io/awesome-agenticsystems/resources#course) | Courses and lecture series with recorded or written material. |
-| `guide` | [Guides & Posts](https://juliodosreis.github.io/awesome-agenticsystems/resources#guide) | Articles and engineering posts on building and running agents. |
-| `tool` | [Tools & SDKs](https://juliodosreis.github.io/awesome-agenticsystems/resources#tool) | Libraries, SDKs and developer tools for building, running or observing agents. |
+| `protocol` | [Protocols](https://juliodosreis.com/awesome-agenticsystems/resources#protocol) | Specifications for connecting agents to tools, to clients or to other agents. |
+| `framework` | [Orchestration Frameworks](https://juliodosreis.com/awesome-agenticsystems/resources#framework) | Code frameworks for orchestrating agents: control flow, state, tool calls and multi-agent workflows. |
+| `skill` | [Skills](https://juliodosreis.com/awesome-agenticsystems/resources#skill) | Packaged instructions, scripts and reference files that an agent loads when a task requires them. |
+| `benchmark` | [Benchmarks](https://juliodosreis.com/awesome-agenticsystems/resources#benchmark) | Benchmarks, leaderboards and evaluation harnesses released as a website, dataset or repository. A benchmark published as a paper also gets a record in the paper collection, under the evaluation area. |
+| `book` | [Books](https://juliodosreis.com/awesome-agenticsystems/resources#book) | Books covering agents, or the methods agents are built from. |
+| `course` | [Courses](https://juliodosreis.com/awesome-agenticsystems/resources#course) | Courses and lecture series with recorded or written material. |
+| `guide` | [Guides & Posts](https://juliodosreis.com/awesome-agenticsystems/resources#guide) | Articles and engineering posts on building and running agents. |
+| `tool` | [Tools & SDKs](https://juliodosreis.com/awesome-agenticsystems/resources#tool) | Libraries, SDKs and developer tools for building, running or observing agents. |
 <!-- /gen:resource-kinds -->
 
 A framework or a benchmark with a paper can have two entries. The paper gets a record
@@ -303,7 +303,7 @@ repository, documentation or leaderboard can be listed as a resource.
   both directions).
 - **Adding a paper or a resource is a GitHub issue.** A workflow turns the
   issue into a pull request that holds one file, with no local setup.
-- **Site-wide search** (Pagefind), an [RSS feed](https://juliodosreis.github.io/awesome-agenticsystems/rss.xml)
+- **Site-wide search** (Pagefind), an [RSS feed](https://juliodosreis.com/awesome-agenticsystems/rss.xml)
   of new additions, and a sitemap.
 
 ## The taxonomy
@@ -321,7 +321,7 @@ validator, the site, the guides and the issue form all read from that one file.
 <!-- /gen:areas-table -->
 
 The complete vocabulary, with usage counts, is at
-[`/taxonomy`](https://juliodosreis.github.io/awesome-agenticsystems/taxonomy).
+[`/taxonomy`](https://juliodosreis.com/awesome-agenticsystems/taxonomy).
 The design and the criterion behind each field are documented in
 [TAXONOMY.md](./TAXONOMY.md), and the rule for picking an area under [area
 selection](./CONTRIBUTING.md#area-selection).
