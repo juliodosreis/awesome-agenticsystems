@@ -1,0 +1,26 @@
+id: ai-hospital-2025
+title: 'AI Hospital: Benchmarking Large Language Models in a Multi-agent Medical Interaction Simulator'
+authors:
+- Zhihao Fan
+- Lai Wei
+- Jialong Tang
+- Wei Chen
+- Wang Siyuan
+- Zhongyu Wei
+- Fei Huang
+year: 2025
+venue: Proceedings of the 31st International Conference on Computational Linguistics
+links:
+  paper: https://aclanthology.org/2025.coling-main.680.pdf
+area: evaluation
+scale:
+- multi-agent
+type:
+- benchmark
+topics: []
+about: []
+infra: []
+domain:
+- healthcare
+status: triaged
+added: '2026-10-14'

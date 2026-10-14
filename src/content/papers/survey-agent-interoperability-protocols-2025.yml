@@ -1,0 +1,25 @@
+id: survey-agent-interoperability-protocols-2025
+title: 'A survey of agent interoperability protocols: Model Context Protocol (MCP), Agent Communication Protocol (ACP), Agent-to-Agent Protocol (A2A), and Agent Network Protocol (ANP)'
+authors:
+- Abul Ehtesham
+- Aditi Singh
+- Gaurav Kumar Gupta
+- Saket Kumar
+year: 2025
+venue: arXiv preprint arXiv:2505.02279
+arxiv: '2505.02279'
+links:
+  paper: https://arxiv.org/abs/2505.02279
+area: interoperability
+scale:
+- single-agent
+- multi-agent
+type:
+- survey
+topics: []
+about: []
+infra: []
+domain:
+- general
+status: triaged
+added: '2026-10-14'

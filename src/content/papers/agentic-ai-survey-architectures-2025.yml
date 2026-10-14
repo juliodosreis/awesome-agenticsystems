@@ -1,0 +1,22 @@
+id: agentic-ai-survey-architectures-2025
+title: 'Agentic AI: A Comprehensive Survey of Architectures, Applications, and Future Directions'
+authors:
+- Mohamad Abou Ali
+- Fadi Dornaika
+year: 2025
+arxiv: '2510.25445'
+links:
+  paper: https://arxiv.org/abs/2510.25445
+area: foundations
+scale:
+- single-agent
+- multi-agent
+type:
+- survey
+topics: []
+about: []
+infra: []
+domain:
+- general
+status: triaged
+added: '2026-10-14'

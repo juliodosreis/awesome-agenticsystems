@@ -1,0 +1,27 @@
+id: telecom-troubleshooting-mas-2025
+title: Leveraging Multi-Agent System (MAS) and Fine-Tuned Small Language Models (SLMs) for Automated Telecom
+  Network Troubleshooting
+authors:
+- Chenhua Shi
+- Bhavika Jalli
+- Gregor Macdonald
+- John Zou
+- Wanlu Lei
+- Mridul Jain
+- Joji Philip
+year: 2025
+arxiv: '2511.00651'
+links:
+  paper: https://arxiv.org/abs/2511.00651
+area: architectures
+scale:
+- multi-agent
+type:
+- framework
+topics: []
+about: []
+infra: []
+domain:
+- general
+status: triaged
+added: '2026-10-14'

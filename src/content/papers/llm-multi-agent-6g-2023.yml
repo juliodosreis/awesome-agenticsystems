@@ -1,0 +1,27 @@
+id: llm-multi-agent-6g-2023
+title: Large Language Model Enhanced Multi-Agent Systems for 6G Communications
+authors:
+- Feibo Jiang
+- Li Dong
+- Yubo Peng
+- Kezhi Wang
+- Kun Yang
+- Cunhua Pan
+- Dusit Niyato
+- Octavia A. Dobre
+year: 2023
+arxiv: '2312.07850'
+links:
+  paper: https://arxiv.org/abs/2312.07850
+area: architectures
+scale:
+- multi-agent
+type:
+- framework
+topics: []
+about: []
+infra: []
+domain:
+- general
+status: triaged
+added: '2026-10-14'
