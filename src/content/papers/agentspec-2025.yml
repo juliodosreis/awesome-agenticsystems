@@ -1,0 +1,23 @@
+id: agentspec-2025
+title: 'AgentSpec: Customizable Runtime Enforcement for Safe and Reliable LLM Agents'
+authors:
+- Haoyu Wang
+- Christopher M. Poskitt
+- Jun Sun
+year: 2025
+venue: Proc. ICSE'26, pages 2938-2950. ACM, 2026
+arxiv: '2503.18666'
+links:
+  paper: https://arxiv.org/abs/2503.18666
+area: safety
+scale:
+- single-agent
+type:
+- framework
+topics: []
+about: []
+infra: []
+domain:
+- general
+status: triaged
+added: '2026-10-14'
