@@ -41,7 +41,7 @@ courses and guides. See [Resources](#resources).
 ## The collection
 
 <!-- gen:paper-count -->
-118 papers listed, 42 of them with a written summary.
+120 papers listed, 42 of them with a written summary.
 <!-- /gen:paper-count -->
 
 The site has filtering, search and the reading-path graph; this listing is the
@@ -158,6 +158,7 @@ The inner loop of the system, its number of agents, and the substrate it runs on
 - [Leveraging Multi-Agent System (MAS) and Fine-Tuned Small Language Models (SLMs) for Automated Telecom Network Troubleshooting](https://arxiv.org/abs/2511.00651) — `2025`
 - [MedScrubCrew: A Medical Multi-Agent Framework for Automating Appointment Scheduling Based on Patient-Provider Profile Resource Matching](https://www.mdpi.com/2227-9032/13/14/1649) — `Healthcare` · 2025
 - [PentestAgent: Incorporating LLM Agents to Automated Penetration Testing](https://dl.acm.org/doi/10.1145/3708821.3733882) — `Proceedings of the 20th ACM Asia Conference on Computer and Communications Security` · 2025
+- [Scaling Equitable Reflection Assessment in Education via Large Language Models and Role-Based Feedback Agents](https://arxiv.org/abs/2511.11772) — `2025`
 - [UFO2: The Desktop AgentOS](https://arxiv.org/abs/2504.14603) — `2025`
 - [UFO: A UI-Focused Agent for Windows OS Interaction](https://aclanthology.org/2025.naacl-long.26/) — `Proceedings of the 2025 Conference of the Nations of the Americas Chapter of the Association for Computational Linguistics: Human Language Technologies (Volume 1: Long Papers)` · 2025
 - [Agent S: An Open Agentic Framework that Uses Computers Like a Human](https://arxiv.org/abs/2410.08164) — `2024`
@@ -178,6 +179,7 @@ The inner loop of the system, its number of agents, and the substrate it runs on
 - [A Knowledge-driven Adaptive Collaboration of LLMs for Enhancing Medical Decision-making](https://aclanthology.org/2025.emnlp-main.1699/) — `Proceedings of the 2025 Conference on Empirical Methods in Natural Language Processing` · 2025
 - [AgileCoder: Dynamic Collaborative Agents for Software Development based on Agile Methodology](https://ieeexplore.ieee.org/document/11052788) — `2025 IEEE/ACM Second International Conference on AI Foundation Models and Software Engineering (Forge)` · 2025
 - [Controller Makes Pentesting Better: An Improved Multi-Agent Automated Penetration Testing Framework](https://ieeexplore.ieee.org/document/11354714) — `2025 IEEE 24th International Conference on Trust, Security and Privacy in Computing and Communications (TrustCom)` · 2025
+- [LLM Agents at the Roundtable: A Multi-Perspective and Dialectical Reasoning Framework for Essay Scoring](https://arxiv.org/abs/2509.14834) — `2025`
 - [MultiTutor: Collaborative LLM Agents for Multimodal Student Support](https://proceedings.mlr.press/v273/sun25a.html) — `PMLR 2025` · 2025  
   A multi-agent tutoring framework that coordinates specialized expert agents to provide personalized, multimodal educational support using internet search and code generation.
 - [ChatDev: Communicative Agents for Software Development](https://aclanthology.org/2024.acl-long.810/) — `Proceedings of the 62nd Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)` · 2024
