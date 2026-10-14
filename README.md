@@ -28,7 +28,7 @@ A curated collection of material on agentic AI systems, in two parts:
 | | Papers | Resources |
 |---|---|---|
 | Holds | Papers on agentic systems: surveys, methods, benchmarks, frameworks, empirical studies | Links to protocols, frameworks, skills, benchmarks, books, courses, guides and tools |
-| Entries | <!-- gen:paper-total -->136<!-- /gen:paper-total --> | <!-- gen:resource-total -->7<!-- /gen:resource-total --> |
+| Entries | <!-- gen:paper-total -->138<!-- /gen:paper-total --> | <!-- gen:resource-total -->7<!-- /gen:resource-total --> |
 | Classified by | One `area`, plus topics and facets | One `kind`, plus an optional `area` |
 | On the site | [Index](https://juliodosreis.com/awesome-agenticsystems), [areas](https://juliodosreis.com/awesome-agenticsystems/areas), [domains](https://juliodosreis.com/awesome-agenticsystems/domains) | [Resources](https://juliodosreis.com/awesome-agenticsystems/resources), and the page of its area when one is set |
 | In this README | [Papers](#papers), grouped by area | [Resources](#resources), grouped by kind |
@@ -52,7 +52,7 @@ A framework or a benchmark published with a paper has an entry in each part. The
 ## Papers
 
 <!-- gen:paper-count -->
-136 papers listed, 42 of them with a written summary.
+138 papers listed, 42 of them with a written summary.
 <!-- /gen:paper-count -->
 
 Each paper is filed under one area, the one its main contribution belongs to. The areas are grouped in layers, listed below in order. The site adds filtering, search and the reading-path graph over the same data.
@@ -166,8 +166,10 @@ The inner loop of the system, its number of agents, and the substrate it runs on
 - [An Agentic AI Control Plane for 6G Network Slice Orchestration, Monitoring, and Trading](https://arxiv.org/abs/2602.13227) — `2026`
 - [ITAS: A Multi-Agent Architecture for LLM-Based Intelligent Tutoring](https://arxiv.org/abs/2604.24808) — `arXiv preprint arXiv:2604.24808` · 2026
 - [Towards conversational artificial intelligence for disease management](https://www.nature.com/articles/s41586-026-10764-5) — `Nature` · 2026
+- [A Multi-agent LLM System for Automated Requirements Analysis: A Study on User Story Generation and Prioritization](https://link.springer.com/chapter/10.1007/978-3-032-04200-2_12) — `Euromicro Conference on Software Engineering and Advanced Applications (SEAA 2025)` · 2025
 - [Agent Laboratory: Using LLM Agents as Research Assistants](https://arxiv.org/abs/2501.04227) — `2025`
 - [Cradle: Empowering Foundation Agents towards General Computer Control](https://proceedings.mlr.press/v267/tan25h.html) — `Proceedings of the 42nd International Conference on Machine Learning` · 2025
+- [Designing an LLM-based Multiagent System for Generating Activities and Their Rubrics: A Study on Data Mining](https://doi.org/10.5753/sbie.2025.12723) — `Simpósio Brasileiro de Informática na Educação (SBIE)` · 2025
 - [LegalWebAgent: Empowering Access to Justice via LLM-Based Web Agents](https://arxiv.org/abs/2512.04105) — `2025`
 - [Leveraging Multi-Agent System (MAS) and Fine-Tuned Small Language Models (SLMs) for Automated Telecom Network Troubleshooting](https://arxiv.org/abs/2511.00651) — `2025`
 - [MedScrubCrew: A Medical Multi-Agent Framework for Automating Appointment Scheduling Based on Patient-Provider Profile Resource Matching](https://www.mdpi.com/2227-9032/13/14/1649) — `Healthcare` · 2025
