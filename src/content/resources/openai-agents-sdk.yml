@@ -1,0 +1,10 @@
+id: openai-agents-sdk
+title: OpenAI Agents SDK
+kind: framework
+url: https://github.com/openai/openai-agents-python
+org: OpenAI
+year: 2025
+area: engineering
+description: Python framework for multi-agent workflows built from agents with instructions and tools,
+  handoffs between agents, guardrails and tracing. Supports the OpenAI APIs and other model providers.
+added: '2026-11-03'
