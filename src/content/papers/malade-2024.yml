@@ -1,0 +1,26 @@
+id: malade-2024
+title: 'MALADE: Orchestration of LLM-powered Agents with Retrieval Augmented Generation for Pharmacovigilance'
+authors:
+- Jihye Choi
+- Nils Palumbo
+- Prasad Chalasani
+- Matthew M. Engelhard
+- Somesh Jha
+- Anivarya Kumar
+- David Page
+year: 2024
+arxiv: '2408.01869'
+links:
+  paper: https://arxiv.org/abs/2408.01869
+area: architectures
+scale:
+- multi-agent
+type:
+- framework
+topics: []
+about: []
+infra: []
+domain:
+- healthcare
+status: triaged
+added: '2026-11-03'

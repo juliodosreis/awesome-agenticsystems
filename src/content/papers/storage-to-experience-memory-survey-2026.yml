@@ -1,0 +1,28 @@
+id: storage-to-experience-memory-survey-2026
+title: 'From Storage to Experience: A Survey on the Evolution of LLM Agent Memory Mechanisms'
+authors:
+- Jinghao Luo
+- Yuchen Tian
+- Chuxue Cao
+- Ziyang Luo
+- Hongzhan Lin
+- Kaixin Li
+- Chuyi Kong
+- Ruichao Yang
+- Jing Ma
+year: 2026
+arxiv: '2605.06716'
+links:
+  paper: https://arxiv.org/abs/2605.06716
+area: memory
+scale:
+- single-agent
+type:
+- survey
+topics: []
+about: []
+infra: []
+domain:
+- general
+status: triaged
+added: '2026-11-03'

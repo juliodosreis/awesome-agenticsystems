@@ -1,0 +1,24 @@
+id: autodcworkflow-2024
+title: 'AutoDCWorkflow: LLM-based Data Cleaning Workflow Auto-Generation and Benchmark'
+authors:
+- Lan Li
+- Liri Fang
+- Bertram Ludäscher
+- Vetle I. Torvik
+year: 2024
+arxiv: '2412.06724'
+links:
+  paper: https://arxiv.org/abs/2412.06724
+area: architectures
+scale:
+- single-agent
+type:
+- framework
+- benchmark
+topics: []
+about: []
+infra: []
+domain:
+- data
+status: triaged
+added: '2026-11-03'

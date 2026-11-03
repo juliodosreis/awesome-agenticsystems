@@ -1,0 +1,21 @@
+id: how-llms-fail-agentic-scenarios-2025
+title: How Do LLMs Fail In Agentic Scenarios? A Qualitative Analysis of Success and Failure Scenarios
+  of Various LLMs in Agentic Simulations
+authors:
+- JV Roig
+year: 2025
+arxiv: '2512.07497'
+links:
+  paper: https://arxiv.org/abs/2512.07497
+area: evaluation
+scale:
+- single-agent
+type:
+- empirical
+topics: []
+about: []
+infra: []
+domain:
+- general
+status: triaged
+added: '2026-11-03'

@@ -1,0 +1,32 @@
+id: agentlite-2024
+title: 'AgentLite: A Lightweight Library for Building and Advancing Task-Oriented LLM Agent System'
+authors:
+- Zhiwei Liu
+- Weiran Yao
+- Jianguo Zhang
+- Liangwei Yang
+- Zuxin Liu
+- Juntao Tan
+- Prafulla K. Choubey
+- Tian Lan
+- Jason Wu
+- Huan Wang
+- Shelby Heinecke
+- Caiming Xiong
+- Silvio Savarese
+year: 2024
+arxiv: '2402.15538'
+links:
+  paper: https://arxiv.org/abs/2402.15538
+area: engineering
+scale:
+- multi-agent
+type:
+- framework
+topics: []
+about: []
+infra: []
+domain:
+- general
+status: triaged
+added: '2026-11-03'

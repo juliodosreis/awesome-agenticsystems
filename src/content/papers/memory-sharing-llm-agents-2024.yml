@@ -1,0 +1,21 @@
+id: memory-sharing-llm-agents-2024
+title: 'INMS: Memory Sharing for Large Language Model based Agents'
+authors:
+- Hang Gao
+- Yongfeng Zhang
+year: 2024
+arxiv: '2404.09982'
+links:
+  paper: https://arxiv.org/abs/2404.09982
+area: memory
+scale:
+- multi-agent
+type:
+- method
+topics: []
+about: []
+infra: []
+domain:
+- general
+status: triaged
+added: '2026-11-03'

@@ -1,0 +1,27 @@
+id: re-invoke-2024
+title: 'Re-Invoke: Tool Invocation Rewriting for Zero-Shot Tool Retrieval'
+authors:
+- Yanfei Chen
+- Jinsung Yoon
+- Devendra Singh Sachan
+- Qingze Wang
+- Vincent Cohen-Addad
+- Mohammadhossein Bateni
+- Chen-Yu Lee
+- Tomas Pfister
+year: 2024
+arxiv: '2408.01875'
+links:
+  paper: https://arxiv.org/abs/2408.01875
+area: tools-context
+scale:
+- single-agent
+type:
+- method
+topics: []
+about: []
+infra: []
+domain:
+- general
+status: triaged
+added: '2026-11-03'

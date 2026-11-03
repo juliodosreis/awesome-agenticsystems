@@ -1,0 +1,25 @@
+id: rewoo-2023
+title: 'ReWOO: Decoupling Reasoning from Observations for Efficient Augmented Language Models'
+authors:
+- Binfeng Xu
+- Zhiyuan Peng
+- Bowen Lei
+- Subhabrata Mukherjee
+- Yuchen Liu
+- Dongkuan Xu
+year: 2023
+arxiv: '2305.18323'
+links:
+  paper: https://arxiv.org/abs/2305.18323
+area: reasoning-planning
+scale:
+- single-agent
+type:
+- method
+topics: []
+about: []
+infra: []
+domain:
+- general
+status: triaged
+added: '2026-11-03'

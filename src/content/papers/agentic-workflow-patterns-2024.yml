@@ -1,0 +1,24 @@
+id: agentic-workflow-patterns-2024
+title: Enhancing AI Systems with Agentic Workflows Patterns in Large Language Model
+authors:
+- Aditi Singh
+- Abul Ehtesham
+- Saket Kumar
+- Tala Talaei Khoei
+year: 2024
+venue: TechRxiv
+links:
+  paper: https://doi.org/10.36227/techrxiv.173092393.30216600/v1
+area: foundations
+scale:
+- single-agent
+- multi-agent
+type:
+- case-study
+topics: []
+about: []
+infra: []
+domain:
+- general
+status: triaged
+added: '2026-11-03'

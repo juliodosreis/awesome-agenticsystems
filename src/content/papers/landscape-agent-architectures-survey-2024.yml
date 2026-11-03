@@ -1,0 +1,24 @@
+id: landscape-agent-architectures-survey-2024
+title: 'The Landscape of Emerging AI Agent Architectures for Reasoning, Planning, and Tool Calling: A
+  Survey'
+authors:
+- Tula Masterman
+- Sandi Besen
+- Mason Sawtell
+- Alex Chao
+year: 2024
+arxiv: '2404.11584'
+links:
+  paper: https://arxiv.org/abs/2404.11584
+area: foundations
+scale:
+- multi-agent
+type:
+- survey
+topics: []
+about: []
+infra: []
+domain:
+- general
+status: triaged
+added: '2026-11-03'

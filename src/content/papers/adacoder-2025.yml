@@ -1,0 +1,26 @@
+id: adacoder-2025
+title: 'AdaCoder: An Adaptive Planning and Multi-Agent Framework for Function-Level Code Generation'
+authors:
+- Yueheng Zhu
+- Chao Liu
+- Xuan He
+- Xiaoxue Ren
+- Zhongxin Liu
+- Ruwei Pan
+- Hongyu Zhang
+year: 2025
+arxiv: '2504.04220'
+links:
+  paper: https://arxiv.org/abs/2504.04220
+area: coordination
+scale:
+- multi-agent
+type:
+- method
+topics: []
+about: []
+infra: []
+domain:
+- software-engineering
+status: triaged
+added: '2026-11-03'

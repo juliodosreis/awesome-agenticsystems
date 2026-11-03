@@ -1,0 +1,27 @@
+id: llms-miss-multi-agent-mark-2025
+title: Large Language Models Miss the Multi-Agent Mark
+authors:
+- Emanuele La Malfa
+- Gabriele La Malfa
+- Samuele Marro
+- Jie M. Zhang
+- Elizabeth Black
+- Michael Luck
+- Philip Torr
+- Michael Wooldridge
+year: 2025
+arxiv: '2505.21298'
+links:
+  paper: https://arxiv.org/abs/2505.21298
+area: foundations
+scale:
+- multi-agent
+type:
+- position
+topics: []
+about: []
+infra: []
+domain:
+- general
+status: triaged
+added: '2026-11-03'

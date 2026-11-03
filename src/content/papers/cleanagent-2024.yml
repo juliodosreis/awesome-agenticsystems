@@ -1,0 +1,22 @@
+id: cleanagent-2024
+title: 'CleanAgent: Automating Data Standardization with LLM-based Agents'
+authors:
+- Danrui Qi
+- Zhengjie Miao
+- Jiannan Wang
+year: 2024
+arxiv: '2403.08291'
+links:
+  paper: https://arxiv.org/abs/2403.08291
+area: architectures
+scale:
+- single-agent
+type:
+- framework
+topics: []
+about: []
+infra: []
+domain:
+- data
+status: triaged
+added: '2026-11-03'

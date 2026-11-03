@@ -1,0 +1,24 @@
+id: taser-2025
+title: 'TASER: Table Agents for Schema-guided Extraction and Recommendation'
+authors:
+- Nicole Cho
+- Kirsty Fielding
+- William Watson
+- Sumitra Ganesh
+- Manuela Veloso
+year: 2025
+arxiv: '2508.13404'
+links:
+  paper: https://arxiv.org/abs/2508.13404
+area: architectures
+scale:
+- multi-agent
+type:
+- framework
+topics: []
+about: []
+infra: []
+domain:
+- finance
+status: triaged
+added: '2026-11-03'

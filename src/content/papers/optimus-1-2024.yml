@@ -1,0 +1,25 @@
+id: optimus-1-2024
+title: 'Optimus-1: Hybrid Multimodal Memory Empowered Agents Excel in Long-Horizon Tasks'
+authors:
+- Zaijing Li
+- Yuquan Xie
+- Rui Shao
+- Gongwei Chen
+- Dongmei Jiang
+- Liqiang Nie
+year: 2024
+arxiv: '2408.03615'
+links:
+  paper: https://arxiv.org/abs/2408.03615
+area: memory
+scale:
+- single-agent
+type:
+- method
+topics: []
+about: []
+infra: []
+domain:
+- general
+status: triaged
+added: '2026-11-03'

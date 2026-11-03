@@ -1,0 +1,31 @@
+id: why-reasoning-fails-to-plan-2026
+title: 'Why Reasoning Fails to Plan: A Planning-Centric Analysis of Long-Horizon Decision Making in LLM
+  Agents'
+authors:
+- Zehong Wang
+- Fang Wu
+- Hongru Wang
+- Xiangru Tang
+- Bolian Li
+- Zhenfei Yin
+- Yijun Ma
+- Yiyang Li
+- Weixiang Sun
+- Xiusi Chen
+- Yanfang Ye
+year: 2026
+arxiv: '2601.22311'
+links:
+  paper: https://arxiv.org/abs/2601.22311
+area: reasoning-planning
+scale:
+- single-agent
+type:
+- empirical
+topics: []
+about: []
+infra: []
+domain:
+- general
+status: triaged
+added: '2026-11-03'

@@ -1,0 +1,38 @@
+id: agentscope-2024
+title: 'AgentScope: A Flexible yet Robust Multi-Agent Platform'
+authors:
+- Dawei Gao
+- Zitao Li
+- Xuchen Pan
+- Weirui Kuang
+- Zhijian Ma
+- Bingchen Qian
+- Fei Wei
+- Wenhao Zhang
+- Yuexiang Xie
+- Daoyuan Chen
+- Liuyi Yao
+- Hongyi Peng
+- Zeyu Zhang
+- Lin Zhu
+- Chen Cheng
+- Hongzhu Shi
+- Yaliang Li
+- Bolin Ding
+- Jingren Zhou
+year: 2024
+arxiv: '2402.14034'
+links:
+  paper: https://arxiv.org/abs/2402.14034
+area: engineering
+scale:
+- multi-agent
+type:
+- framework
+topics: []
+about: []
+infra: []
+domain:
+- general
+status: triaged
+added: '2026-11-03'

@@ -1,0 +1,24 @@
+id: llm-multi-agent-survey-workflow-infrastructure-2024
+title: 'A survey on LLM-based multi-agent systems: workflow, infrastructure, and challenges'
+authors:
+- Xinyi Li
+- Sai Wang
+- Siqi Zeng
+- Yu Wu
+- Yi Yang
+year: 2024
+venue: Vicinagearth
+links:
+  paper: https://doi.org/10.1007/s44336-024-00009-2
+area: foundations
+scale:
+- multi-agent
+type:
+- survey
+topics: []
+about: []
+infra: []
+domain:
+- general
+status: triaged
+added: '2026-11-03'

@@ -1,0 +1,28 @@
+id: rap-retrieval-augmented-planning-2024
+title: 'RAP: Retrieval-Augmented Planning with Contextual Memory for Multimodal LLM Agents'
+authors:
+- Tomoyuki Kagaya
+- Thong Jing Yuan
+- Yuxuan Lou
+- Jayashree Karlekar
+- Sugiri Pranata
+- Akira Kinose
+- Koki Oguri
+- Felix Wick
+- Yang You
+year: 2024
+arxiv: '2402.03610'
+links:
+  paper: https://arxiv.org/abs/2402.03610
+area: memory
+scale:
+- single-agent
+type:
+- method
+topics: []
+about: []
+infra: []
+domain:
+- general
+status: triaged
+added: '2026-11-03'

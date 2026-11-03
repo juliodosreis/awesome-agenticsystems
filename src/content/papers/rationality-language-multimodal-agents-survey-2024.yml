@@ -1,0 +1,28 @@
+id: rationality-language-multimodal-agents-survey-2024
+title: 'Towards Rationality in Language and Multimodal Agents: A Survey'
+authors:
+- Bowen Jiang
+- Yangxinyu Xie
+- Xiaomeng Wang
+- Yuan Yuan
+- Zhuoqun Hao
+- Xinyi Bai
+- Weijie J. Su
+- Camillo J. Taylor
+- Tanwi Mallick
+year: 2024
+arxiv: '2406.00252'
+links:
+  paper: https://arxiv.org/abs/2406.00252
+area: foundations
+scale:
+- multi-agent
+type:
+- survey
+topics: []
+about: []
+infra: []
+domain:
+- general
+status: triaged
+added: '2026-11-03'

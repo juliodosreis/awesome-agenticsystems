@@ -1,0 +1,26 @@
+id: moa-llm-research-team-2024
+title: 'MoA is All You Need: Building LLM Research Team using Mixture of Agents'
+authors:
+- Sandy Chen
+- Leqi Zeng
+- Abhinav Raghunathan
+- Flora Huang
+- Terrence C. Kim
+year: 2024
+arxiv: '2409.07487'
+links:
+  paper: https://arxiv.org/abs/2409.07487
+area: architectures
+scale:
+- multi-agent
+type:
+- framework
+topics: []
+about: []
+infra: []
+domain:
+- finance
+notes: Layered small language models with retrieval; each layer reads the outputs of the previous one,
+  with no environment step.
+status: triaged
+added: '2026-11-03'

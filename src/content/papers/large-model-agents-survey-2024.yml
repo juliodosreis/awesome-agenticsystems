@@ -1,0 +1,29 @@
+id: large-model-agents-survey-2024
+title: 'Large Model Based Agents: State-of-the-Art, Cooperation Paradigms, Security and Privacy, and Future
+  Trends'
+authors:
+- Yuntao Wang
+- Yanghe Pan
+- Zhou Su
+- Yi Deng
+- Quan Zhao
+- Linkang Du
+- Tom H. Luan
+- Jiawen Kang
+- Dusit Niyato
+year: 2024
+arxiv: '2409.14457'
+links:
+  paper: https://arxiv.org/abs/2409.14457
+area: foundations
+scale:
+- multi-agent
+type:
+- survey
+topics: []
+about: []
+infra: []
+domain:
+- general
+status: triaged
+added: '2026-11-03'

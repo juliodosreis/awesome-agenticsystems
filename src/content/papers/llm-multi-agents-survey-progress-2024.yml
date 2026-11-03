@@ -1,0 +1,27 @@
+id: llm-multi-agents-survey-progress-2024
+title: 'Large Language Model based Multi-Agents: A Survey of Progress and Challenges'
+authors:
+- Taicheng Guo
+- Xiuying Chen
+- Yaqi Wang
+- Ruidi Chang
+- Shichao Pei
+- Nitesh V. Chawla
+- Olaf Wiest
+- Xiangliang Zhang
+year: 2024
+arxiv: '2402.01680'
+links:
+  paper: https://arxiv.org/abs/2402.01680
+area: foundations
+scale:
+- multi-agent
+type:
+- survey
+topics: []
+about: []
+infra: []
+domain:
+- general
+status: triaged
+added: '2026-11-03'

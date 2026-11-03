@@ -1,0 +1,21 @@
+id: autonomy-alignment-multi-agent-taxonomy-2023
+title: 'Balancing Autonomy and Alignment: A Multi-Dimensional Taxonomy for Autonomous LLM-powered Multi-Agent
+  Architectures'
+authors:
+- Thorsten Händler
+year: 2023
+arxiv: '2310.03659'
+links:
+  paper: https://arxiv.org/abs/2310.03659
+area: foundations
+scale:
+- multi-agent
+type:
+- survey
+topics: []
+about: []
+infra: []
+domain:
+- general
+status: triaged
+added: '2026-11-03'
