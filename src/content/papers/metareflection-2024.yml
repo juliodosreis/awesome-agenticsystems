@@ -1,0 +1,26 @@
+id: metareflection-2024
+title: 'MetaReflection: Learning Instructions for Language Agents using Past Reflections'
+authors:
+- Priyanshu Gupta
+- Shashank Kirtania
+- Ananya Singha
+- Sumit Gulwani
+- Arjun Radhakrishna
+- Sherry Shi
+- Gustavo Soares
+year: 2024
+arxiv: '2405.13009'
+links:
+  paper: https://arxiv.org/abs/2405.13009
+area: learning-evolution
+scale:
+- single-agent
+type:
+- method
+topics: []
+about: []
+infra: []
+domain:
+- general
+status: triaged
+added: '2026-11-03'
