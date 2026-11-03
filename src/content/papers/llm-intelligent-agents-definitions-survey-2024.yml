@@ -1,0 +1,30 @@
+id: llm-intelligent-agents-definitions-survey-2024
+title: 'Exploring Large Language Model based Intelligent Agents: Definitions, Methods, and Prospects'
+authors:
+- Yuheng Cheng
+- Ceyao Zhang
+- Zhengwen Zhang
+- Xiangrui Meng
+- Sirui Hong
+- Wenhao Li
+- Zihao Wang
+- Zekai Wang
+- Feng Yin
+- Junhua Zhao
+- Xiuqiang He
+year: 2024
+arxiv: '2401.03428'
+links:
+  paper: https://arxiv.org/abs/2401.03428
+area: foundations
+scale:
+- single-agent
+type:
+- survey
+topics: []
+about: []
+infra: []
+domain:
+- general
+status: triaged
+added: '2026-11-03'
