@@ -1,0 +1,13 @@
+id: reinforcement-learning-introduction
+title: 'Reinforcement Learning: An Introduction (2nd edition)'
+kind: book
+url: http://incompleteideas.net/book/the-book-2nd.html
+authors:
+- Richard S. Sutton
+- Andrew G. Barto
+year: 2018
+area: learning-evolution
+description: 'Textbook on reinforcement learning: Markov decision processes, dynamic programming, Monte
+  Carlo and temporal-difference methods, function approximation and policy gradient methods. The authors
+  publish the full text on the site.'
+added: '2026-11-03'

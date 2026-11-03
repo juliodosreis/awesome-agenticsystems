@@ -1,0 +1,11 @@
+id: agent-client-protocol
+title: Agent Client Protocol (ACP)
+kind: protocol
+url: https://agentclientprotocol.com/
+org: Zed Industries
+year: 2025
+area: interoperability
+description: Protocol for communication between code editors and coding agents, for local and remote agents.
+  An editor that implements it connects to any agent that implements it, with no integration specific
+  to each agent.
+added: '2026-11-03'

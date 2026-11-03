@@ -1,0 +1,11 @@
+id: multi-agent-research-system
+title: How we built our multi-agent research system
+kind: guide
+url: https://www.anthropic.com/engineering/multi-agent-research-system
+org: Anthropic
+year: 2025
+area: coordination
+description: Engineering post on the Research feature of Claude, in which a lead agent plans the research
+  and starts subagents that search in parallel. Covers prompt design, evaluation and the operation of
+  the system in production.
+added: '2026-11-03'

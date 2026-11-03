@@ -1,0 +1,14 @@
+id: berkeley-advanced-llm-agents-mooc
+title: Advanced Large Language Model Agents (MOOC, Spring 2025)
+kind: course
+url: https://llmagents-learning.org/sp25
+authors:
+- Dawn Song
+- Xinyun Chen
+- Kaiyu Yang
+org: UC Berkeley
+year: 2025
+area: foundations
+description: Lecture series that follows the Fall 2024 LLM Agents MOOC, with recorded lectures on reasoning
+  and planning, agents for coding and web tasks, mathematics and theorem proving, and agent safety.
+added: '2026-11-03'

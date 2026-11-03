@@ -1,0 +1,11 @@
+id: huggingface-agents-course
+title: AI Agents Course
+kind: course
+url: https://huggingface.co/learn/agents-course
+org: Hugging Face
+year: 2025
+area: foundations
+description: Course with written units and exercises on agent fundamentals and on building agents with
+  smolagents, LlamaIndex and LangGraph. The final assignment evaluates the agent of each student on questions
+  from the GAIA benchmark.
+added: '2026-11-03'

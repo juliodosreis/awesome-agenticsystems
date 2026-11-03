@@ -1,0 +1,11 @@
+id: a2a-protocol
+title: Agent2Agent Protocol (A2A)
+kind: protocol
+url: https://a2a-protocol.org/
+org: Linux Foundation
+year: 2025
+area: interoperability
+description: Protocol for communication between agents built on different frameworks. An agent publishes
+  an Agent Card that describes its skills, and a client agent sends it tasks over JSON-RPC on HTTP, with
+  streaming and push notifications for long-running tasks.
+added: '2026-11-03'

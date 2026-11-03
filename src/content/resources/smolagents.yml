@@ -1,0 +1,10 @@
+id: smolagents
+title: smolagents
+kind: framework
+url: https://github.com/huggingface/smolagents
+org: Hugging Face
+year: 2024
+area: tools-context
+description: Python library for agents that write their actions as Python code snippets, executed locally
+  or in a sandbox.
+added: '2026-11-03'

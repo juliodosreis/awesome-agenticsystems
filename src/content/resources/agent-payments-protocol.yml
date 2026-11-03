@@ -1,0 +1,11 @@
+id: agent-payments-protocol
+title: Agent Payments Protocol (AP2)
+kind: protocol
+url: https://ap2-protocol.org/
+org: Google
+year: 2025
+area: interoperability
+description: Protocol for payments started by agents, available as an extension of A2A. Signed mandates
+  record the intent of the user and the approval of the cart, so the merchant and the payment provider
+  can check what the user authorized.
+added: '2026-11-03'

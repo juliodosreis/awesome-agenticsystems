@@ -1,0 +1,10 @@
+id: berkeley-function-calling-leaderboard
+title: Berkeley Function Calling Leaderboard (BFCL)
+kind: benchmark
+url: https://gorilla.cs.berkeley.edu/leaderboard.html
+org: UC Berkeley
+year: 2024
+area: tools-context
+description: Leaderboard that measures how accurately language models call functions, over single-turn
+  and multi-turn tests. Version 4 adds agentic evaluation categories.
+added: '2026-11-03'

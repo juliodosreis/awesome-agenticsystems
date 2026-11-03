@@ -1,0 +1,10 @@
+id: swe-bench-leaderboards
+title: SWE-bench leaderboards
+kind: benchmark
+url: https://www.swebench.com/
+year: 2023
+area: evaluation
+description: Leaderboards for SWE-bench and its variants (Verified, Lite, Multimodal, Multilingual, Bash
+  Only). Each entry reports the percentage of GitHub issues an agent resolved, checked by the tests of
+  the repository.
+added: '2026-11-03'
