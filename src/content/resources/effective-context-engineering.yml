@@ -1,0 +1,11 @@
+id: effective-context-engineering
+title: Effective context engineering for AI agents
+kind: guide
+url: https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents
+org: Anthropic
+year: 2025
+area: tools-context
+description: 'Article on the tokens an agent holds in its context window: system prompts, tool definitions,
+  examples, retrieval at the time of use, compaction, structured note-taking and sub-agents for long-horizon
+  tasks.'
+added: '2026-11-03'
