@@ -1,0 +1,20 @@
+id: autonomous-agents-llm-review-2024
+title: 'Exploring Autonomous Agents through the Lens of Large Language Models: A Review'
+authors:
+- Saikat Barua
+year: 2024
+arxiv: '2404.04442'
+links:
+  paper: https://arxiv.org/abs/2404.04442
+area: foundations
+scale:
+- single-agent
+type:
+- survey
+topics: []
+about: []
+infra: []
+domain:
+- general
+status: triaged
+added: '2026-11-03'
