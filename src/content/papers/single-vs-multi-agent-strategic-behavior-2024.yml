@@ -1,0 +1,23 @@
+id: single-vs-multi-agent-strategic-behavior-2024
+title: 'Simulating Human Strategic Behavior: Comparing Single and Multi-agent LLMs'
+authors:
+- Karthik Sreedhar
+- Lydia Chilton
+year: 2024
+arxiv: '2402.08189'
+links:
+  paper: https://arxiv.org/abs/2402.08189
+area: coordination
+scale:
+- multi-agent
+type:
+- empirical
+topics: []
+about: []
+infra: []
+domain:
+- general
+notes: Role-prompted agents with greedy and fair personalities play the ultimatum game against each other.
+  The paper compares them with a single model that simulates both players.
+status: triaged
+added: '2026-11-03'
