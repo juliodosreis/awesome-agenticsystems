@@ -1,0 +1,28 @@
+id: llm-agent-based-modeling-simulation-survey-2024
+title: 'Large language models empowered agent-based modeling and simulation: a survey and perspectives'
+authors:
+- Chen Gao
+- Xiaochong Lan
+- Nian Li
+- Yuan Yuan
+- Jingtao Ding
+- Zhilun Zhou
+- Fengli Xu
+- Yong Li
+year: 2024
+venue: Humanities and Social Sciences Communications
+arxiv: '2312.11970'
+links:
+  paper: https://doi.org/10.1057/s41599-024-03611-3
+area: foundations
+scale:
+- multi-agent
+type:
+- survey
+topics: []
+about: []
+infra: []
+domain:
+- general
+status: triaged
+added: '2026-11-03'
