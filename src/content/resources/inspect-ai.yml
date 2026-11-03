@@ -1,0 +1,10 @@
+id: inspect-ai
+title: Inspect
+kind: tool
+url: https://inspect.aisi.org.uk/
+org: UK AI Security Institute
+year: 2024
+area: evaluation
+description: Python framework for evaluations of language models and agents, built from datasets, solvers,
+  tools and scorers. Includes sandboxed tool execution, a log viewer and a collection of pre-built evaluations.
+added: '2026-11-03'
