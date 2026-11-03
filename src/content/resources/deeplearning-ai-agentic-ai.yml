@@ -1,0 +1,12 @@
+id: deeplearning-ai-agentic-ai
+title: Agentic AI
+kind: course
+url: https://www.deeplearning.ai/courses/agentic-ai/
+authors:
+- Andrew Ng
+org: DeepLearning.AI
+year: 2025
+area: architectures
+description: Course of 31 video lessons with code examples and graded assignments on reflection, tool
+  use, planning and multi-agent workflows, and on the evaluation and error analysis of agentic systems.
+added: '2026-11-03'
