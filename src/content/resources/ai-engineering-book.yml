@@ -1,0 +1,11 @@
+id: ai-engineering-book
+title: AI Engineering
+kind: book
+url: https://huyenchip.com/books/
+authors:
+- Chip Huyen
+year: 2025
+area: engineering
+description: Book on building applications on top of foundation models. Covers evaluation, prompt engineering,
+  retrieval-augmented generation, agents, finetuning and inference optimization.
+added: '2026-11-03'
