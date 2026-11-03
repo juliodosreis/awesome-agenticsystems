@@ -1,0 +1,10 @@
+id: terminal-bench
+title: Terminal-Bench
+kind: benchmark
+url: https://www.tbench.ai/
+org: Stanford University and Laude Institute
+year: 2025
+area: evaluation
+description: Benchmark of tasks that an agent completes in a terminal environment. The leaderboard reports
+  the resolution rate, cost and tokens of each model and agent pair.
+added: '2026-11-03'
