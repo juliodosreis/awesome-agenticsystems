@@ -1,0 +1,10 @@
+id: microsoft-agent-framework
+title: Microsoft Agent Framework
+kind: framework
+url: https://github.com/microsoft/agent-framework
+org: Microsoft
+year: 2025
+area: engineering
+description: Framework for building agents and multi-agent workflows in Python and .NET, with a Go SDK
+  in a separate repository. The archived AutoGen repository points to it as its successor.
+added: '2026-11-03'
