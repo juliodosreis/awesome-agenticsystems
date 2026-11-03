@@ -1,0 +1,10 @@
+id: pydantic-ai
+title: Pydantic AI
+kind: framework
+url: https://github.com/pydantic/pydantic-ai
+org: Pydantic
+year: 2024
+area: engineering
+description: Python agent framework with typed tool definitions and structured outputs validated by Pydantic
+  models, for several model providers.
+added: '2026-11-03'
