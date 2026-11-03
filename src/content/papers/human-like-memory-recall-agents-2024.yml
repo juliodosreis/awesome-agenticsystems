@@ -1,0 +1,23 @@
+id: human-like-memory-recall-agents-2024
+title: '"My agent understands me better": Integrating Dynamic Human-like Memory Recall and Consolidation
+  in LLM-Based Agents'
+authors:
+- Yuki Hou
+- Haruki Tamoto
+- Homei Miyashita
+year: 2024
+arxiv: '2404.00573'
+links:
+  paper: https://arxiv.org/abs/2404.00573
+area: memory
+scale:
+- single-agent
+type:
+- method
+topics: []
+about: []
+infra: []
+domain:
+- general
+status: triaged
+added: '2026-11-03'
