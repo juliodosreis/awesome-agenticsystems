@@ -1,0 +1,11 @@
+id: anthropic-skills
+title: Anthropic Skills repository
+kind: skill
+url: https://github.com/anthropics/skills
+org: Anthropic
+year: 2025
+area: tools-context
+description: Repository of skills for Claude, each one a folder with a SKILL.md file. Includes skills
+  for creative tasks, web application testing and MCP server generation, and the document skills for Word,
+  PowerPoint, Excel and PDF files.
+added: '2026-11-03'
