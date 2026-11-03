@@ -1,0 +1,20 @@
+id: agon-2026
+title: "Agon: An Autonomous Large-Scale Omnidisciplinary Research System Built on Prompt Economy"
+authors: ["Youran Sun", "Xingyu Ren", "Chugang Yi", "Jiaxuan Guo", "Kejia Zhang", "Jianda Du", "Haizhao Yang"]
+year: 2026
+arxiv: "2606.24177"
+links:
+  paper: https://arxiv.org/abs/2606.24177
+  code: https://github.com/AutoResearch-Factory/Agon
+area: architectures
+scale:
+- multi-agent
+type:
+- framework
+topics: []
+about: []
+infra: []
+domain:
+- science
+status: triaged
+added: '2026-11-03'
