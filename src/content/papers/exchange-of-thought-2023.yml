@@ -1,0 +1,29 @@
+id: exchange-of-thought-2023
+title: 'Exchange-of-Thought: Enhancing Large Language Model Capabilities through Cross-Model Communication'
+authors:
+- Zhangyue Yin
+- Qiushi Sun
+- Cheng Chang
+- Qipeng Guo
+- Junqi Dai
+- Xuanjing Huang
+- Xipeng Qiu
+year: 2023
+venue: Proceedings of the 2023 Conference on Empirical Methods in Natural Language Processing
+arxiv: '2312.01823'
+links:
+  paper: https://doi.org/10.18653/v1/2023.emnlp-main.936
+area: coordination
+scale:
+- multi-agent
+type:
+- method
+topics: []
+about: []
+infra: []
+domain:
+- general
+notes: Several language models exchange reasoning under four communication paradigms (memory, report,
+  relay, debate), with no tool call or environment step.
+status: triaged
+added: '2026-11-03'
