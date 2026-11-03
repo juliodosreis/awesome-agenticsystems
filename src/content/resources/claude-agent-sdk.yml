@@ -1,0 +1,11 @@
+id: claude-agent-sdk
+title: Claude Agent SDK
+kind: framework
+url: https://github.com/anthropics/claude-agent-sdk-python
+org: Anthropic
+year: 2025
+area: engineering
+description: Python SDK that runs the Claude Code agent loop from a program, with its built-in tools,
+  custom tools defined as in-process MCP servers, and hooks on tool calls. The package bundles the Claude
+  Code CLI.
+added: '2026-11-03'
