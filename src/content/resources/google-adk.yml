@@ -1,0 +1,10 @@
+id: google-adk
+title: Agent Development Kit (ADK)
+kind: framework
+url: https://github.com/google/adk-python
+org: Google
+year: 2025
+area: engineering
+description: Python toolkit for defining agents in code, composing them into multi-agent systems, and
+  evaluating and deploying them.
+added: '2026-11-03'
