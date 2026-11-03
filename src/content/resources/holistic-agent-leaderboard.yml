@@ -1,0 +1,10 @@
+id: holistic-agent-leaderboard
+title: Holistic Agent Leaderboard (HAL)
+kind: benchmark
+url: https://hal.cs.princeton.edu/
+org: Princeton University
+year: 2025
+area: evaluation
+description: Third-party leaderboard that runs agents on nine benchmarks and reports accuracy together
+  with cost. A separate dashboard reports reliability measures such as consistency and robustness.
+added: '2026-11-03'
