@@ -1,0 +1,29 @@
+id: internet-of-agents-2024
+title: 'Internet of Agents: Weaving a Web of Heterogeneous Agents for Collaborative Intelligence'
+authors:
+- Weize Chen
+- Ziming You
+- Ran Li
+- Yitong Guan
+- Chen Qian
+- Chenyang Zhao
+- Cheng Yang
+- Ruobing Xie
+- Zhiyuan Liu
+- Maosong Sun
+year: 2024
+arxiv: '2407.07061'
+links:
+  paper: https://arxiv.org/abs/2407.07061
+area: interoperability
+scale:
+- multi-agent
+type:
+- framework
+topics: []
+about: []
+infra: []
+domain:
+- general
+status: triaged
+added: '2026-11-03'
