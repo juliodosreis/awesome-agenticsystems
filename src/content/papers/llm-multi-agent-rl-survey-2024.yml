@@ -1,0 +1,22 @@
+id: llm-multi-agent-rl-survey-2024
+title: 'LLM-based Multi-Agent Reinforcement Learning: Current and Future Directions'
+authors:
+- Chuanneng Sun
+- Songjun Huang
+- Dario Pompili
+year: 2024
+arxiv: '2405.11106'
+links:
+  paper: https://arxiv.org/abs/2405.11106
+area: foundations
+scale:
+- multi-agent
+type:
+- survey
+topics: []
+about: []
+infra: []
+domain:
+- general
+status: triaged
+added: '2026-11-03'
