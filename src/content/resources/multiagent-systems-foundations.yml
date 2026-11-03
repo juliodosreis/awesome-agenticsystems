@@ -1,0 +1,12 @@
+id: multiagent-systems-foundations
+title: 'Multiagent Systems: Algorithmic, Game-Theoretic, and Logical Foundations'
+kind: book
+url: http://www.masfoundations.org/
+authors:
+- Yoav Shoham
+- Kevin Leyton-Brown
+year: 2008
+area: coordination
+description: Textbook on multiagent systems covering distributed problem solving, game theory, social
+  choice, mechanism design and logics of knowledge and belief. The site offers the eBook as a free download.
+added: '2026-11-03'
