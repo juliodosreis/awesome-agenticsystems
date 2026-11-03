@@ -1,0 +1,21 @@
+id: synthai-2024
+title: 'SynthAI: A Multi Agent Generative AI Framework for Automated Modular HLS Design Generation'
+authors:
+- Seyed Arash Sheikholeslam
+- Andre Ivanov
+year: 2024
+arxiv: '2405.16072'
+links:
+  paper: https://arxiv.org/abs/2405.16072
+area: architectures
+scale:
+- multi-agent
+type:
+- framework
+topics: []
+about: []
+infra: []
+domain:
+- general
+status: triaged
+added: '2026-11-03'
