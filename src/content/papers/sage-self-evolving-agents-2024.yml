@@ -1,0 +1,33 @@
+id: sage-self-evolving-agents-2024
+title: Self-evolving Agents with reflective and memory-augmented abilities
+authors:
+- Xuechen Liang
+- Yangfan He
+- Yinghui Xia
+- Xinyuan Song
+- Jianhui Wang
+- Meiling Tao
+- Li Sun
+- Xinhang Yuan
+- Jiayi Su
+- Keqin Li
+- Jiaqi Chen
+- Jinsong Yang
+- Siyuan Chen
+- Tianyu Shi
+year: 2024
+arxiv: '2409.00872'
+links:
+  paper: https://arxiv.org/abs/2409.00872
+area: memory
+scale:
+- single-agent
+type:
+- method
+topics: []
+about: []
+infra: []
+domain:
+- general
+status: triaged
+added: '2026-11-03'
