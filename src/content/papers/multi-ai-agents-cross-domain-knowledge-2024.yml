@@ -1,0 +1,28 @@
+id: multi-ai-agents-cross-domain-knowledge-2024
+title: Leveraging Multi-AI Agents for Cross-Domain Knowledge Discovery
+authors:
+- Shiva Aryal
+- Tuyen Do
+- Bisesh Heyojoo
+- Sandeep Chataut
+- Bichar Dip Shrestha Gurung
+- Venkataramana Gadhamshetty
+- Etienne Gnimpieba
+year: 2024
+arxiv: '2404.08511'
+links:
+  paper: https://arxiv.org/abs/2404.08511
+area: coordination
+scale:
+- multi-agent
+type:
+- framework
+topics: []
+about: []
+infra: []
+domain:
+- general
+notes: Domain-expert language model agents combine their answers to interdisciplinary queries under several
+  workflow scenarios.
+status: triaged
+added: '2026-11-03'
