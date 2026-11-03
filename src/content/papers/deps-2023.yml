@@ -1,0 +1,26 @@
+id: deps-2023
+title: 'Describe, Explain, Plan and Select: Interactive Planning with Large Language Models Enables Open-World
+  Multi-Task Agents'
+authors:
+- Zihao Wang
+- Shaofei Cai
+- Guanzhou Chen
+- Anji Liu
+- Xiaojian Ma
+- Yitao Liang
+year: 2023
+arxiv: '2302.01560'
+links:
+  paper: https://arxiv.org/abs/2302.01560
+area: reasoning-planning
+scale:
+- single-agent
+type:
+- method
+topics: []
+about: []
+infra: []
+domain:
+- general
+status: triaged
+added: '2026-11-03'
