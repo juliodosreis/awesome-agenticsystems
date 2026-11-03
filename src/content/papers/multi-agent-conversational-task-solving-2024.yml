@@ -1,0 +1,22 @@
+id: multi-agent-conversational-task-solving-2024
+title: Multi-Agent Large Language Models for Conversational Task-Solving
+authors:
+- Jonas Becker
+year: 2024
+arxiv: '2410.22932'
+links:
+  paper: https://arxiv.org/abs/2410.22932
+area: coordination
+scale:
+- multi-agent
+type:
+- empirical
+topics: []
+about: []
+infra: []
+domain:
+- general
+notes: Compares discussion paradigms among role-prompted language model agents; the agents exchange text
+  only.
+status: triaged
+added: '2026-11-03'
