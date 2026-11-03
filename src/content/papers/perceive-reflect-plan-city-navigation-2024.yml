@@ -1,0 +1,26 @@
+id: perceive-reflect-plan-city-navigation-2024
+title: 'Perceive, Reflect, and Plan: Designing LLM Agent for Goal-Directed City Navigation without Instructions'
+authors:
+- Qingbin Zeng
+- Qinglong Yang
+- Shunan Dong
+- Heming Du
+- Liang Zheng
+- Fengli Xu
+- Yong Li
+year: 2024
+arxiv: '2408.04168'
+links:
+  paper: https://arxiv.org/abs/2408.04168
+area: architectures
+scale:
+- single-agent
+type:
+- method
+topics: []
+about: []
+infra: []
+domain:
+- general
+status: triaged
+added: '2026-11-03'
