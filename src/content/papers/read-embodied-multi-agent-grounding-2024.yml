@@ -1,0 +1,26 @@
+id: read-embodied-multi-agent-grounding-2024
+title: Towards Efficient LLM Grounding for Embodied Multi-Agent Collaboration
+authors:
+- Yang Zhang
+- Shixin Yang
+- Chenjia Bai
+- Fei Wu
+- Xiu Li
+- Zhen Wang
+- Xuelong Li
+year: 2024
+arxiv: '2405.14314'
+links:
+  paper: https://arxiv.org/abs/2405.14314
+area: coordination
+scale:
+- multi-agent
+type:
+- method
+topics: []
+about: []
+infra: []
+domain:
+- robotics
+status: triaged
+added: '2026-11-03'
