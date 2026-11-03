@@ -1,0 +1,10 @@
+id: agent-skills-specification
+title: Agent Skills specification
+kind: skill
+url: https://agentskills.io/
+year: 2025
+area: tools-context
+description: Open format for agent skills. A skill is a folder with a SKILL.md file that holds a name,
+  a description and instructions, and can bundle scripts, reference files and templates that the agent
+  loads when a task requires them.
+added: '2026-11-03'
