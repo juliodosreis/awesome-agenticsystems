@@ -28,7 +28,7 @@ A curated collection of material on agentic AI systems, in two parts:
 | | Papers | Resources |
 |---|---|---|
 | Holds | Papers on agentic systems: surveys, methods, benchmarks, frameworks, empirical studies | Links to protocols, frameworks, skills, benchmarks, books, courses, guides and tools |
-| Entries | <!-- gen:paper-total -->222<!-- /gen:paper-total --> | <!-- gen:resource-total -->7<!-- /gen:resource-total --> |
+| Entries | <!-- gen:paper-total -->222<!-- /gen:paper-total --> | <!-- gen:resource-total -->35<!-- /gen:resource-total --> |
 | Classified by | One `area`, plus topics and facets | One `kind`, plus an optional `area` |
 | On the site | [Index](https://juliodosreis.com/awesome-agenticsystems), [areas](https://juliodosreis.com/awesome-agenticsystems/areas), [domains](https://juliodosreis.com/awesome-agenticsystems/domains) | [Resources](https://juliodosreis.com/awesome-agenticsystems/resources), and the page of its area when one is set |
 | In this README | [Papers](#papers), grouped by area | [Resources](#resources), grouped by kind |
@@ -380,7 +380,7 @@ How a system is measured, and how its risk is governed.
 ## Resources
 
 <!-- gen:resource-count -->
-7 resources listed, in 6 of the 8 kinds.
+35 resources listed, in 8 of the 8 kinds.
 <!-- /gen:resource-count -->
 
 Each entry is a link with a one or two sentence description, filed under one kind. An entry with an `area` also appears on that area's page of the site, below the papers. The kinds and the rule for each one are listed under [resource kinds](./CONTRIBUTING.md#resource-kinds) in CONTRIBUTING.md.
@@ -390,6 +390,12 @@ Each entry is a link with a one or two sentence description, filed under one kin
 
 Specifications for connecting agents to tools, to clients or to other agents.
 
+- [Agent Client Protocol (ACP)](https://agentclientprotocol.com/) — Zed Industries, 2025  
+  Protocol for communication between code editors and coding agents, for local and remote agents. An editor that implements it connects to any agent that implements it, with no integration specific to each agent.
+- [Agent Payments Protocol (AP2)](https://ap2-protocol.org/) — Google, 2025  
+  Protocol for payments started by agents, available as an extension of A2A. Signed mandates record the intent of the user and the approval of the cart, so the merchant and the payment provider can check what the user authorized.
+- [Agent2Agent Protocol (A2A)](https://a2a-protocol.org/) — Linux Foundation, 2025  
+  Protocol for communication between agents built on different frameworks. An agent publishes an Agent Card that describes its skills, and a client agent sends it tasks over JSON-RPC on HTTP, with streaming and push notifications for long-running tasks.
 - [Model Context Protocol (MCP)](https://modelcontextprotocol.io/) — Agentic AI Foundation, 2024  
   Client-server protocol over JSON-RPC. A server exposes tools, resources and prompts, and an LLM application connects to it as a client.
 
@@ -397,22 +403,68 @@ Specifications for connecting agents to tools, to clients or to other agents.
 
 Code frameworks for orchestrating agents: control flow, state, tool calls and multi-agent workflows.
 
+- [Agent Development Kit (ADK)](https://github.com/google/adk-python) — Google, 2025  
+  Python toolkit for defining agents in code, composing them into multi-agent systems, and evaluating and deploying them.
+- [Claude Agent SDK](https://github.com/anthropics/claude-agent-sdk-python) — Anthropic, 2025  
+  Python SDK that runs the Claude Code agent loop from a program, with its built-in tools, custom tools defined as in-process MCP servers, and hooks on tool calls. The package bundles the Claude Code CLI.
 - [CrewAI](https://github.com/crewAIInc/crewAI)  
   Python framework for running groups of role-based agents that share tasks, with sequential and hierarchical processes.
 - [LangGraph](https://github.com/langchain-ai/langgraph) — LangChain, 2024  
   Library for building agents as graphs of nodes over a shared state, with checkpointing and interrupts for human review.
+- [Microsoft Agent Framework](https://github.com/microsoft/agent-framework) — Microsoft, 2025  
+  Framework for building agents and multi-agent workflows in Python and .NET, with a Go SDK in a separate repository. The archived AutoGen repository points to it as its successor.
+- [OpenAI Agents SDK](https://github.com/openai/openai-agents-python) — OpenAI, 2025  
+  Python framework for multi-agent workflows built from agents with instructions and tools, handoffs between agents, guardrails and tracing. Supports the OpenAI APIs and other model providers.
+- [Pydantic AI](https://github.com/pydantic/pydantic-ai) — Pydantic, 2024  
+  Python agent framework with typed tool definitions and structured outputs validated by Pydantic models, for several model providers.
+- [smolagents](https://github.com/huggingface/smolagents) — Hugging Face, 2024  
+  Python library for agents that write their actions as Python code snippets, executed locally or in a sandbox.
+
+### Skills ([`skill`](https://juliodosreis.com/awesome-agenticsystems/resources#skill))
+
+Packaged instructions, scripts and reference files that an agent loads when a task requires them.
+
+- [Agent Skills specification](https://agentskills.io/) — 2025  
+  Open format for agent skills. A skill is a folder with a SKILL.md file that holds a name, a description and instructions, and can bundle scripts, reference files and templates that the agent loads when a task requires them.
+- [Anthropic Skills repository](https://github.com/anthropics/skills) — Anthropic, 2025  
+  Repository of skills for Claude, each one a folder with a SKILL.md file. Includes skills for creative tasks, web application testing and MCP server generation, and the document skills for Word, PowerPoint, Excel and PDF files.
+
+### Benchmarks ([`benchmark`](https://juliodosreis.com/awesome-agenticsystems/resources#benchmark))
+
+Benchmarks, leaderboards and evaluation harnesses released as a website, dataset or repository. A benchmark published as a paper also gets a record in the paper collection, under the evaluation area.
+
+- [Berkeley Function Calling Leaderboard (BFCL)](https://gorilla.cs.berkeley.edu/leaderboard.html) — UC Berkeley, 2024  
+  Leaderboard that measures how accurately language models call functions, over single-turn and multi-turn tests. Version 4 adds agentic evaluation categories.
+- [Holistic Agent Leaderboard (HAL)](https://hal.cs.princeton.edu/) — Princeton University, 2025  
+  Third-party leaderboard that runs agents on nine benchmarks and reports accuracy together with cost. A separate dashboard reports reliability measures such as consistency and robustness.
+- [SWE-bench leaderboards](https://www.swebench.com/) — 2023  
+  Leaderboards for SWE-bench and its variants (Verified, Lite, Multimodal, Multilingual, Bash Only). Each entry reports the percentage of GitHub issues an agent resolved, checked by the tests of the repository.
+- [Terminal-Bench](https://www.tbench.ai/) — Stanford University and Laude Institute, 2025  
+  Benchmark of tasks that an agent completes in a terminal environment. The leaderboard reports the resolution rate, cost and tokens of each model and agent pair.
 
 ### Books ([`book`](https://juliodosreis.com/awesome-agenticsystems/resources#book))
 
 Books covering agents, or the methods agents are built from.
 
+- [AI Engineering](https://huyenchip.com/books/) — Chip Huyen, 2025  
+  Book on building applications on top of foundation models. Covers evaluation, prompt engineering, retrieval-augmented generation, agents, finetuning and inference optimization.
 - [Artificial Intelligence: A Modern Approach (4th edition)](https://aima.cs.berkeley.edu/) — Stuart Russell, Peter Norvig, 2020  
   Textbook on artificial intelligence. Chapter 2 defines intelligent agents and their environments, and later chapters cover search, planning, knowledge representation and learning.
+- [Multiagent Systems: Algorithmic, Game-Theoretic, and Logical Foundations](http://www.masfoundations.org/) — Yoav Shoham, Kevin Leyton-Brown, 2008  
+  Textbook on multiagent systems covering distributed problem solving, game theory, social choice, mechanism design and logics of knowledge and belief. The site offers the eBook as a free download.
+- [Reinforcement Learning: An Introduction (2nd edition)](http://incompleteideas.net/book/the-book-2nd.html) — Richard S. Sutton, Andrew G. Barto, 2018  
+  Textbook on reinforcement learning: Markov decision processes, dynamic programming, Monte Carlo and temporal-difference methods, function approximation and policy gradient methods. The authors publish the full text on the site.
 
 ### Courses ([`course`](https://juliodosreis.com/awesome-agenticsystems/resources#course))
 
 Courses and lecture series with recorded or written material.
 
+- [Advanced Large Language Model Agents (MOOC, Spring 2025)](https://llmagents-learning.org/sp25) — Dawn Song, Xinyun Chen, Kaiyu Yang · UC Berkeley, 2025  
+  Lecture series that follows the Fall 2024 LLM Agents MOOC, with recorded lectures on reasoning and planning, agents for coding and web tasks, mathematics and theorem proving, and agent safety.
+- [Agentic AI](https://www.deeplearning.ai/courses/agentic-ai/) — Andrew Ng · DeepLearning.AI, 2025  
+  Course of 31 video lessons with code examples and graded assignments on reflection, tool use, planning and multi-agent workflows, and on the evaluation and error analysis of agentic systems.
+- [AI Agents Course](https://huggingface.co/learn/agents-course) — Hugging Face, 2025  
+  Course with written units and exercises on agent fundamentals and on building agents with smolagents, LlamaIndex and LangGraph. The final assignment evaluates the agent of each student on questions from the GAIA benchmark.
 - [Large Language Model Agents (MOOC, Fall 2024)](https://llmagents-learning.org/f24) — Dawn Song, Xinyun Chen · UC Berkeley, 2024  
   Lecture series with recordings and slides, given by guest speakers, on LLM reasoning, the history of LLM agents, agent frameworks such as AutoGen, agents for software development and robotics.
 
@@ -420,17 +472,29 @@ Courses and lecture series with recorded or written material.
 
 Articles and engineering posts on building and running agents.
 
+- [12-Factor Agents](https://github.com/humanlayer/12-factor-agents) — Dex Horthy · HumanLayer, 2025  
+  Twelve principles for building LLM applications, among them owning the prompts and the context window, treating tools as structured outputs, unifying execution state with business state and contacting humans through tool calls.
 - [Building effective agents](https://www.anthropic.com/engineering/building-effective-agents) — Anthropic, 2024  
   Article that separates workflows, where LLMs and tools follow predefined code paths, from agents, where the LLM directs its own tool use. Describes prompt chaining, routing, parallelization, orchestrator-workers and evaluator-optimizer.
+- [Effective context engineering for AI agents](https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents) — Anthropic, 2025  
+  Article on the tokens an agent holds in its context window: system prompts, tool definitions, examples, retrieval at the time of use, compaction, structured note-taking and sub-agents for long-horizon tasks.
+- [How we built our multi-agent research system](https://www.anthropic.com/engineering/multi-agent-research-system) — Anthropic, 2025  
+  Engineering post on the Research feature of Claude, in which a lead agent plans the research and starts subagents that search in parallel. Covers prompt design, evaluation and the operation of the system in production.
+- [LLM Powered Autonomous Agents](https://lilianweng.github.io/posts/2023-06-23-agent/) — Lilian Weng, 2023  
+  Blog post that describes an agent as an LLM with three components: planning (task decomposition and self-reflection), memory (short-term and long-term) and tool use. Reviews the papers behind each component and several case studies.
 
 ### Tools & SDKs ([`tool`](https://juliodosreis.com/awesome-agenticsystems/resources#tool))
 
 Libraries, SDKs and developer tools for building, running or observing agents.
 
+- [Browser Use](https://github.com/browser-use/browser-use) — Browser Use, 2024  
+  Python library through which an LLM agent controls a web browser. The agent reads the state of the page and clicks, types and navigates.
+- [E2B](https://github.com/e2b-dev/E2B) — E2B, 2023  
+  Open-source infrastructure that runs code generated by AI models in isolated cloud sandboxes, with Python and JavaScript SDKs.
+- [Inspect](https://inspect.aisi.org.uk/) — UK AI Security Institute, 2024  
+  Python framework for evaluations of language models and agents, built from datasets, solvers, tools and scorers. Includes sandboxed tool execution, a log viewer and a collection of pre-built evaluations.
 - [Langfuse](https://github.com/langfuse/langfuse) — Langfuse  
   Open-source platform for tracing LLM applications and agents, with evaluations, prompt management and datasets.
-
-> **Gaps.** No resources yet of kind `skill`, `benchmark`.
 <!-- /gen:resources -->
 
 ## Design decisions
