@@ -1,0 +1,23 @@
+id: llm-multi-agent-challenges-open-problems-2024
+title: 'LLM Multi-Agent Systems: Challenges and Open Problems'
+authors:
+- Shanshan Han
+- Qifan Zhang
+- Weizhao Jin
+- Zhaozhuo Xu
+year: 2024
+arxiv: '2402.03578'
+links:
+  paper: https://arxiv.org/abs/2402.03578
+area: foundations
+scale:
+- multi-agent
+type:
+- position
+topics: []
+about: []
+infra: []
+domain:
+- general
+status: triaged
+added: '2026-11-03'
