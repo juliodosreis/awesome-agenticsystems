@@ -1,0 +1,12 @@
+id: llm-powered-autonomous-agents
+title: LLM Powered Autonomous Agents
+kind: guide
+url: https://lilianweng.github.io/posts/2023-06-23-agent/
+authors:
+- Lilian Weng
+year: 2023
+area: foundations
+description: 'Blog post that describes an agent as an LLM with three components: planning (task decomposition
+  and self-reflection), memory (short-term and long-term) and tool use. Reviews the papers behind each
+  component and several case studies.'
+added: '2026-11-03'
