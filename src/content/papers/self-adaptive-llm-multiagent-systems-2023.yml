@@ -1,0 +1,22 @@
+id: self-adaptive-llm-multiagent-systems-2023
+title: Self-Adaptive Large Language Model (LLM)-Based Multiagent Systems
+authors:
+- Nathalia Nascimento
+- Paulo Alencar
+- Donald Cowan
+year: 2023
+arxiv: '2307.06187'
+links:
+  paper: https://arxiv.org/abs/2307.06187
+area: architectures
+scale:
+- multi-agent
+type:
+- position
+topics: []
+about: []
+infra: []
+domain:
+- general
+status: triaged
+added: '2026-11-03'
