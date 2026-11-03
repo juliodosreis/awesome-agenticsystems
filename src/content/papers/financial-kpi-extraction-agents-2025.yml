@@ -1,0 +1,31 @@
+id: financial-kpi-extraction-agents-2025
+title: 'Structuring the Unstructured: A Multi-Agent System for Extracting and Querying Financial KPIs
+  and Guidance'
+authors:
+- Chanyeol Choi
+- Alejandro Lopez-Lira
+- Yongjae Lee
+- Jihoon Kwon
+- Minjae Kim
+- Juneha Hwang
+- Minsoo Ha
+- Chaewoon Kim
+- Jaeseon Ha
+- Suyeol Yun
+- Jin Kim
+year: 2025
+arxiv: '2505.19197'
+links:
+  paper: https://arxiv.org/abs/2505.19197
+area: architectures
+scale:
+- multi-agent
+type:
+- framework
+topics: []
+about: []
+infra: []
+domain:
+- finance
+status: triaged
+added: '2026-11-03'
