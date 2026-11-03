@@ -1,0 +1,27 @@
+id: public-administration-documents-agents-2024
+title: LLM Based Multi-Agent Generation of Semi-structured Documents from Semantic Templates in the Public
+  Administration Domain
+authors:
+- Emanuele Musumeci
+- Michele Brienza
+- Vincenzo Suriani
+- Daniele Nardi
+- Domenico Daniele Bloisi
+year: 2024
+arxiv: '2402.14871'
+links:
+  paper: https://arxiv.org/abs/2402.14871
+area: architectures
+scale:
+- multi-agent
+type:
+- framework
+topics: []
+about: []
+infra: []
+domain:
+- general
+notes: Language model agents generate documents from semantic templates; the task description is produced
+  by semantic retrieval, with no tool or environment action.
+status: triaged
+added: '2026-11-03'
