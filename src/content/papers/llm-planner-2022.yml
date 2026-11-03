@@ -1,0 +1,25 @@
+id: llm-planner-2022
+title: 'LLM-Planner: Few-Shot Grounded Planning for Embodied Agents with Large Language Models'
+authors:
+- Chan Hee Song
+- Jiaman Wu
+- Clayton Washington
+- Brian M. Sadler
+- Wei-Lun Chao
+- Yu Su
+year: 2022
+arxiv: '2212.04088'
+links:
+  paper: https://arxiv.org/abs/2212.04088
+area: reasoning-planning
+scale:
+- single-agent
+type:
+- method
+topics: []
+about: []
+infra: []
+domain:
+- robotics
+status: triaged
+added: '2026-11-03'
