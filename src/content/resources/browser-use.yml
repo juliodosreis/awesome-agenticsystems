@@ -1,0 +1,10 @@
+id: browser-use
+title: Browser Use
+kind: tool
+url: https://github.com/browser-use/browser-use
+org: Browser Use
+year: 2024
+area: tools-context
+description: Python library through which an LLM agent controls a web browser. The agent reads the state
+  of the page and clicks, types and navigates.
+added: '2026-11-03'
