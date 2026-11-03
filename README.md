@@ -28,7 +28,7 @@ A curated collection of material on agentic AI systems, in two parts:
 | | Papers | Resources |
 |---|---|---|
 | Holds | Papers on agentic systems: surveys, methods, benchmarks, frameworks, empirical studies | Links to protocols, frameworks, skills, benchmarks, books, courses, guides and tools |
-| Entries | <!-- gen:paper-total -->154<!-- /gen:paper-total --> | <!-- gen:resource-total -->7<!-- /gen:resource-total --> |
+| Entries | <!-- gen:paper-total -->222<!-- /gen:paper-total --> | <!-- gen:resource-total -->7<!-- /gen:resource-total --> |
 | Classified by | One `area`, plus topics and facets | One `kind`, plus an optional `area` |
 | On the site | [Index](https://juliodosreis.com/awesome-agenticsystems), [areas](https://juliodosreis.com/awesome-agenticsystems/areas), [domains](https://juliodosreis.com/awesome-agenticsystems/domains) | [Resources](https://juliodosreis.com/awesome-agenticsystems/resources), and the page of its area when one is set |
 | In this README | [Papers](#papers), grouped by area | [Resources](#resources), grouped by kind |
@@ -52,7 +52,7 @@ A framework or a benchmark published with a paper has an entry in each part. The
 ## Papers
 
 <!-- gen:paper-count -->
-154 papers listed, 42 of them with a written summary.
+222 papers listed, 42 of them with a written summary.
 <!-- /gen:paper-count -->
 
 Each paper is filed under one area, the one its main contribution belongs to. The areas are grouped in layers, listed below in order. The site adds filtering, search and the reading-path graph over the same data.
@@ -74,8 +74,24 @@ Where to enter the field.
 - 📖 [Evolution of AI in Education: Agentic Workflows](https://arxiv.org/abs/2504.20082v2) — `2025`
 - 📖 [From Multi-Agent Systems and the Semantic Web to Agentic AI: A Unified Narrative of the Web of Agents](https://arxiv.org/abs/2507.10644) — `arXiv preprint arXiv:2507.10644` · 2025
 - 📖 [LLM-Based Multi-Agent Systems for Software Engineering: Literature Review, Vision, and the Road Ahead](https://dl.acm.org/doi/10.1145/3712003) — `ACM Transactions on Software Engineering and Methodology` · 2025
+- 📖 [A survey on LLM-based multi-agent systems: workflow, infrastructure, and challenges](https://doi.org/10.1007/s44336-024-00009-2) — `Vicinagearth` · 2024
+- 📖 [Exploring Autonomous Agents through the Lens of Large Language Models: A Review](https://arxiv.org/abs/2404.04442) — `2024`
+- 📖 [Exploring Large Language Model based Intelligent Agents: Definitions, Methods, and Prospects](https://arxiv.org/abs/2401.03428) — `2024`
+- 📖 [LLM-based Multi-Agent Reinforcement Learning: Current and Future Directions](https://arxiv.org/abs/2405.11106) — `2024`
+- 📖 [Large Language Model based Multi-Agents: A Survey of Progress and Challenges](https://arxiv.org/abs/2402.01680) — `2024`
+- 📖 [Large Model Based Agents: State-of-the-Art, Cooperation Paradigms, Security and Privacy, and Future Trends](https://arxiv.org/abs/2409.14457) — `2024`
+- 📖 [Large language models empowered agent-based modeling and simulation: a survey and perspectives](https://doi.org/10.1057/s41599-024-03611-3) — `Humanities and Social Sciences Communications` · 2024
+- 📖 [The Landscape of Emerging AI Agent Architectures for Reasoning, Planning, and Tool Calling: A Survey](https://arxiv.org/abs/2404.11584) — `2024`
+- 📖 [Towards Rationality in Language and Multimodal Agents: A Survey](https://arxiv.org/abs/2406.00252) — `2024`
+- 📖 [A Survey on Large Language Model based Autonomous Agents](https://arxiv.org/abs/2308.11432) — `2023`
+- 📖 [Balancing Autonomy and Alignment: A Multi-Dimensional Taxonomy for Autonomous LLM-powered Multi-Agent Architectures](https://arxiv.org/abs/2310.03659) — `2023`
 - 📖 [The Rise and Potential of Large Language Model Based Agents: A Survey](https://arxiv.org/abs/2309.07864) — `2023`
+- [Large Language Models Miss the Multi-Agent Mark](https://arxiv.org/abs/2505.21298) — `2025`
+- [Enhancing AI Systems with Agentic Workflows Patterns in Large Language Model](https://doi.org/10.36227/techrxiv.173092393.30216600/v1) — `TechRxiv` · 2024
+- [GenAI-powered Multi-Agent Paradigm for Smart Urban Mobility: Opportunities and Challenges for Integrating Large Language Models (LLMs) and Retrieval-Augmented Generation (RAG) with Intelligent Transportation Systems](https://arxiv.org/abs/2409.00494) — `2024`
+- [LLM Multi-Agent Systems: Challenges and Open Problems](https://arxiv.org/abs/2402.03578) — `2024`
 - [LLM-based agentic systems in medicine and healthcare](https://www.nature.com/articles/s42256-024-00944-1) — `Nature Machine Intelligence` · 2024
+- [Cognitive Architectures for Language Agents](https://arxiv.org/abs/2309.02427) — `2023`
 
 
 ### Agent capabilities
@@ -91,14 +107,24 @@ What the agent reasons about, stores, executes and learns.
   Runs Monte Carlo Tree Search where an LLM Judge scores emergent behavior and an LLM Editor proposes variants, searching for complex systems that meet a stated behavioral goal.
 - [ClinicalAgents: Multi-Agent Orchestration for Clinical Decision Making with Dual-Memory](https://dl.acm.org/doi/10.1145/3770855.3818931) — `Proceedings of the 32nd ACM SIGKDD Conference on Knowledge Discovery and Data Mining (KDD '26)` · 2026
 - [L-MARS: Legal Multi-Agent System with Agentic Search and Citation-Faithfulness Audit](https://arxiv.org/abs/2509.00761) — `2026`
+- [Why Reasoning Fails to Plan: A Planning-Centric Analysis of Long-Horizon Decision Making in LLM Agents](https://arxiv.org/abs/2601.22311) — `2026`
+- [CODESIM: Multi-Agent Code Generation and Problem Solving through Simulation-Driven Planning and Debugging](https://arxiv.org/abs/2502.05664) — `2025`
 - [ADaPT: As-Needed Decomposition and Planning with Language Models](https://aclanthology.org/2024.findings-naacl.264/) — `Findings of the Association for Computational Linguistics: NAACL 2024` · 2024
+- [Devil's Advocate: Anticipatory Reflection for LLM Agents](https://arxiv.org/abs/2405.16334) — `2024`
 - [Language Agent Tree Search Unifies Reasoning, Acting, and Planning in Language Models](https://proceedings.mlr.press/v235/zhou24r.html) — `Proceedings of the 41st International Conference on Machine Learning` · 2024
+- [Positive Experience Reflection for Agents in Interactive Text Environments](https://arxiv.org/abs/2411.02223) — `2024`
+- [Describe, Explain, Plan and Select: Interactive Planning with Large Language Models Enables Open-World Multi-Task Agents](https://arxiv.org/abs/2302.01560) — `2023`
+- [ReWOO: Decoupling Reasoning from Observations for Efficient Augmented Language Models](https://arxiv.org/abs/2305.18323) — `2023`
+- [Reasoning with Language Model is Planning with World Model](https://arxiv.org/abs/2305.14992) — `2023`
 - [Reflexion: Language Agents with Verbal Reinforcement Learning](https://arxiv.org/abs/2303.11366) — `NeurIPS 2023` · 2023  
   Turns the feedback from a failed attempt into text and stores it in episodic memory to condition the retry, without updating weights.
+- [Self-Refine: Iterative Refinement with Self-Feedback](https://arxiv.org/abs/2303.17651) — `2023`
 - [ToRA: A Tool-Integrated Reasoning Agent for Mathematical Problem Solving](https://arxiv.org/abs/2309.17452) — `ICLR 2024` · 2023  
   An agent that solves complex mathematical problems by interleaving natural language reasoning with programmatic code execution.
 - [Tree of Thoughts: Deliberate Problem Solving with Large Language Models](https://arxiv.org/abs/2305.10601) — `NeurIPS 2023` · 2023  
   Explores several reasoning paths in parallel and prunes them with self-evaluation.
+- [LLM-Planner: Few-Shot Grounded Planning for Embodied Agents with Large Language Models](https://arxiv.org/abs/2212.04088) — `2022`
+- [Measuring and Narrowing the Compositionality Gap in Language Models](https://arxiv.org/abs/2210.03350) — `2022`
 - [ReAct: Synergizing Reasoning and Acting in Language Models](https://arxiv.org/abs/2210.03629) — `ICLR 2023` · 2022  
   Interleaves reasoning traces with actions on the environment, so that each observation corrects the reasoning that follows.
 
@@ -106,6 +132,7 @@ What the agent reasons about, stores, executes and learns.
 
 - 🔥 📖 [Always-On Agents: A Survey of Persistent Memory, State, and Governance in LLM Agents](https://arxiv.org/abs/2606.30306) — `2026`  
   Surveys 435 works on agents whose behavior depends on durable state, along six axes (authority, scope, mutability, provenance, recoverability, actionability) and a write-to-rollback lifecycle.
+- 📖 [From Storage to Experience: A Survey on the Evolution of LLM Agent Memory Mechanisms](https://arxiv.org/abs/2605.06716) — `2026`
 - 📖 [A Survey on the Memory Mechanism of Large Language Model based Agents](https://arxiv.org/abs/2404.13501) — `2024`
 - [A Hippocampus for Linear Attention: An Exact Memory for What the Recurrent State Forgets](https://arxiv.org/abs/2607.02303) — `2026`  
   Gives linear attention a bounded exact KV cache alongside its compressive recurrent state, so associations that do not survive compression are still recallable.
@@ -119,6 +146,11 @@ What the agent reasons about, stores, executes and learns.
   A memory architecture that maps long documents into a structure-aware hypergraph, tracing and retrieving only the necessary context nodes on-demand for complex multi-hop question answering.
 - [Zero-Mem: Zero-Token Memory Operations for LLM Agents](https://arxiv.org/abs/2607.29377) — `2026`  
   Runs memory operations with no LLM calls, using an entity-context graph and a temporal hierarchy over the original traces, and reserves generation for the final answer.
+- ["My agent understands me better": Integrating Dynamic Human-like Memory Recall and Consolidation in LLM-Based Agents](https://arxiv.org/abs/2404.00573) — `2024`
+- [INMS: Memory Sharing for Large Language Model based Agents](https://arxiv.org/abs/2404.09982) — `2024`
+- [Optimus-1: Hybrid Multimodal Memory Empowered Agents Excel in Long-Horizon Tasks](https://arxiv.org/abs/2408.03615) — `2024`
+- [RAP: Retrieval-Augmented Planning with Contextual Memory for Multimodal LLM Agents](https://arxiv.org/abs/2402.03610) — `2024`
+- [Self-evolving Agents with reflective and memory-augmented abilities](https://arxiv.org/abs/2409.00872) — `2024`
 - [Generative Agents: Interactive Simulacra of Human Behavior](https://arxiv.org/abs/2304.03442) — `UIST 2023` · 2023  
   A memory architecture with an observation stream, retrieval weighted by relevance-recency-importance, and periodic synthesis into reflections.
 - [MemGPT: Towards LLMs as Operating Systems](https://arxiv.org/abs/2310.08560) — `ICLR 2024` · 2023  
@@ -138,7 +170,9 @@ What the agent reasons about, stores, executes and learns.
 - [RAG-MCP: Mitigating Prompt Bloat in LLM Tool Selection via Retrieval-Augmented Generation](https://arxiv.org/abs/2505.03275) — `2025`
 - [AutoCodeRover: Autonomous Program Improvement](https://dl.acm.org/doi/10.1145/3650212.3680384) — `Proceedings of the 33rd ACM SIGSOFT International Symposium on Software Testing and Analysis` · 2024
 - [DRAGIN: Dynamic Retrieval Augmented Generation based on the Real-time Information Needs of Large Language Models](https://aclanthology.org/2024.acl-long.702.pdf) — `Proceedings of the 62nd Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)` · 2024
+- [Re-Invoke: Tool Invocation Rewriting for Zero-Shot Tool Retrieval](https://arxiv.org/abs/2408.01875) — `2024`
 - [SWE-agent: Agent-Computer Interfaces Enable Automated Software Engineering](https://proceedings.neurips.cc/paper_files/paper/2024/file/5a7c947568c1b1328ccc5230172e1e7c-Paper-Conference.pdf) — `Advances in Neural Information Processing Systems` · 2024
+- [Tool Documentation Enables Zero-Shot Tool-Usage with Large Language Models](https://arxiv.org/abs/2308.00675) — `2023`
 - [Toolformer: Language Models Can Teach Themselves to Use Tools](https://arxiv.org/abs/2302.04761) — `NeurIPS 2023` · 2023  
   The model self-annotates where to insert API calls and keeps the ones that reduce perplexity, learning tool use without human supervision.
 
@@ -155,6 +189,7 @@ What the agent reasons about, stores, executes and learns.
 - [Towards conversational diagnostic artificial intelligence](https://www.nature.com/articles/s41586-025-08866-7) — `Nature` · 2025
 - [Agent Workflow Memory](https://arxiv.org/abs/2409.07429) — `2024`
 - [ExpeL: LLM Agents Are Experiential Learners](https://dl.acm.org/doi/10.1609/aaai.v38i17.29936) — `Proceedings of the AAAI Conference on Artificial Intelligence` · 2024
+- [MetaReflection: Learning Instructions for Language Agents using Past Reflections](https://arxiv.org/abs/2405.13009) — `2024`
 - [Voyager: An Open-Ended Embodied Agent with Large Language Models](https://arxiv.org/abs/2305.16291) — `2023`  
   An embodied agent that continuously explores a 3D environment by writing, refining, and retrieving executable code from a procedural skill library.
 
@@ -185,21 +220,34 @@ The inner loop of the system, its number of agents, and the substrate it runs on
 - [MedScrubCrew: A Medical Multi-Agent Framework for Automating Appointment Scheduling Based on Patient-Provider Profile Resource Matching](https://www.mdpi.com/2227-9032/13/14/1649) — `Healthcare` · 2025
 - [PentestAgent: Incorporating LLM Agents to Automated Penetration Testing](https://dl.acm.org/doi/10.1145/3708821.3733882) — `Proceedings of the 20th ACM Asia Conference on Computer and Communications Security` · 2025
 - [Scaling Equitable Reflection Assessment in Education via Large Language Models and Role-Based Feedback Agents](https://arxiv.org/abs/2511.11772) — `2025`
+- [Structuring the Unstructured: A Multi-Agent System for Extracting and Querying Financial KPIs and Guidance](https://arxiv.org/abs/2505.19197) — `2025`
+- [TASER: Table Agents for Schema-guided Extraction and Recommendation](https://arxiv.org/abs/2508.13404) — `2025`
 - [Towards AI-Powered Real-Time Negotiation Agent](https://ceur-ws.org/Vol-3977/SemGenAge-5.pdf) — `SemGenAge Workshop (CEUR-WS Vol-3977)` · 2025
 - [UFO2: The Desktop AgentOS](https://arxiv.org/abs/2504.14603) — `2025`
 - [UFO: A UI-Focused Agent for Windows OS Interaction](https://aclanthology.org/2025.naacl-long.26/) — `Proceedings of the 2025 Conference of the Nations of the Americas Chapter of the Association for Computational Linguistics: Human Language Technologies (Volume 1: Long Papers)` · 2025
 - [Agent S: An Open Agentic Framework that Uses Computers Like a Human](https://arxiv.org/abs/2410.08164) — `2024`
+- ⚖️ [AutoDCWorkflow: LLM-based Data Cleaning Workflow Auto-Generation and Benchmark](https://arxiv.org/abs/2412.06724) — `2024`
+- [CleanAgent: Automating Data Standardization with LLM-based Agents](https://arxiv.org/abs/2403.08291) — `2024`
+- [LLM Based Multi-Agent Generation of Semi-structured Documents from Semantic Templates in the Public Administration Domain](https://arxiv.org/abs/2402.14871) — `2024`
 - [LLM-based agents for automating the enhancement of user story quality: An early report](https://arxiv.org/abs/2403.09442) — `2024`
+- [MALADE: Orchestration of LLM-powered Agents with Retrieval Augmented Generation for Pharmacovigilance](https://arxiv.org/abs/2408.01869) — `2024`
+- [MoA is All You Need: Building LLM Research Team using Mixture of Agents](https://arxiv.org/abs/2409.07487) — `2024`
 - [PENTEST-AI: An LLM-Powered Multi-Agents Framework for Penetration Testing Automation Leveraging MITRE ATT&CK](https://ieeexplore.ieee.org/document/10679480) — `2024 IEEE International Conference on Cyber Security and Resilience (CSR)` · 2024
 - ⚖️ [PentestGPT: Evaluating and Harnessing Large Language Models for Automated Penetration Testing](https://www.usenix.org/conference/usenixsecurity24/presentation/deng) — `33rd USENIX Security Symposium (USENIX Security 24)` · 2024
+- [Perceive, Reflect, and Plan: Designing LLM Agent for Goal-Directed City Navigation without Instructions](https://arxiv.org/abs/2408.04168) — `2024`
+- [StateFlow: Enhancing LLM Task-Solving through State-Driven Workflows](https://arxiv.org/abs/2403.11322) — `2024`
+- [SynthAI: A Multi Agent Generative AI Framework for Automated Modular HLS Design Generation](https://arxiv.org/abs/2405.16072) — `2024`
 - ⚖️ [WebVoyager: Building an End-to-End Web Agent with Large Multimodal Models](https://aclanthology.org/2024.acl-long.371/) — `Proceedings of the 62nd Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)` · 2024
+- [Building Cooperative Embodied Agents Modularly with Large Language Models](https://arxiv.org/abs/2307.02485) — `2023`
 - [Large Language Model Enhanced Multi-Agent Systems for 6G Communications](https://arxiv.org/abs/2312.07850) — `2023`
+- [Self-Adaptive Large Language Model (LLM)-Based Multiagent Systems](https://arxiv.org/abs/2307.06187) — `2023`
 
 #### Coordination & organization ([`coordination`](https://juliodosreis.com/awesome-agenticsystems/areas/coordination))
 
 - [A Diagnostic-Driven Multi-Agent Socratic Teaching System](https://doi.org/10.1145/3796114.3796119) — `Proceedings of the 2026 Asia-Pacific Intelligent Educational Technologies Conference (APIET 2026)` · 2026
 - [A Multi-Agent AI System for Automated High School Transcript Processing: Collaborative Document Analysis at Scale](https://arxiv.org/abs/2606.13916) — `2026`
 - [Artifact validity under varying agent configurations in LLM-assisted software development: A comparative analysis](https://www.sciencedirect.com/science/article/abs/pii/S095058492600011X) — `Information and Software Technology` · 2026
+- [From Spark to Fire: Modeling and Mitigating Error Cascades in LLM-Based Multi-Agent Collaboration](https://arxiv.org/abs/2603.04474) — `2026`
 - [Graph-of-Agents: A Graph-based Framework for Multi-Agent LLM Collaboration](https://arxiv.org/abs/2604.17148) — `2026`
 - [Hetero-Designer: Automated Design of Multi-Agent Systems with Heterogeneous LLMs](https://aclanthology.org/2026.acl-long.1272/) — `Proceedings of the 64th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)` · 2026
 - [IntelliCode: A Multi-Agent LLM Tutoring System with Centralized Learner Modeling](https://aclanthology.org/2026.eacl-demo.10/) — `Proceedings of the 19th Conference of the European Chapter of the Association for Computational Linguistics (EACL 2026) -- System Demonstrations` · 2026
@@ -208,20 +256,30 @@ The inner loop of the system, its number of agents, and the substrate it runs on
 - [QUARE: Quality-Aware Requirements Analysis through Multi-Agent Dialectical Negotiation](https://arxiv.org/abs/2603.11890) — `2026`
 - [UFO3: Weaving the Digital Agent Galaxy](https://arxiv.org/abs/2511.11332) — `2026`
 - [A Knowledge-driven Adaptive Collaboration of LLMs for Enhancing Medical Decision-making](https://aclanthology.org/2025.emnlp-main.1699/) — `Proceedings of the 2025 Conference on Empirical Methods in Natural Language Processing` · 2025
+- [AdaCoder: An Adaptive Planning and Multi-Agent Framework for Function-Level Code Generation](https://arxiv.org/abs/2504.04220) — `2025`
 - [AgileCoder: Dynamic Collaborative Agents for Software Development based on Agile Methodology](https://ieeexplore.ieee.org/document/11052788) — `2025 IEEE/ACM Second International Conference on AI Foundation Models and Software Engineering (Forge)` · 2025
 - [Controller Makes Pentesting Better: An Improved Multi-Agent Automated Penetration Testing Framework](https://ieeexplore.ieee.org/document/11354714) — `2025 IEEE 24th International Conference on Trust, Security and Privacy in Computing and Communications (TrustCom)` · 2025
 - [LLM Agents at the Roundtable: A Multi-Perspective and Dialectical Reasoning Framework for Essay Scoring](https://arxiv.org/abs/2509.14834) — `2025`
 - [Mixture-of-Agents Enhances Large Language Model Capabilities](https://openreview.net/forum?id=h0ZfDIrj7T) — `The Thirteenth International Conference on Learning Representations` · 2025
 - [MultiTutor: Collaborative LLM Agents for Multimodal Student Support](https://proceedings.mlr.press/v273/sun25a.html) — `PMLR 2025` · 2025  
   A multi-agent tutoring framework that coordinates specialized expert agents to provide personalized, multimodal educational support using internet search and code generation.
+- [A Multi-Agent Conversational Recommender System](https://arxiv.org/abs/2402.01135) — `2024`
+- [Challenges Faced by Large Language Models in Solving Multi-Agent Flocking](https://arxiv.org/abs/2404.04752) — `2024`
 - [ChatDev: Communicative Agents for Software Development](https://aclanthology.org/2024.acl-long.810/) — `Proceedings of the 62nd Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)` · 2024
+- [Cut the Crap: An Economical Communication Pipeline for LLM-based Multi-Agent Systems](https://arxiv.org/abs/2410.02506) — `2024`
 - [LawLuo: A Multi-Agent Collaborative Framework for Multi-Round Chinese Legal Consultation](https://arxiv.org/abs/2407.16252) — `2024`
+- [Leveraging Multi-AI Agents for Cross-Domain Knowledge Discovery](https://arxiv.org/abs/2404.08511) — `2024`
 - [Mdagents: An adaptive collaboration of llms for medical decision-making](https://proceedings.neurips.cc/paper_files/paper/2024/hash/90d1fc07f46e31387978b88e7e057a31-Abstract-Conference.html) — `Advances in Neural Information Processing Systems` · 2024
+- [Multi-Agent Large Language Models for Conversational Task-Solving](https://arxiv.org/abs/2410.22932) — `2024`
 - [SimAC: Simulating Agile Collaboration to Generate Acceptance Criteria in User Story Elaboration](https://link.springer.com/article/10.1007/s10515-024-00448-7) — `Automated Software Engineering` · 2024
 - [Simulating Classroom Education with LLM-Empowered Agents](https://arxiv.org/abs/2406.19226) — `2024`
+- [Simulating Human Strategic Behavior: Comparing Single and Multi-agent LLMs](https://arxiv.org/abs/2402.08189) — `2024`
+- [Towards Efficient LLM Grounding for Embodied Multi-Agent Collaboration](https://arxiv.org/abs/2405.14314) — `2024`
+- [AgentCoder: Multi-Agent-based Code Generation with Iterative Testing and Optimisation](https://arxiv.org/abs/2312.13010) — `2023`
 - [AutoGen: Enabling Next-Gen LLM Applications via Multi-Agent Conversation](https://arxiv.org/abs/2308.08155) — `COLM 2024` · 2023  
   Models the application as a conversation between configurable agents, with humans and code execution as first-class participants.
 - [CAMEL: Communicative Agents for "Mind" Exploration of Large Language Model Society](https://proceedings.neurips.cc/paper/2023/hash/a3621ee907def47c1b952ade25c67698-Abstract-Conference.html) — `Advances in Neural Information Processing Systems` · 2023
+- [Exchange-of-Thought: Enhancing Large Language Model Capabilities through Cross-Model Communication](https://doi.org/10.18653/v1/2023.emnlp-main.936) — `Proceedings of the 2023 Conference on Empirical Methods in Natural Language Processing` · 2023
 - [MedAgents: Large Language Models as Collaborators for Zero-shot Medical Reasoning](https://arxiv.org/abs/2311.10537) — `2023`
 - [MetaGPT: Meta Programming for a Multi-Agent Collaborative Framework](https://arxiv.org/abs/2308.00352) — `ICLR 2024` · 2023  
   Encodes the standard operating procedures of a software company as agent roles chained by structured artifacts.
@@ -230,6 +288,7 @@ The inner loop of the system, its number of agents, and the substrate it runs on
 
 - 📖 [A survey of agent interoperability protocols: Model Context Protocol (MCP), Agent Communication Protocol (ACP), Agent-to-Agent Protocol (A2A), and Agent Network Protocol (ANP)](https://arxiv.org/abs/2505.02279) — `arXiv preprint arXiv:2505.02279` · 2025
 - [Beyond DNS: Unlocking the Internet of AI Agents via the NANDA Index and Verified AgentFacts](https://arxiv.org/abs/2507.14263) — `2025`
+- [Internet of Agents: Weaving a Web of Heterogeneous Agents for Collaborative Intelligence](https://arxiv.org/abs/2407.07061) — `2024`
 
 #### Harness, scaffolding & AgentOps ([`engineering`](https://juliodosreis.com/awesome-agenticsystems/areas/engineering))
 
@@ -250,7 +309,11 @@ The inner loop of the system, its number of agents, and the substrate it runs on
 - [An Empirical Study of Agent Developer Practices in AI Agent Frameworks](https://arxiv.org/abs/2512.01939) — `2025`
 - [Edge-First Language Model Inference: Models, Metrics, and Tradeoffs](https://arxiv.org/abs/2505.16508) — `2025`  
   An empirical benchmarking study of edge-first Small Language Model (SLM) inference, exploring the tradeoffs between on-device performance, energy consumption, and cloud fallback.
+- [Let It Flow: Agentic Crafting on Rock and Roll, Building the ROME Model within an Open Agentic Learning Ecosystem](https://arxiv.org/abs/2512.24873) — `2025`
 - [OpenHands: An Open Platform for AI Software Developers as Generalist Agents](https://proceedings.iclr.cc/paper_files/paper/2025/hash/a4b6ad6b48850c0c331d1259fc66a69c-Abstract-Conference.html) — `International Conference on Learning Representations` · 2025
+- [AgentLite: A Lightweight Library for Building and Advancing Task-Oriented LLM Agent System](https://arxiv.org/abs/2402.15538) — `2024`
+- [AgentScope: A Flexible yet Robust Multi-Agent Platform](https://arxiv.org/abs/2402.14034) — `2024`
+- [Gentopia: A Collaborative Platform for Tool-Augmented LLMs](https://arxiv.org/abs/2308.04030) — `2023`
 
 
 ### Measurement and control
@@ -273,6 +336,8 @@ How a system is measured, and how its risk is governed.
   Argues automatic harness evolution must be compared against test-time scaling under matched feedback and inference budgets, and finds it does not outperform that baseline or generalize to held-out tasks.
 - ⚖️ [AI Hospital: Benchmarking Large Language Models in a Multi-agent Medical Interaction Simulator](https://aclanthology.org/2025.coling-main.680.pdf) — `Proceedings of the 31st International Conference on Computational Linguistics` · 2025
 - ⚖️ [AutoPenBench: A Vulnerability Testing Benchmark for Generative Agents](https://aclanthology.org/2025.emnlp-industry.114/) — `Proceedings of the 2025 Conference on Empirical Methods in Natural Language Processing: Industry Track` · 2025
+- [Exploring LLM Agents for Cleaning Tabular Machine Learning Datasets](https://arxiv.org/abs/2503.06664) — `2025`
+- [How Do LLMs Fail In Agentic Scenarios? A Qualitative Analysis of Success and Failure Scenarios of Various LLMs in Agentic Simulations](https://arxiv.org/abs/2512.07497) — `2025`
 - ⚖️ [MedAgentBench: A Realistic Virtual EHR Environment to Benchmark Medical LLM Agents](https://arxiv.org/abs/2501.14654) — `2025`
 - ⚖️ [Sequential Diagnosis with Language Models](https://arxiv.org/abs/2506.22405) — `2025`
 - ⚖️ [Why Do Multi-Agent LLM Systems Fail?](https://arxiv.org/abs/2503.13657) — `2025`
@@ -306,7 +371,10 @@ How a system is measured, and how its risk is governed.
 - [Governance-as-a-Service: A Multi-Agent Framework for AI System Compliance and Policy Enforcement](https://arxiv.org/abs/2508.18765) — `2025`
 - [Graph-Symbolic Policy Enforcement and Control (G-SPEC): A Neuro-Symbolic Framework for Safe Agentic AI in 5G Autonomous Networks](https://arxiv.org/abs/2512.20275) — `2025`
 - [MiniScope: Authorizing Agents with Least-Privilege Permissions](https://arxiv.org/abs/2512.11147) — `2025`
+- [SHIELDA: Structured Handling of Exceptions in LLM-Driven Agentic Workflows](https://arxiv.org/abs/2508.07935) — `2025`
 - [VeriGuard: Enhancing LLM Agent Safety via Verified Code Generation](https://arxiv.org/abs/2510.05156) — `2025`
+- [BlockAgents: Towards Byzantine-Robust LLM-Based Multi-Agent Coordination via Blockchain](https://doi.org/10.1145/3674399.3674445) — `ACM Turing Award Celebration Conference 2024` · 2024
+- [RedAgent: Red Teaming Large Language Models with Context-aware Autonomous Language Agent](https://arxiv.org/abs/2407.16667) — `2024`
 <!-- /gen:papers -->
 
 ## Resources
