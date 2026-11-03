@@ -1,0 +1,25 @@
+id: macrs-2024
+title: A Multi-Agent Conversational Recommender System
+authors:
+- Jiabao Fang
+- Shen Gao
+- Pengjie Ren
+- Xiuying Chen
+- Suzan Verberne
+- Zhaochun Ren
+year: 2024
+arxiv: '2402.01135'
+links:
+  paper: https://arxiv.org/abs/2402.01135
+area: coordination
+scale:
+- multi-agent
+type:
+- method
+topics: []
+about: []
+infra: []
+domain:
+- business
+status: triaged
+added: '2026-11-03'
