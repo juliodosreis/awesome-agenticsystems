@@ -1,0 +1,11 @@
+id: agent-qa
+title: "agent-qa"
+kind: tool
+url: https://vostride.com
+org: "vostride"
+area: engineering
+description: >-
+  CLI/MCP QA agent for natural-language testing of web, Android, and iOS apps.
+  Persistent memidex memory retains verified lessons across runs, and
+  evidence-gated self-improvement retires stale knowledge.
+added: "2026-11-01"
